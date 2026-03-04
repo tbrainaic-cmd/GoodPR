@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-04T05:12:35.128981+00:00",
+    "enriched_at": "2026-03-04T06:51:26.065634+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 2,
-    "total_prs_input": 150,
-    "prs_after_repo_filter": 31,
-    "prs_after_pr_filter": 25,
+    "total_prs_input": 115,
+    "prs_after_repo_filter": 20,
+    "prs_after_pr_filter": 17,
     "prs_analyzed_by_llm": 0,
     "tier_a": 3,
-    "tier_b": 22,
+    "tier_b": 14,
     "tier_c": 0,
     "workers": 5,
-    "elapsed_seconds": 0.13,
+    "elapsed_seconds": 0.16,
     "incremental": true,
-    "prs_from_cache": 31,
-    "prs_new": 119,
-    "prs_disappeared": 5
+    "prs_from_cache": 20,
+    "prs_new": 95,
+    "prs_disappeared": 11
   },
   "scored_prs": [
     {
@@ -231,113 +231,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/4349",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 4349,
-      "title": "Fix case-insensitive comparison in Session.get_adapter",
-      "changed_files": 2,
-      "additions": 39,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "url-parsing",
-          "string-manipulation",
-          "object-oriented-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
-      },
-      "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/6097",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 6097,
-      "title": "Fix inconsistent exception for JSONDecode error",
-      "changed_files": 2,
-      "additions": 26,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "json",
-          "encoding",
-          "exception-handling",
-          "unicode"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes an inconsistent `JSONDecodeError` by ensuring proper exception handling for alternative UTF encodings, especially when guessing encoding from byte sequencing.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve serving responses with invalid JSON data in various UTF encodings and observing the raised exceptions."
-      },
-      "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/3943",
       "repo_url": "https://github.com/psf/requests",
       "number": 3943,
@@ -374,6 +267,59 @@
         "pr_summary": "This PR enhances `HTTPAdapter.send()` to accept `urllib3.Timeout` objects for the `timeout` argument and allows setting default timeouts at the connection pool level.",
         "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
         "feasibility_notes": "Reproducing involves configuring an `HTTPAdapter` with `urllib3.Timeout` objects and verifying that timeouts are correctly applied at both call and connection pool levels."
+      },
+      "priority_score": 76.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/4349",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 4349,
+      "title": "Fix case-insensitive comparison in Session.get_adapter",
+      "changed_files": 2,
+      "additions": 39,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "url-parsing",
+          "string-manipulation",
+          "object-oriented-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
       },
       "priority_score": 76.0,
       "priority_tier": "B",
@@ -445,12 +391,12 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/6629",
+      "url": "https://github.com/psf/requests/pull/6097",
       "repo_url": "https://github.com/psf/requests",
-      "number": 6629,
-      "title": "Fix #6628 - JSONDecodeError are not deserializable",
+      "number": 6097,
+      "title": "Fix inconsistent exception for JSONDecode error",
       "changed_files": 2,
-      "additions": 20,
+      "additions": 26,
       "deletions": 0,
       "labels": [],
       "repo_size_mb": 12.99,
@@ -471,17 +417,17 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "serialization",
-          "object-oriented-programming",
-          "debugging",
-          "unit-testing"
+          "json",
+          "encoding",
+          "exception-handling",
+          "unicode"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes a bug where `requests.exceptions.JSONDecodeError` instances cannot be deserialized using `pickle` due to incorrect `__reduce__` method inheritance, causing process pool crashes.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing requires creating an invalid JSON response, raising the specific exception, pickling it, and then attempting to unpickle it, potentially within a multiprocessing context."
+        "pr_summary": "This PR fixes an inconsistent `JSONDecodeError` by ensuring proper exception handling for alternative UTF encodings, especially when guessing encoding from byte sequencing.",
+        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
+        "feasibility_notes": "Reproducing and testing locally would involve serving responses with invalid JSON data in various UTF encodings and observing the raised exceptions."
       },
       "priority_score": 76.0,
       "priority_tier": "B",
@@ -550,67 +496,17 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3713",
+      "url": "https://github.com/psf/requests/pull/2393",
       "repo_url": "https://github.com/psf/requests",
-      "number": 3713,
-      "title": "Restrict URL preparation to HTTP/HTTPS",
+      "number": 2393,
+      "title": "Attempt to quote anyway if unquoting fails",
       "changed_files": 2,
-      "additions": 20,
-      "deletions": 3,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
+      "additions": 28,
+      "deletions": 4,
+      "labels": [
+        "Ready To Merge",
+        "Minion Seal of Approval"
       ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "url-parsing",
-          "networking",
-          "http-protocol"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR restricts IDNA URL preparation in `requests` to only `http://` and `https://` schemes to avoid breaking non-standard URIs like `http+unix`.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
-        "feasibility_notes": "Reproducible by attempting to use `requests` with a URL scheme like `http+unix` before and after the change."
-      },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3289",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3289,
-      "title": "Test verify parameter",
-      "changed_files": 2,
-      "additions": 56,
-      "deletions": 0,
-      "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
       "repo_topics": [
@@ -705,17 +601,14 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/2393",
+      "url": "https://github.com/psf/requests/pull/3713",
       "repo_url": "https://github.com/psf/requests",
-      "number": 2393,
-      "title": "Attempt to quote anyway if unquoting fails",
+      "number": 3713,
+      "title": "Restrict URL preparation to HTTP/HTTPS",
       "changed_files": 2,
-      "additions": 28,
-      "deletions": 4,
-      "labels": [
-        "Ready To Merge",
-        "Minion Seal of Approval"
-      ],
+      "additions": 20,
+      "deletions": 3,
+      "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
       "repo_topics": [
@@ -731,14 +624,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "other",
-        "skills_required": [],
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "url-parsing",
+          "networking",
+          "http-protocol"
+        ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
+        "pr_summary": "This PR restricts IDNA URL preparation in `requests` to only `http://` and `https://` schemes to avoid breaking non-standard URIs like `http+unix`.",
+        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
+        "feasibility_notes": "Reproducible by attempting to use `requests` with a URL scheme like `http+unix` before and after the change."
       },
       "priority_score": 74.0,
       "priority_tier": "B",
@@ -789,60 +687,6 @@
         "feasibility_notes": ""
       },
       "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/898",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 898,
-      "title": "Replace assert statements with unittest's self.assert*",
-      "changed_files": 2,
-      "additions": 41,
-      "deletions": 40,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "refactoring",
-          "unit-testing",
-          "code-quality"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR refactors existing test suites by replacing standard `assert` statements with `unittest`'s `self.assert*` methods to provide more informative error messages upon test failure.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing involves running the existing test suite and observing the error messages generated by `assert` vs. `self.assert*` when tests fail."
-      },
-      "priority_score": 73.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -966,165 +810,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3835",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3835,
-      "title": "Only send HTTPDigestAuth on 4xx challenges",
-      "changed_files": 2,
-      "additions": 43,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "http",
-          "authentication",
-          "digest-auth"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR modifies `requests` to only send HTTP Digest Authentication credentials in response to HTTP 4xx challenge status codes, resolving issue #3772.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing requires setting up a server that issues Digest authentication challenges and verifying when `requests` sends credentials."
-      },
-      "priority_score": 70.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3969",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3969,
-      "title": "fix handle of non-ascii location on redirects issue #3888",
-      "changed_files": 2,
-      "additions": 14,
-      "deletions": 11,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "http",
-          "redirects",
-          "encoding"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR fixes an issue where `requests` incorrectly handles non-ASCII characters in `Location` headers during HTTP redirects, addressing issue #3888.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing requires setting up a web server that issues redirects with non-ASCII characters in the `Location` header and observing how `requests` handles them."
-      },
-      "priority_score": 70.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/582",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 582,
-      "title": "Tests for persistent and secure cookies",
-      "changed_files": 2,
-      "additions": 44,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "http-cookies",
-          "web-security"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds new tests specifically for persistent and secure cookies within the Requests library.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and running the added test suite."
-      },
-      "priority_score": 69.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/580",
       "repo_url": "https://github.com/psf/requests",
       "number": 580,
@@ -1213,112 +898,6 @@
         "pr_summary": "This PR adds explicit string casting for non-bytes values to ensure compatibility, addressing issue #3753.",
         "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
         "feasibility_notes": "Testing involves providing non-bytes values where bytes are expected and observing if the library handles them without errors."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/443",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 443,
-      "title": "Implemented #439. Added supporting test.",
-      "changed_files": 2,
-      "additions": 31,
-      "deletions": 8,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "bug-fixing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR implements a fix for an unspecified issue (#439) and includes a corresponding test.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Without the linked issue, it's difficult to pinpoint, but generally involves running the provided test and verifying the fix."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/863",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 863,
-      "title": "Fix #785 & add regression test.",
-      "changed_files": 2,
-      "additions": 38,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "debugging",
-          "unit-testing",
-          "http-networking",
-          "regression-testing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR fixes an issue referenced as #785 and includes a new regression test to prevent future reoccurrences.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
-        "feasibility_notes": "Without knowing the specific bug (from #785), it's difficult to assess local reproducibility, but adding a regression test usually makes it easier to verify the fix."
       },
       "priority_score": 65.0,
       "priority_tier": "B",
