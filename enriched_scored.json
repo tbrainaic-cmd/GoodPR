@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-04T06:51:26.065634+00:00",
+    "enriched_at": "2026-03-04T07:24:34.308902+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 2,
-    "total_prs_input": 115,
-    "prs_after_repo_filter": 20,
-    "prs_after_pr_filter": 17,
+    "total_prs_input": 109,
+    "prs_after_repo_filter": 18,
+    "prs_after_pr_filter": 15,
     "prs_analyzed_by_llm": 0,
     "tier_a": 3,
-    "tier_b": 14,
+    "tier_b": 12,
     "tier_c": 0,
     "workers": 5,
-    "elapsed_seconds": 0.16,
+    "elapsed_seconds": 0.13,
     "incremental": true,
-    "prs_from_cache": 20,
-    "prs_new": 95,
-    "prs_disappeared": 11
+    "prs_from_cache": 18,
+    "prs_new": 91,
+    "prs_disappeared": 2
   },
   "scored_prs": [
     {
@@ -231,13 +231,13 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3943",
+      "url": "https://github.com/psf/requests/pull/6149",
       "repo_url": "https://github.com/psf/requests",
-      "number": 3943,
-      "title": "HTTPAdapter.send() timeout defaults",
+      "number": 6149,
+      "title": "Tolerate bad registry entries in Windows proxy settings",
       "changed_files": 2,
-      "additions": 32,
-      "deletions": 9,
+      "additions": 34,
+      "deletions": 1,
       "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
@@ -257,16 +257,17 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "http",
-          "networking",
-          "urllib3"
+          "windows-api",
+          "registry",
+          "error-handling",
+          "http-proxies"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances `HTTPAdapter.send()` to accept `urllib3.Timeout` objects for the `timeout` argument and allows setting default timeouts at the connection pool level.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing involves configuring an `HTTPAdapter` with `urllib3.Timeout` objects and verifying that timeouts are correctly applied at both call and connection pool levels."
+        "pr_summary": "This PR enhances Requests to gracefully handle and ignore invalid Windows registry entries related to proxy settings, preventing exceptions.",
+        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
+        "feasibility_notes": "Reproducing and testing locally would require a Windows environment and manually creating or modifying invalid proxy entries in the registry."
       },
       "priority_score": 76.0,
       "priority_tier": "B",
@@ -337,13 +338,13 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/6149",
+      "url": "https://github.com/psf/requests/pull/3943",
       "repo_url": "https://github.com/psf/requests",
-      "number": 6149,
-      "title": "Tolerate bad registry entries in Windows proxy settings",
+      "number": 3943,
+      "title": "HTTPAdapter.send() timeout defaults",
       "changed_files": 2,
-      "additions": 34,
-      "deletions": 1,
+      "additions": 32,
+      "deletions": 9,
       "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
@@ -363,124 +364,18 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "windows-api",
-          "registry",
-          "error-handling",
-          "http-proxies"
+          "http",
+          "networking",
+          "urllib3"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances Requests to gracefully handle and ignore invalid Windows registry entries related to proxy settings, preventing exceptions.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would require a Windows environment and manually creating or modifying invalid proxy entries in the registry."
+        "pr_summary": "This PR enhances `HTTPAdapter.send()` to accept `urllib3.Timeout` objects for the `timeout` argument and allows setting default timeouts at the connection pool level.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing involves configuring an `HTTPAdapter` with `urllib3.Timeout` objects and verifying that timeouts are correctly applied at both call and connection pool levels."
       },
       "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/6097",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 6097,
-      "title": "Fix inconsistent exception for JSONDecode error",
-      "changed_files": 2,
-      "additions": 26,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "json",
-          "encoding",
-          "exception-handling",
-          "unicode"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes an inconsistent `JSONDecodeError` by ensuring proper exception handling for alternative UTF encodings, especially when guessing encoding from byte sequencing.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve serving responses with invalid JSON data in various UTF encodings and observing the raised exceptions."
-      },
-      "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/2148",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 2148,
-      "title": "Handle socket errors in iter_content",
-      "changed_files": 2,
-      "additions": 17,
-      "deletions": 2,
-      "labels": [
-        "Ready To Merge",
-        "Minion Seal of Approval"
-      ],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 74.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -584,6 +479,57 @@
         "pr_summary": "This PR enhances the `super_len` function to correctly count the encoded byte length of strings, addressing a potential issue with HTTP message sizing.",
         "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
         "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and using `super_len` with various strings and encodings, potentially within HTTP requests."
+      },
+      "priority_score": 74.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/2148",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 2148,
+      "title": "Handle socket errors in iter_content",
+      "changed_files": 2,
+      "additions": 17,
+      "deletions": 2,
+      "labels": [
+        "Ready To Merge",
+        "Minion Seal of Approval"
+      ],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
       },
       "priority_score": 74.0,
       "priority_tier": "B",
@@ -795,59 +741,6 @@
         "feasibility_notes": "Reproducing and testing locally would involve upgrading `urllib3` to version 2.0+ and running the test suite to confirm warnings are handled correctly."
       },
       "priority_score": 71.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/580",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 580,
-      "title": "Fix and test for #458",
-      "changed_files": 2,
-      "additions": 17,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "http-requests",
-          "testing",
-          "bug-fixing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR fixes an unspecified issue and adds corresponding tests.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and running the provided test cases."
-      },
-      "priority_score": 67.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
