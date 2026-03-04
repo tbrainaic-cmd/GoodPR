@@ -1,131 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-04T09:37:29.807828+00:00",
-    "total_repos_input": 2,
-    "repos_passed_filter": 1,
-    "total_prs_input": 61,
-    "prs_after_repo_filter": 2,
-    "prs_after_pr_filter": 2,
+    "enriched_at": "2026-03-04T10:13:03.373020+00:00",
+    "total_repos_input": 1,
+    "repos_passed_filter": 0,
+    "total_prs_input": 44,
+    "prs_after_repo_filter": 0,
+    "prs_after_pr_filter": 0,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 2,
+    "tier_b": 0,
     "tier_c": 0,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.16,
     "incremental": true,
-    "prs_from_cache": 2,
-    "prs_new": 59,
-    "prs_disappeared": 11
+    "prs_from_cache": 0,
+    "prs_new": 44,
+    "prs_disappeared": 2
   },
-  "scored_prs": [
-    {
-      "url": "https://github.com/psf/requests/pull/6149",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 6149,
-      "title": "Tolerate bad registry entries in Windows proxy settings",
-      "changed_files": 2,
-      "additions": 34,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "windows-api",
-          "registry",
-          "error-handling",
-          "http-proxies"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances Requests to gracefully handle and ignore invalid Windows registry entries related to proxy settings, preventing exceptions.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would require a Windows environment and manually creating or modifying invalid proxy entries in the registry."
-      },
-      "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3758",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3758,
-      "title": "adding string casting for non-bytes values",
-      "changed_files": 2,
-      "additions": 27,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "type-coercion",
-          "string-handling"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR adds explicit string casting for non-bytes values to ensure compatibility, addressing issue #3753.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Testing involves providing non-bytes values where bytes are expected and observing if the library handles them without errors."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    }
-  ],
+  "scored_prs": [],
   "repos_filtered_out": [
     {
       "repo": "https://github.com/sympy/sympy",
