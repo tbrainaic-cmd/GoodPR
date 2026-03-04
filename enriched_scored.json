@@ -1,10 +1,10 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-04T01:53:38.930003+00:00",
+    "enriched_at": "2026-03-04T03:03:28.659995+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 2,
-    "total_prs_input": 191,
+    "total_prs_input": 186,
     "prs_after_repo_filter": 40,
     "prs_after_pr_filter": 33,
     "prs_analyzed_by_llm": 0,
@@ -12,67 +12,13 @@
     "tier_b": 27,
     "tier_c": 0,
     "workers": 5,
-    "elapsed_seconds": 0.14,
+    "elapsed_seconds": 0.16,
     "incremental": true,
     "prs_from_cache": 40,
-    "prs_new": 151,
-    "prs_disappeared": 18
+    "prs_new": 146,
+    "prs_disappeared": 0
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/psf/black/pull/339",
-      "repo_url": "https://github.com/psf/black",
-      "number": 339,
-      "title": "Ignore symbolic links pointing outside of the root directory",
-      "changed_files": 2,
-      "additions": 58,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 7.57,
-      "repo_language": "Python",
-      "repo_topics": [
-        "autopep8",
-        "code",
-        "codeformatter",
-        "formatter",
-        "gofmt",
-        "hacktoberfest",
-        "pre-commit-hook",
-        "python",
-        "yapf"
-      ],
-      "repo_has_dockerfile": true,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "file system operations",
-          "pathlib",
-          "error handling"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": true,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR fixes a crash in Black by ignoring symbolic links that point outside of the project's root directory during file analysis.",
-        "repo_summary": "Black is an opinionated Python code formatter that automatically reformats code to conform to a consistent style.",
-        "feasibility_notes": "Reproducing the bug is easy by following the detailed steps to create the specified directory structure and symbolic link, then running `black .` within the repository."
-      },
-      "priority_score": 100.0,
-      "priority_tier": "A",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/psf/black/pull/1680",
       "repo_url": "https://github.com/psf/black",
@@ -120,6 +66,60 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/black/pull/339",
+      "repo_url": "https://github.com/psf/black",
+      "number": 339,
+      "title": "Ignore symbolic links pointing outside of the root directory",
+      "changed_files": 2,
+      "additions": 58,
+      "deletions": 2,
+      "labels": [],
+      "repo_size_mb": 7.57,
+      "repo_language": "Python",
+      "repo_topics": [
+        "autopep8",
+        "code",
+        "codeformatter",
+        "formatter",
+        "gofmt",
+        "hacktoberfest",
+        "pre-commit-hook",
+        "python",
+        "yapf"
+      ],
+      "repo_has_dockerfile": true,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "file system operations",
+          "pathlib",
+          "error handling"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": true,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR fixes a crash in Black by ignoring symbolic links that point outside of the project's root directory during file analysis.",
+        "repo_summary": "Black is an opinionated Python code formatter that automatically reformats code to conform to a consistent style.",
+        "feasibility_notes": "Reproducing the bug is easy by following the detailed steps to create the specified directory structure and symbolic link, then running `black .` within the repository."
+      },
+      "priority_score": 100.0,
+      "priority_tier": "A",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -501,6 +501,112 @@
       ]
     },
     {
+      "url": "https://github.com/psf/requests/pull/3943",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 3943,
+      "title": "HTTPAdapter.send() timeout defaults",
+      "changed_files": 2,
+      "additions": 32,
+      "deletions": 9,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "http",
+          "networking",
+          "urllib3"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR enhances `HTTPAdapter.send()` to accept `urllib3.Timeout` objects for the `timeout` argument and allows setting default timeouts at the connection pool level.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing involves configuring an `HTTPAdapter` with `urllib3.Timeout` objects and verifying that timeouts are correctly applied at both call and connection pool levels."
+      },
+      "priority_score": 76.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/4349",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 4349,
+      "title": "Fix case-insensitive comparison in Session.get_adapter",
+      "changed_files": 2,
+      "additions": 39,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "url-parsing",
+          "string-manipulation",
+          "object-oriented-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
+      },
+      "priority_score": 76.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/psf/requests/pull/6036",
       "repo_url": "https://github.com/psf/requests",
       "number": 6036,
@@ -608,59 +714,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/4349",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 4349,
-      "title": "Fix case-insensitive comparison in Session.get_adapter",
-      "changed_files": 2,
-      "additions": 39,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "url-parsing",
-          "string-manipulation",
-          "object-oriented-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
-      },
-      "priority_score": 76.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/6097",
       "repo_url": "https://github.com/psf/requests",
       "number": 6097,
@@ -715,13 +768,160 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3943",
+      "url": "https://github.com/psf/requests/pull/3195",
       "repo_url": "https://github.com/psf/requests",
-      "number": 3943,
-      "title": "HTTPAdapter.send() timeout defaults",
+      "number": 3195,
+      "title": "Fix to check for Plain ip notations in no_proxy settings if not CIDR",
       "changed_files": 2,
-      "additions": 32,
-      "deletions": 9,
+      "additions": 25,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 74.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/2148",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 2148,
+      "title": "Handle socket errors in iter_content",
+      "changed_files": 2,
+      "additions": 17,
+      "deletions": 2,
+      "labels": [
+        "Ready To Merge",
+        "Minion Seal of Approval"
+      ],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 74.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/3289",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 3289,
+      "title": "Test verify parameter",
+      "changed_files": 2,
+      "additions": 56,
+      "deletions": 0,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 74.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/6589",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 6589,
+      "title": "Enhance `super_len` to count encoded bytes for str",
+      "changed_files": 2,
+      "additions": 20,
+      "deletions": 0,
       "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
@@ -741,18 +941,19 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "http",
-          "networking",
-          "urllib3"
+          "encoding",
+          "http-requests",
+          "byte-manipulation",
+          "performance-optimization"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances `HTTPAdapter.send()` to accept `urllib3.Timeout` objects for the `timeout` argument and allows setting default timeouts at the connection pool level.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing involves configuring an `HTTPAdapter` with `urllib3.Timeout` objects and verifying that timeouts are correctly applied at both call and connection pool levels."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR enhances the `super_len` function to correctly count the encoded byte length of strings, addressing a potential issue with HTTP message sizing.",
+        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
+        "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and using `super_len` with various strings and encodings, potentially within HTTP requests."
       },
-      "priority_score": 76.0,
+      "priority_score": 74.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -920,207 +1121,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/6589",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 6589,
-      "title": "Enhance `super_len` to count encoded bytes for str",
-      "changed_files": 2,
-      "additions": 20,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "encoding",
-          "http-requests",
-          "byte-manipulation",
-          "performance-optimization"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR enhances the `super_len` function to correctly count the encoded byte length of strings, addressing a potential issue with HTTP message sizing.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and using `super_len` with various strings and encodings, potentially within HTTP requests."
-      },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3289",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3289,
-      "title": "Test verify parameter",
-      "changed_files": 2,
-      "additions": 56,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3195",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3195,
-      "title": "Fix to check for Plain ip notations in no_proxy settings if not CIDR",
-      "changed_files": 2,
-      "additions": 25,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/2148",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 2148,
-      "title": "Handle socket errors in iter_content",
-      "changed_files": 2,
-      "additions": 17,
-      "deletions": 2,
-      "labels": [
-        "Ready To Merge",
-        "Minion Seal of Approval"
-      ],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/898",
       "repo_url": "https://github.com/psf/requests",
       "number": 898,
@@ -1175,59 +1175,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3493",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3493,
-      "title": "#3490 removing Content-Type and Transfer-Encoding headers on redirect",
-      "changed_files": 2,
-      "additions": 44,
-      "deletions": 3,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "http-protocol",
-          "web-security",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR removes `Content-Type` and `Transfer-Encoding` headers during non-temporary/non-permanent HTTP redirects.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
-        "feasibility_notes": "Requires setting up a web server that issues specific types of redirects and inspecting the subsequent requests made by `requests`."
-      },
-      "priority_score": 72.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/3591",
       "repo_url": "https://github.com/psf/requests",
       "number": 3591,
@@ -1265,6 +1212,59 @@
         "pr_summary": "This PR fixes an issue in `RequestsCookieJar`'s update logic, ensuring `merge_cookies` correctly handles updates for different cookiejar types.",
         "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
         "feasibility_notes": "Requires crafting specific scenarios involving cookie updates, potentially with different cookiejar implementations, to observe the bug."
+      },
+      "priority_score": 72.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/3493",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 3493,
+      "title": "#3490 removing Content-Type and Transfer-Encoding headers on redirect",
+      "changed_files": 2,
+      "additions": 44,
+      "deletions": 3,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "http-protocol",
+          "web-security",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR removes `Content-Type` and `Transfer-Encoding` headers during non-temporary/non-permanent HTTP redirects.",
+        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make HTTP requests easy and human-friendly.",
+        "feasibility_notes": "Requires setting up a web server that issues specific types of redirects and inspecting the subsequent requests made by `requests`."
       },
       "priority_score": 72.0,
       "priority_tier": "B",
@@ -1336,59 +1336,6 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/3835",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3835,
-      "title": "Only send HTTPDigestAuth on 4xx challenges",
-      "changed_files": 2,
-      "additions": 43,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "http",
-          "authentication",
-          "digest-auth"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR modifies `requests` to only send HTTP Digest Authentication credentials in response to HTTP 4xx challenge status codes, resolving issue #3772.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing requires setting up a server that issues Digest authentication challenges and verifying when `requests` sends credentials."
-      },
-      "priority_score": 70.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/psf/requests/pull/3969",
       "repo_url": "https://github.com/psf/requests",
       "number": 3969,
@@ -1425,6 +1372,59 @@
         "pr_summary": "This PR fixes an issue where `requests` incorrectly handles non-ASCII characters in `Location` headers during HTTP redirects, addressing issue #3888.",
         "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
         "feasibility_notes": "Reproducing requires setting up a web server that issues redirects with non-ASCII characters in the `Location` header and observing how `requests` handles them."
+      },
+      "priority_score": 70.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/3835",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 3835,
+      "title": "Only send HTTPDigestAuth on 4xx challenges",
+      "changed_files": 2,
+      "additions": 43,
+      "deletions": 0,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "http",
+          "authentication",
+          "digest-auth"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 1,
+        "pr_summary": "This PR modifies `requests` to only send HTTP Digest Authentication credentials in response to HTTP 4xx challenge status codes, resolving issue #3772.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing requires setting up a server that issues Digest authentication challenges and verifying when `requests` sends credentials."
       },
       "priority_score": 70.0,
       "priority_tier": "B",
