@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-04T08:06:43.005173+00:00",
+    "enriched_at": "2026-03-04T08:40:36.032660+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 2,
-    "total_prs_input": 100,
-    "prs_after_repo_filter": 14,
-    "prs_after_pr_filter": 12,
+    "total_prs_input": 94,
+    "prs_after_repo_filter": 13,
+    "prs_after_pr_filter": 11,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 12,
+    "tier_b": 11,
     "tier_c": 0,
     "workers": 5,
     "elapsed_seconds": 0.15,
     "incremental": true,
-    "prs_from_cache": 14,
-    "prs_new": 86,
-    "prs_disappeared": 4
+    "prs_from_cache": 13,
+    "prs_new": 81,
+    "prs_disappeared": 1
   },
   "scored_prs": [
     {
@@ -58,59 +58,6 @@
         "feasibility_notes": "Reproducing involves testing `requests` with custom URL schemes (e.g., `http+unix`) and verifying parameter handling, possibly involving `docker-py`'s usage."
       },
       "priority_score": 78.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/4349",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 4349,
-      "title": "Fix case-insensitive comparison in Session.get_adapter",
-      "changed_files": 2,
-      "additions": 39,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "url-parsing",
-          "string-manipulation",
-          "object-oriented-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
-        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
-        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
-      },
-      "priority_score": 76.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -233,13 +180,13 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/6589",
+      "url": "https://github.com/psf/requests/pull/4349",
       "repo_url": "https://github.com/psf/requests",
-      "number": 6589,
-      "title": "Enhance `super_len` to count encoded bytes for str",
+      "number": 4349,
+      "title": "Fix case-insensitive comparison in Session.get_adapter",
       "changed_files": 2,
-      "additions": 20,
-      "deletions": 0,
+      "additions": 39,
+      "deletions": 1,
       "labels": [],
       "repo_size_mb": 12.99,
       "repo_language": "Python",
@@ -259,67 +206,18 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "encoding",
-          "http-requests",
-          "byte-manipulation",
-          "performance-optimization"
+          "url-parsing",
+          "string-manipulation",
+          "object-oriented-design"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR enhances the `super_len` function to correctly count the encoded byte length of strings, addressing a potential issue with HTTP message sizing.",
-        "repo_summary": "Requests is an elegant and simple HTTP library for Python, designed to make web requests easy and human-friendly.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up a Python environment and using `super_len` with various strings and encodings, potentially within HTTP requests."
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes a bug in `Session.get_adapter` where a mounted adapter with a non-lowercase URL prefix would not be matched because the incoming URL was lowered but the prefix was not.",
+        "repo_summary": "requests is a popular HTTP library for Python, designed to make making HTTP requests simple and user-friendly.",
+        "feasibility_notes": "Reproducing involves mounting an adapter with a mixed-case URL prefix and observing that requests to matching URLs fail to use the correct adapter."
       },
-      "priority_score": 74.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/psf/requests/pull/3195",
-      "repo_url": "https://github.com/psf/requests",
-      "number": 3195,
-      "title": "Fix to check for Plain ip notations in no_proxy settings if not CIDR",
-      "changed_files": 2,
-      "additions": 25,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 12.99,
-      "repo_language": "Python",
-      "repo_topics": [
-        "client",
-        "cookies",
-        "forhumans",
-        "http",
-        "humans",
-        "python",
-        "python-requests",
-        "requests"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 74.0,
+      "priority_score": 76.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -388,13 +286,13 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/2148",
+      "url": "https://github.com/psf/requests/pull/2393",
       "repo_url": "https://github.com/psf/requests",
-      "number": 2148,
-      "title": "Handle socket errors in iter_content",
+      "number": 2393,
+      "title": "Attempt to quote anyway if unquoting fails",
       "changed_files": 2,
-      "additions": 17,
-      "deletions": 2,
+      "additions": 28,
+      "deletions": 4,
       "labels": [
         "Ready To Merge",
         "Minion Seal of Approval"
@@ -439,13 +337,61 @@
       ]
     },
     {
-      "url": "https://github.com/psf/requests/pull/2393",
+      "url": "https://github.com/psf/requests/pull/3195",
       "repo_url": "https://github.com/psf/requests",
-      "number": 2393,
-      "title": "Attempt to quote anyway if unquoting fails",
+      "number": 3195,
+      "title": "Fix to check for Plain ip notations in no_proxy settings if not CIDR",
       "changed_files": 2,
-      "additions": 28,
-      "deletions": 4,
+      "additions": 25,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 12.99,
+      "repo_language": "Python",
+      "repo_topics": [
+        "client",
+        "cookies",
+        "forhumans",
+        "http",
+        "humans",
+        "python",
+        "python-requests",
+        "requests"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 74.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/psf/requests/pull/2148",
+      "repo_url": "https://github.com/psf/requests",
+      "number": 2148,
+      "title": "Handle socket errors in iter_content",
+      "changed_files": 2,
+      "additions": 17,
+      "deletions": 2,
       "labels": [
         "Ready To Merge",
         "Minion Seal of Approval"
