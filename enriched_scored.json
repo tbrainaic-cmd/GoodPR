@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-13T08:26:35.265714+00:00",
+    "enriched_at": "2026-03-13T09:26:32.488600+00:00",
     "total_repos_input": 1,
     "repos_passed_filter": 1,
     "total_prs_input": 149,
@@ -273,56 +273,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/816",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 816,
-      "title": "Cleaned up test_lambdify.py and others.",
-      "changed_files": 4,
-      "additions": 71,
-      "deletions": 111,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "refactoring",
-          "mpmath"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR cleans up `test_lambdify.py` and other test files by implementing `raises()` for expected exceptions and applying a decorator to conserve `mpmath` precision.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing involves running the affected tests and verifying that the refactoring hasn't introduced regressions and that `mpmath` precision is handled correctly."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/561",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 561,
@@ -356,106 +306,6 @@
         "pr_summary": "This PR enhances `powsimp` to better flatten rational powers by recursively combining terms with rational exponents and loose terms within a `Mul` expression.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
         "feasibility_notes": "Testing involves providing symbolic expressions with various combinations of base terms and rational exponents to `powsimp` and verifying the simplified output."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1590",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1590,
-      "title": "1836 - subs sees expanded 2-arg mul",
-      "changed_files": 3,
-      "additions": 47,
-      "deletions": 61,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-computation",
-          "algebra",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes an issue where the `subs` method incorrectly handles expanded 2-argument multiplications, ensuring `(2*a + 2*b).subs(a + b, 1)` correctly evaluates to `2`.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves running the specific test case `(2*a + 2*b).subs(a + b, 1)` and verifying the output matches the expected `2`."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/759",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 759,
-      "title": "Fixed test_args.py tests for Physics Module",
-      "changed_files": 4,
-      "additions": 161,
-      "deletions": 250,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "physics",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR completes and corrects tests within the Physics Module's `test_args.py` file, including sympifying arguments where necessary.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves running the `test_args.py` tests within the Physics Module and verifying they now pass as intended."
       },
       "priority_score": 58.0,
       "priority_tier": "B",
@@ -524,6 +374,106 @@
       ]
     },
     {
+      "url": "https://github.com/sympy/sympy/pull/1590",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1590,
+      "title": "1836 - subs sees expanded 2-arg mul",
+      "changed_files": 3,
+      "additions": 47,
+      "deletions": 61,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-computation",
+          "algebra",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes an issue where the `subs` method incorrectly handles expanded 2-argument multiplications, ensuring `(2*a + 2*b).subs(a + b, 1)` correctly evaluates to `2`.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves running the specific test case `(2*a + 2*b).subs(a + b, 1)` and verifying the output matches the expected `2`."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/816",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 816,
+      "title": "Cleaned up test_lambdify.py and others.",
+      "changed_files": 4,
+      "additions": 71,
+      "deletions": 111,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "testing",
+          "refactoring",
+          "mpmath"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR cleans up `test_lambdify.py` and other test files by implementing `raises()` for expected exceptions and applying a decorator to conserve `mpmath` precision.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing involves running the affected tests and verifying that the refactoring hasn't introduced regressions and that `mpmath` precision is handled correctly."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/sympy/sympy/pull/1269",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 1269,
@@ -566,6 +516,107 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/759",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 759,
+      "title": "Fixed test_args.py tests for Physics Module",
+      "changed_files": 4,
+      "additions": 161,
+      "deletions": 250,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "testing",
+          "physics",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR completes and corrects tests within the Physics Module's `test_args.py` file, including sympifying arguments where necessary.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves running the `test_args.py` tests within the Physics Module and verifying they now pass as intended."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/810",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 810,
+      "title": "Bug fix for #791",
+      "changed_files": 2,
+      "additions": 37,
+      "deletions": 38,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "latex",
+          "rendering",
+          "testing",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR resolves a bug introduced in PR #791, where horizontal bars of the `\\sum` LaTeX representation appeared disconnected, and adjusts related test cases.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing requires generating LaTeX output for summation expressions and visually inspecting the `\\sum` symbol."
+      },
+      "priority_score": 56.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -675,64 +726,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/810",
+      "url": "https://github.com/sympy/sympy/pull/405",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 810,
-      "title": "Bug fix for #791",
-      "changed_files": 2,
-      "additions": 37,
-      "deletions": 38,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "latex",
-          "rendering",
-          "testing",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR resolves a bug introduced in PR #791, where horizontal bars of the `\\sum` LaTeX representation appeared disconnected, and adjusts related test cases.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing requires generating LaTeX output for summation expressions and visually inspecting the `\\sum` symbol."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/602",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 602,
-      "title": "Root function2",
-      "changed_files": 3,
-      "additions": 149,
-      "deletions": 3,
+      "number": 405,
+      "title": "Use more robust hashing in polyclasses (DMP and friends)",
+      "changed_files": 4,
+      "additions": 75,
+      "deletions": 4,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -750,16 +750,16 @@
         "skills_required": [
           "python",
           "symbolic-math",
-          "algebra",
-          "functions",
-          "testing"
+          "data-structures",
+          "hashing",
+          "bug-fixing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR implements a new `root(a,n)` function as proposed in issue 2643, for calculating the nth root of 'a'.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves calling the new `root` function with various numerical and symbolic inputs to verify its correctness and expected behavior."
+        "pr_summary": "This PR improves the robustness of hashing for polynomial classes (DMP and ANP) by converting list representations to tuples to avoid issues with different integer types' `repr` output.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system.",
+        "feasibility_notes": "Reproducing might be difficult without the specific setup that caused the original hashing collision, as it's noted 'only you seemed to be able to reproduce'."
       },
       "priority_score": 55.0,
       "priority_tier": "B",
@@ -767,7 +767,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -810,158 +810,6 @@
         "pr_summary": "This PR integrates the numpydoc Sphinx extension into SymPy to enable Numpy docstring format, though it introduces many warnings and errors.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
         "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy and Sphinx dependencies, building the documentation locally, and inspecting the generated warnings and errors."
-      },
-      "priority_score": 55.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/542",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 542,
-      "title": "factor() obeys power rules (#2390)",
-      "changed_files": 3,
-      "additions": 54,
-      "deletions": 6,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic computation",
-          "mathematics",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR improves the `factor()` function to correctly obey power rules, fixing existing bugs and enhancing code quality and test coverage.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
-        "feasibility_notes": "Testing requires providing diverse symbolic expressions with powers to `factor()` and verifying that the factorization adheres to mathematical power rules."
-      },
-      "priority_score": 55.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1274",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1274,
-      "title": "Fix issue 3249.",
-      "changed_files": 4,
-      "additions": 52,
-      "deletions": 4,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "special functions",
-          "mathematical theorems",
-          "testing",
-          "symbolic mathematics"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR addresses issue 3249 by adding a new table entry and tests to enable the evaluation of a specific G-function that was previously unhandled by Slater's theorem.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
-        "feasibility_notes": "Testing involves creating the specific G-function expression mentioned in issue 3249 (if accessible) and verifying its correct evaluation after the new table entry is added."
-      },
-      "priority_score": 55.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/405",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 405,
-      "title": "Use more robust hashing in polyclasses (DMP and friends)",
-      "changed_files": 4,
-      "additions": 75,
-      "deletions": 4,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "data-structures",
-          "hashing",
-          "bug-fixing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR improves the robustness of hashing for polynomial classes (DMP and ANP) by converting list representations to tuples to avoid issues with different integer types' `repr` output.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system.",
-        "feasibility_notes": "Reproducing might be difficult without the specific setup that caused the original hashing collision, as it's noted 'only you seemed to be able to reproduce'."
       },
       "priority_score": 55.0,
       "priority_tier": "B",
@@ -1126,13 +974,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/636",
+      "url": "https://github.com/sympy/sympy/pull/602",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 636,
-      "title": "Add a measure option to simplify(), letting you specify the complexity me",
-      "changed_files": 2,
-      "additions": 134,
-      "deletions": 44,
+      "number": 602,
+      "title": "Root function2",
+      "changed_files": 3,
+      "additions": 149,
+      "deletions": 3,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -1149,24 +997,25 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "algorithms",
-          "api-design",
-          "symbolic-computation"
+          "symbolic-math",
+          "algebra",
+          "functions",
+          "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds a `measure` option to the `simplify()` function, allowing users to specify a custom complexity metric, and addresses issue 2719.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running tests for `simplify()` to verify the new `measure` option and its behavior."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR implements a new `root(a,n)` function as proposed in issue 2643, for calculating the nth root of 'a'.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves calling the new `root` function with various numerical and symbolic inputs to verify its correctness and expected behavior."
       },
-      "priority_score": 53.0,
-      "priority_tier": "C",
+      "priority_score": 55.0,
+      "priority_tier": "B",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1176,13 +1025,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/78",
+      "url": "https://github.com/sympy/sympy/pull/542",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 78,
-      "title": "Summation: Rename sum() to summation()",
-      "changed_files": 6,
-      "additions": 87,
-      "deletions": 50,
+      "number": 542,
+      "title": "factor() obeys power rules (#2390)",
+      "changed_files": 3,
+      "additions": 54,
+      "deletions": 6,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -1199,16 +1048,117 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "refactoring",
-          "api-design",
-          "symbolic-math"
+          "symbolic computation",
+          "mathematics",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR improves the `factor()` function to correctly obey power rules, fixing existing bugs and enhancing code quality and test coverage.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
+        "feasibility_notes": "Testing requires providing diverse symbolic expressions with powers to `factor()` and verifying that the factorization adheres to mathematical power rules."
+      },
+      "priority_score": 55.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1274",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1274,
+      "title": "Fix issue 3249.",
+      "changed_files": 4,
+      "additions": 52,
+      "deletions": 4,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "special functions",
+          "mathematical theorems",
+          "testing",
+          "symbolic mathematics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR addresses issue 3249 by adding a new table entry and tests to enable the evaluation of a specific G-function that was previously unhandled by Slater's theorem.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
+        "feasibility_notes": "Testing involves creating the specific G-function expression mentioned in issue 3249 (if accessible) and verifying its correct evaluation after the new table entry is added."
+      },
+      "priority_score": 55.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/388",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 388,
+      "title": "Fixed pretty printing of Lambda and added tests (#2401)",
+      "changed_files": 2,
+      "additions": 103,
+      "deletions": 7,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "code-formatting",
+          "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR renames the `sum()` function to `summation()` to avoid conflict with Python's built-in `sum()`, while also refining `Sum()` behavior and adding a docstring.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve using the `sum()` function and observing the conflict, then running tests locally."
+        "pr_summary": "This PR fixes and improves the pretty printing of `Lambda` expressions within SymPy, including adding relevant tests.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system.",
+        "feasibility_notes": "Reproducing involves running the provided `Lambda` expressions and observing their pretty-printed output in a SymPy environment."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -1216,7 +1166,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1276,107 +1226,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/610",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 610,
-      "title": "relax constraints on is_quad_residue",
-      "changed_files": 2,
-      "additions": 70,
-      "deletions": 17,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "number-theory",
-          "symbolic-math",
-          "error-handling",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR relaxes constraints on the `is_quad_residue` function, allowing it to provide an answer for any integer 'a' or 'p' instead of raising an error.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing involves calling `is_quad_residue` with various integer inputs for 'a' and 'p', including those that previously raised errors, to confirm it now returns a boolean result."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/670",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 670,
-      "title": "allow 4**x -> 2**(2*x) again",
-      "changed_files": 2,
-      "additions": 129,
-      "deletions": 84,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-computation",
-          "algebra",
-          "mathematics"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR re-enables the transformation of `4**x` to `2**(2*x)` to maintain canonical representation and expose hidden exponents in symbolic expressions.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
-        "feasibility_notes": "Testing involves running symbolic transformations on expressions like `(2**4)**x` and verifying the output with the SymPy library locally."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/483",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 483,
@@ -1418,156 +1267,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/717",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 717,
-      "title": "let nsimplify select tolerance and autodetect rational case",
-      "changed_files": 2,
-      "additions": 45,
-      "deletions": 17,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "numerical-analysis",
-          "symbolic-computation",
-          "algorithms"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances `nsimplify` to automatically select tolerance based on expression numbers and detect when to convert floats to rationals, improving conversion flexibility.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
-        "feasibility_notes": "Testing involves using `nsimplify` with various numerical inputs, including floats and symbolic expressions, to confirm correct rational conversion and tolerance selection."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1245",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1245,
-      "title": "give cse a postprocess option and better Pow handling",
-      "changed_files": 2,
-      "additions": 118,
-      "deletions": 23,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic mathematics",
-          "algorithms",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances the Common Subexpression Elimination (CSE) function by introducing a `postprocess` option and improving its handling of power expressions.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
-        "feasibility_notes": "Testing is straightforward using the provided examples in the PR description and by running the existing test suite for CSE and `Pow` operations."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/488",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 488,
-      "title": "Fix remainder (i.e., 'mod') operation for numbers.",
-      "changed_files": 2,
-      "additions": 43,
-      "deletions": 8,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "mathematics",
-          "object-oriented programming",
-          "numerical analysis"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes the remainder (modulo) operation for `Float` and `Rational` types by adding `__rmod__` and unifies the implementation for `Integer` types, addressing the non-commutative nature of the operation.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
-        "feasibility_notes": "Testing requires providing various combinations of `Float`, `Rational`, and `Integer` inputs to the remainder operation and verifying correctness."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1679,13 +1378,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/674",
+      "url": "https://github.com/sympy/sympy/pull/488",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 674,
-      "title": "Implement latex(symbol_names), which lets you define custom string for sy",
+      "number": 488,
+      "title": "Fix remainder (i.e., 'mod') operation for numbers.",
       "changed_files": 2,
-      "additions": 51,
-      "deletions": 31,
+      "additions": 43,
+      "deletions": 8,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -1702,16 +1401,16 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "latex",
-          "symbolic-computation",
-          "rendering"
+          "mathematics",
+          "object-oriented programming",
+          "numerical analysis"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR implements a feature in `latex(symbol_names)` that allows users to define custom string representations for symbols when generating LaTeX output.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
-        "feasibility_notes": "Testing requires generating LaTeX output for symbolic expressions with custom symbol names and verifying the correctness of the generated strings."
+        "pr_summary": "This PR fixes the remainder (modulo) operation for `Float` and `Rational` types by adding `__rmod__` and unifies the implementation for `Integer` types, addressing the non-commutative nature of the operation.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
+        "feasibility_notes": "Testing requires providing various combinations of `Float`, `Rational`, and `Integer` inputs to the remainder operation and verifying correctness."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -1779,56 +1478,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/388",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 388,
-      "title": "Fixed pretty printing of Lambda and added tests (#2401)",
-      "changed_files": 2,
-      "additions": 103,
-      "deletions": 7,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "code-formatting",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes and improves the pretty printing of `Lambda` expressions within SymPy, including adding relevant tests.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system.",
-        "feasibility_notes": "Reproducing involves running the provided `Lambda` expressions and observing their pretty-printed output in a SymPy environment."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/512",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 512,
@@ -1862,6 +1511,106 @@
         "pr_summary": "This PR improves the `jn_zeros()` function by using `mpmath.besseljzeros` for more efficient and accurate computation of spherical Bessel function zeros, returning `sympy Floats`, and allowing precision control.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
         "feasibility_notes": "Testing involves calling `jn_zeros()` with various parameters and comparing results with known values or other reliable sources, especially verifying precision."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/717",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 717,
+      "title": "let nsimplify select tolerance and autodetect rational case",
+      "changed_files": 2,
+      "additions": 45,
+      "deletions": 17,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "numerical-analysis",
+          "symbolic-computation",
+          "algorithms"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR enhances `nsimplify` to automatically select tolerance based on expression numbers and detect when to convert floats to rationals, improving conversion flexibility.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
+        "feasibility_notes": "Testing involves using `nsimplify` with various numerical inputs, including floats and symbolic expressions, to confirm correct rational conversion and tolerance selection."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/636",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 636,
+      "title": "Add a measure option to simplify(), letting you specify the complexity me",
+      "changed_files": 2,
+      "additions": 134,
+      "deletions": 44,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "algorithms",
+          "api-design",
+          "symbolic-computation"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds a `measure` option to the `simplify()` function, allowing users to specify a custom complexity metric, and addresses issue 2719.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running tests for `simplify()` to verify the new `measure` option and its behavior."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -1913,6 +1662,257 @@
         "pr_summary": "This PR fixes a bug in the MathML printer by ensuring the standard XML library state is restored after each `toprettyxml` call, preventing global behavior changes.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
         "feasibility_notes": "Testing involves generating MathML output with `toprettyxml` and verifying that the XML library's global state is not unexpectedly altered afterward."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1245",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1245,
+      "title": "give cse a postprocess option and better Pow handling",
+      "changed_files": 2,
+      "additions": 118,
+      "deletions": 23,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic mathematics",
+          "algorithms",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR enhances the Common Subexpression Elimination (CSE) function by introducing a `postprocess` option and improving its handling of power expressions.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
+        "feasibility_notes": "Testing is straightforward using the provided examples in the PR description and by running the existing test suite for CSE and `Pow` operations."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/670",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 670,
+      "title": "allow 4**x -> 2**(2*x) again",
+      "changed_files": 2,
+      "additions": 129,
+      "deletions": 84,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-computation",
+          "algebra",
+          "mathematics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR re-enables the transformation of `4**x` to `2**(2*x)` to maintain canonical representation and expose hidden exponents in symbolic expressions.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
+        "feasibility_notes": "Testing involves running symbolic transformations on expressions like `(2**4)**x` and verifying the output with the SymPy library locally."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/610",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 610,
+      "title": "relax constraints on is_quad_residue",
+      "changed_files": 2,
+      "additions": 70,
+      "deletions": 17,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "number-theory",
+          "symbolic-math",
+          "error-handling",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR relaxes constraints on the `is_quad_residue` function, allowing it to provide an answer for any integer 'a' or 'p' instead of raising an error.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing involves calling `is_quad_residue` with various integer inputs for 'a' and 'p', including those that previously raised errors, to confirm it now returns a boolean result."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/78",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 78,
+      "title": "Summation: Rename sum() to summation()",
+      "changed_files": 6,
+      "additions": 87,
+      "deletions": 50,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "refactoring",
+          "api-design",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR renames the `sum()` function to `summation()` to avoid conflict with Python's built-in `sum()`, while also refining `Sum()` behavior and adding a docstring.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve using the `sum()` function and observing the conflict, then running tests locally."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/674",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 674,
+      "title": "Implement latex(symbol_names), which lets you define custom string for sy",
+      "changed_files": 2,
+      "additions": 51,
+      "deletions": 31,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "latex",
+          "symbolic-computation",
+          "rendering"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR implements a feature in `latex(symbol_names)` that allows users to define custom string representations for symbols when generating LaTeX output.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
+        "feasibility_notes": "Testing requires generating LaTeX output for symbolic expressions with custom symbol names and verifying the correctness of the generated strings."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -2081,57 +2081,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/1417",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1417,
-      "title": "Randomization fixes3",
-      "changed_files": 4,
-      "additions": 54,
-      "deletions": 48,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "randomness",
-          "algorithms",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR provides multiple fixes related to randomization.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve installing SymPy, running the relevant tests impacted by randomization, and observing changes in behavior or correctness for algorithms that use random numbers."
-      },
-      "priority_score": 52.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/591",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 591,
@@ -2183,6 +2132,57 @@
       ]
     },
     {
+      "url": "https://github.com/sympy/sympy/pull/1417",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1417,
+      "title": "Randomization fixes3",
+      "changed_files": 4,
+      "additions": 54,
+      "deletions": 48,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "testing",
+          "randomness",
+          "algorithms",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR provides multiple fixes related to randomization.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve installing SymPy, running the relevant tests impacted by randomization, and observing changes in behavior or correctness for algorithms that use random numbers."
+      },
+      "priority_score": 52.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/sympy/sympy/pull/1433",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 1433,
@@ -2224,6 +2224,104 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/933",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 933,
+      "title": "See Also Combinatorics",
+      "changed_files": 5,
+      "additions": 271,
+      "deletions": 18,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "documentation",
+          "combinatorics"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds 'See Also' documentation links to relevant functions within SymPy's combinatorics module.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
+        "feasibility_notes": "Reproducing involves reviewing the documentation for the combinatorics module to ensure new 'See Also' links are correct and helpful."
+      },
+      "priority_score": 51.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/565",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 565,
+      "title": "Fix bug 2647: meijerg pretty printing",
+      "changed_files": 2,
+      "additions": 102,
+      "deletions": 0,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "user interface design",
+          "string manipulation"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR fixes a bug in the pretty printing of the `meijerg` function, improving its visual representation, especially for complex arguments.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
+        "feasibility_notes": "Reproducing involves simply calling the `meijerg` function with complex arguments and observing the console output to compare before and after the fix."
+      },
+      "priority_score": 51.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2284,13 +2382,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/565",
+      "url": "https://github.com/sympy/sympy/pull/331",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 565,
-      "title": "Fix bug 2647: meijerg pretty printing",
+      "number": 331,
+      "title": "2396: disambiguate RegularPolygon.rotate and entity.rotate",
       "changed_files": 2,
-      "additions": 102,
-      "deletions": 0,
+      "additions": 44,
+      "deletions": 14,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -2307,266 +2405,16 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "user interface design",
-          "string manipulation"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR fixes a bug in the pretty printing of the `meijerg` function, improving its visual representation, especially for complex arguments.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
-        "feasibility_notes": "Reproducing involves simply calling the `meijerg` function with complex arguments and observing the console output to compare before and after the fix."
-      },
-      "priority_score": 51.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/933",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 933,
-      "title": "See Also Combinatorics",
-      "changed_files": 5,
-      "additions": 271,
-      "deletions": 18,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "documentation",
-          "combinatorics"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds 'See Also' documentation links to relevant functions within SymPy's combinatorics module.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
-        "feasibility_notes": "Reproducing involves reviewing the documentation for the combinatorics module to ensure new 'See Also' links are correct and helpful."
-      },
-      "priority_score": 51.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1374",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1374,
-      "title": "Minor improvements in trigsimp",
-      "changed_files": 2,
-      "additions": 37,
-      "deletions": 43,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "algorithms",
-          "optimization",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR makes minor improvements to the `trigsimp` function by ensuring that when `deep=True`, it traverses the entire expression tree, not just functions.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve installing SymPy, running the relevant `trigsimp` tests, and comparing simplification results of complex trigonometric expressions with and without the changes."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/683",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 683,
-      "title": "move solve_congruence to ntheory.modular",
-      "changed_files": 5,
-      "additions": 218,
-      "deletions": 195,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "refactoring",
-          "number-theory",
-          "modular-arithmetic"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the `solve_congruence` function by moving it to `ntheory.modular`, consolidating related modular arithmetic routines and improving code organization.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
-        "feasibility_notes": "Reproducing involves running the full test suite to ensure that the refactoring did not introduce regressions and verifying the new module structure."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/27",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 27,
-      "title": "2092 solve4linear symbol -> solve_linear",
-      "changed_files": 5,
-      "additions": 130,
-      "deletions": 73,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-computation",
-          "refactoring",
-          "algebra",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR renames and moves the `solve4linear` function to `solve_linear` within `solvers.py` while removing unused code from `Order`.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete mathematics, and more.",
-        "feasibility_notes": "Testing would involve verifying that existing linear solving functionalities still work correctly and that the refactored code integrates well."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1434",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1434,
-      "title": "Trace permute",
-      "changed_files": 2,
-      "additions": 60,
-      "deletions": 48,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
+          "object-oriented programming",
           "mathematics",
-          "symbolic-computation",
-          "testing"
+          "geometry"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a method and corresponding tests for permuting arguments within the `Tr` operator.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve using the new `Tr` permutation method in an interactive Python session and running the added tests."
+        "pr_summary": "This PR clarifies and redefines rotation methods for `RegularPolygon` to distinguish between spinning about its center and rotating it as a general geometric entity.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
+        "feasibility_notes": "Reproducing/testing locally involves installing SymPy, running its test suite, and potentially setting up a development environment to debug the specific code changes."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -2635,13 +2483,663 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/245",
+      "url": "https://github.com/sympy/sympy/pull/386",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 245,
-      "title": "Fix  _qsympify_sequence",
+      "number": 386,
+      "title": "utilities/iterables: Implemented multiset partitions.",
       "changed_files": 2,
-      "additions": 38,
-      "deletions": 14,
+      "additions": 116,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "algorithms",
+          "combinatorics",
+          "mathematics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds an implementation for multiset partitions to the `utilities/iterables` module of the SymPy library.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
+        "feasibility_notes": "Reproducing/testing locally involves installing SymPy, running its test suite, and potentially setting up a development environment to debug the specific code changes."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/626",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 626,
+      "title": "AssocOp creation",
+      "changed_files": 6,
+      "additions": 35,
+      "deletions": 134,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "oop",
+          "refactoring",
+          "software-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors `AssocOp` object instantiation by adding a `_from_args` classmethod to reduce code duplication.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running existing tests to ensure no regressions in `AssocOp` object creation."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1306",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1306,
+      "title": "3271: allows numbers from exponents to combine in simplify",
+      "changed_files": 6,
+      "additions": 57,
+      "deletions": 47,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-manipulation",
+          "algebra",
+          "testing",
+          "bug-fixing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR modifies the `simplify` function to correctly combine numerical exponents, benefiting a variety of symbolic expressions.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing would involve constructing various expressions with numerical exponents and verifying that the `simplify` function now combines them as expected without introducing regressions."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/8003",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 8003,
+      "title": "Added docstring to lambdified functions",
+      "changed_files": 2,
+      "additions": 50,
+      "deletions": 2,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "documentation",
+          "metaprogramming",
+          "introspection",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR enhances the `lambdify` function by adding informative docstrings to the generated functions, including their signature derived through introspection.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete mathematics, and more.",
+        "feasibility_notes": "Testing involves running the provided demo snippet and checking the `__doc__` attribute of lambdified functions for various input scenarios."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1346",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1346,
+      "title": "Linear momentum function and tests.",
+      "changed_files": 6,
+      "additions": 347,
+      "deletions": 5,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "mechanics",
+          "physics",
+          "symbolic-math",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR implements a linear momentum function along with its corresponding tests.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve installing SymPy, running the added tests for the linear momentum function, and possibly using the function with various symbolic inputs."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1366",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1366,
+      "title": "Python 3.2 failure fix: Use predetermined sequences instead of seeds in circuitutils tests",
+      "changed_files": 2,
+      "additions": 55,
+      "deletions": 28,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "testing",
+          "randomness",
+          "porting",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR fixes a Python 3.2 failure in `circuitutils` tests by using predetermined sequences instead of random seeds, serving as an alternative to another pull request.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve installing SymPy in a Python 3.2 environment, running the `circuitutils` tests before and after the fix, and verifying the new deterministic test behavior."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/787",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 787,
+      "title": "give rref ability to raise ValueError for non-invertible matrix",
+      "changed_files": 2,
+      "additions": 84,
+      "deletions": 46,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "linear-algebra",
+          "error-handling",
+          "symbolic-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR enhances the `rref` function to raise a `ValueError` when encountering a non-invertible matrix.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing would involve providing `rref` with both invertible and non-invertible matrices and verifying the expected behavior and error raising."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/948",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 948,
+      "title": "issue 2975: Simplification of hyperbolic identity.",
+      "changed_files": 2,
+      "additions": 120,
+      "deletions": 66,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1374",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1374,
+      "title": "Minor improvements in trigsimp",
+      "changed_files": 2,
+      "additions": 37,
+      "deletions": 43,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "algorithms",
+          "optimization",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR makes minor improvements to the `trigsimp` function by ensuring that when `deep=True`, it traverses the entire expression tree, not just functions.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve installing SymPy, running the relevant `trigsimp` tests, and comparing simplification results of complex trigonometric expressions with and without the changes."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/87",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 87,
+      "title": "1694  solver related",
+      "changed_files": 2,
+      "additions": 37,
+      "deletions": 17,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "algorithms",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR aims to improve the robustness and accuracy of SymPy's solver by addressing `NotImplemented` errors and adding tests.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
+        "feasibility_notes": "Reproducing involves identifying inputs that previously led to `NotImplemented` errors or incorrect results in the solver and verifying the fixes."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/705",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 705,
+      "title": "Diagonalize to integers",
+      "changed_files": 2,
+      "additions": 44,
+      "deletions": 11,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "linear-algebra",
+          "numerical-methods",
+          "mathematics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR provides a rebased and test-passing implementation for diagonalizing matrices to integer forms, based on a previous pull request.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
+        "feasibility_notes": "Testing involves creating matrices with integer elements and verifying that the diagonalization function correctly produces integer results and passes all tests."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/482",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 482,
+      "title": "utilities/iterables: Added routine to generate all oriented forests",
+      "changed_files": 2,
+      "additions": 50,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "algorithms",
+          "graph theory",
+          "mathematics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds a new routine to generate all oriented forests within the `utilities/iterables` module.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
+        "feasibility_notes": "Reproducing would involve importing and using the new utility function with various inputs to verify its output."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/880",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 880,
+      "title": "Implemented nested products",
+      "changed_files": 6,
+      "additions": 174,
+      "deletions": 74,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "algorithms",
+          "discrete-math"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR implements the functionality for handling nested products within SymPy.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
+        "feasibility_notes": "Testing involves defining symbolic expressions with nested products and verifying their correct evaluation and simplification according to mathematical rules."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/1453",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 1453,
+      "title": "3342 bugfix: Mul._eval_subs handles coefficients better",
+      "changed_files": 2,
+      "additions": 39,
+      "deletions": 20,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -2660,14 +3158,14 @@
           "python",
           "symbolic-computation",
           "bug-fixing",
-          "testing"
+          "refactoring"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes bugs found in the `_qsympify_sequence` function within the `qexpr` module and adds corresponding tests.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete mathematics, and more.",
-        "feasibility_notes": "Reproducing involves running the newly added tests for `_qsympify_sequence` and potentially trying out specific sequences that previously caused issues."
+        "pr_summary": "This PR fixes a bug in `Mul._eval_subs` by simplifying how coefficients are handled, converting them to powers like other expression factors.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves identifying specific symbolic multiplication expressions where coefficient substitution previously behaved incorrectly and verifying the fix."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -2676,6 +3174,56 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/683",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 683,
+      "title": "move solve_congruence to ntheory.modular",
+      "changed_files": 5,
+      "additions": 218,
+      "deletions": 195,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "refactoring",
+          "number-theory",
+          "modular-arithmetic"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors the `solve_congruence` function by moving it to `ntheory.modular`, consolidating related modular arithmetic routines and improving code organization.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
+        "feasibility_notes": "Reproducing involves running the full test suite to ensure that the refactoring did not introduce regressions and verifying the new module structure."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2786,13 +3334,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/787",
+      "url": "https://github.com/sympy/sympy/pull/27",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 787,
-      "title": "give rref ability to raise ValueError for non-invertible matrix",
-      "changed_files": 2,
-      "additions": 84,
-      "deletions": 46,
+      "number": 27,
+      "title": "2092 solve4linear symbol -> solve_linear",
+      "changed_files": 5,
+      "additions": 130,
+      "deletions": 73,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -2809,67 +3357,17 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "linear-algebra",
-          "error-handling",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR enhances the `rref` function to raise a `ValueError` when encountering a non-invertible matrix.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing would involve providing `rref` with both invertible and non-invertible matrices and verifying the expected behavior and error raising."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1346",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1346,
-      "title": "Linear momentum function and tests.",
-      "changed_files": 6,
-      "additions": 347,
-      "deletions": 5,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "mechanics",
-          "physics",
-          "symbolic-math",
+          "symbolic-computation",
+          "refactoring",
+          "algebra",
           "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR implements a linear momentum function along with its corresponding tests.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve installing SymPy, running the added tests for the linear momentum function, and possibly using the function with various symbolic inputs."
+        "pr_summary": "This PR renames and moves the `solve4linear` function to `solve_linear` within `solvers.py` while removing unused code from `Order`.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete mathematics, and more.",
+        "feasibility_notes": "Testing would involve verifying that existing linear solving functionalities still work correctly and that the refactored code integrates well."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -2877,7 +3375,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2887,13 +3385,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/1453",
+      "url": "https://github.com/sympy/sympy/pull/245",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 1453,
-      "title": "3342 bugfix: Mul._eval_subs handles coefficients better",
+      "number": 245,
+      "title": "Fix  _qsympify_sequence",
       "changed_files": 2,
-      "additions": 39,
-      "deletions": 20,
+      "additions": 38,
+      "deletions": 14,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -2912,115 +3410,14 @@
           "python",
           "symbolic-computation",
           "bug-fixing",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes a bug in `Mul._eval_subs` by simplifying how coefficients are handled, converting them to powers like other expression factors.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves identifying specific symbolic multiplication expressions where coefficient substitution previously behaved incorrectly and verifying the fix."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/880",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 880,
-      "title": "Implemented nested products",
-      "changed_files": 6,
-      "additions": 174,
-      "deletions": 74,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "algorithms",
-          "discrete-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR implements the functionality for handling nested products within SymPy.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
-        "feasibility_notes": "Testing involves defining symbolic expressions with nested products and verifying their correct evaluation and simplification according to mathematical rules."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/8003",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 8003,
-      "title": "Added docstring to lambdified functions",
-      "changed_files": 2,
-      "additions": 50,
-      "deletions": 2,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "documentation",
-          "metaprogramming",
-          "introspection",
           "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR enhances the `lambdify` function by adding informative docstrings to the generated functions, including their signature derived through introspection.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete mathematics, and more.",
-        "feasibility_notes": "Testing involves running the provided demo snippet and checking the `__doc__` attribute of lambdified functions for various input scenarios."
+        "pr_summary": "This PR fixes bugs found in the `_qsympify_sequence` function within the `qexpr` module and adds corresponding tests.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete mathematics, and more.",
+        "feasibility_notes": "Reproducing involves running the newly added tests for `_qsympify_sequence` and potentially trying out specific sequences that previously caused issues."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -3029,157 +3426,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/331",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 331,
-      "title": "2396: disambiguate RegularPolygon.rotate and entity.rotate",
-      "changed_files": 2,
-      "additions": 44,
-      "deletions": 14,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "object-oriented programming",
-          "mathematics",
-          "geometry"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR clarifies and redefines rotation methods for `RegularPolygon` to distinguish between spinning about its center and rotating it as a general geometric entity.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
-        "feasibility_notes": "Reproducing/testing locally involves installing SymPy, running its test suite, and potentially setting up a development environment to debug the specific code changes."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/705",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 705,
-      "title": "Diagonalize to integers",
-      "changed_files": 2,
-      "additions": 44,
-      "deletions": 11,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "linear-algebra",
-          "numerical-methods",
-          "mathematics"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR provides a rebased and test-passing implementation for diagonalizing matrices to integer forms, based on a previous pull request.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, and other mathematical operations.",
-        "feasibility_notes": "Testing involves creating matrices with integer elements and verifying that the diagonalization function correctly produces integer results and passes all tests."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1306",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1306,
-      "title": "3271: allows numbers from exponents to combine in simplify",
-      "changed_files": 6,
-      "additions": 57,
-      "deletions": 47,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-manipulation",
-          "algebra",
-          "testing",
-          "bug-fixing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR modifies the `simplify` function to correctly combine numerical exponents, benefiting a variety of symbolic expressions.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing would involve constructing various expressions with numerical exponents and verifying that the `simplify` function now combines them as expected without introducing regressions."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3234,58 +3480,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/948",
+      "url": "https://github.com/sympy/sympy/pull/1434",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 948,
-      "title": "issue 2975: Simplification of hyperbolic identity.",
+      "number": 1434,
+      "title": "Trace permute",
       "changed_files": 2,
-      "additions": 120,
-      "deletions": 66,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1366",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1366,
-      "title": "Python 3.2 failure fix: Use predetermined sequences instead of seeds in circuitutils tests",
-      "changed_files": 2,
-      "additions": 55,
-      "deletions": 28,
+      "additions": 60,
+      "deletions": 48,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -3302,117 +3503,16 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "testing",
-          "randomness",
-          "porting",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes a Python 3.2 failure in `circuitutils` tests by using predetermined sequences instead of random seeds, serving as an alternative to another pull request.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing would involve installing SymPy in a Python 3.2 environment, running the `circuitutils` tests before and after the fix, and verifying the new deterministic test behavior."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/626",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 626,
-      "title": "AssocOp creation",
-      "changed_files": 6,
-      "additions": 35,
-      "deletions": 134,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "oop",
-          "refactoring",
-          "software-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors `AssocOp` object instantiation by adding a `_from_args` classmethod to reduce code duplication.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running existing tests to ensure no regressions in `AssocOp` object creation."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/87",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 87,
-      "title": "1694  solver related",
-      "changed_files": 2,
-      "additions": 37,
-      "deletions": 17,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "algorithms",
+          "mathematics",
+          "symbolic-computation",
           "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR aims to improve the robustness and accuracy of SymPy's solver by addressing `NotImplemented` errors and adding tests.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
-        "feasibility_notes": "Reproducing involves identifying inputs that previously led to `NotImplemented` errors or incorrect results in the solver and verifying the fixes."
+        "pr_summary": "This PR adds a method and corresponding tests for permuting arguments within the `Tr` operator.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing would involve using the new `Tr` permutation method in an interactive Python session and running the added tests."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -3430,13 +3530,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/386",
+      "url": "https://github.com/sympy/sympy/pull/330",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 386,
-      "title": "utilities/iterables: Implemented multiset partitions.",
-      "changed_files": 2,
-      "additions": 116,
-      "deletions": 1,
+      "number": 330,
+      "title": "Combinatorics",
+      "changed_files": 3,
+      "additions": 1099,
+      "deletions": 0,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -3453,74 +3553,24 @@
         "domain": "library",
         "skills_required": [
           "python",
+          "mathematics",
           "algorithms",
-          "combinatorics",
-          "mathematics"
+          "combinatorics"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds an implementation for multiset partitions to the `utilities/iterables` module of the SymPy library.",
+        "issue_clarity_score": 1,
+        "pr_summary": "This PR adds new functionality related to combinatorics, specifically permutations, to the SymPy library.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
         "feasibility_notes": "Reproducing/testing locally involves installing SymPy, running its test suite, and potentially setting up a development environment to debug the specific code changes."
       },
-      "priority_score": 50.0,
+      "priority_score": 49.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/482",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 482,
-      "title": "utilities/iterables: Added routine to generate all oriented forests",
-      "changed_files": 2,
-      "additions": 50,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "algorithms",
-          "graph theory",
-          "mathematics"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a new routine to generate all oriented forests within the `utilities/iterables` module.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing a full-featured computer algebra system (CAS).",
-        "feasibility_notes": "Reproducing would involve importing and using the new utility function with various inputs to verify its output."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3579,13 +3629,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/330",
+      "url": "https://github.com/sympy/sympy/pull/864",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 330,
-      "title": "Combinatorics",
-      "changed_files": 3,
-      "additions": 1099,
-      "deletions": 0,
+      "number": 864,
+      "title": "Imported simplify docs into Sphinx",
+      "changed_files": 5,
+      "additions": 252,
+      "deletions": 174,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -3601,25 +3651,25 @@
       "analysis": {
         "domain": "library",
         "skills_required": [
-          "python",
-          "mathematics",
-          "algorithms",
-          "combinatorics"
+          "documentation",
+          "rst",
+          "sphinx",
+          "python"
         ],
-        "difficulty": "mid",
+        "difficulty": "junior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR adds new functionality related to combinatorics, specifically permutations, to the SymPy library.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features from basic arithmetic to calculus, algebra, discrete mathematics, and quantum physics.",
-        "feasibility_notes": "Reproducing/testing locally involves installing SymPy, running its test suite, and potentially setting up a development environment to debug the specific code changes."
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR imports the documentation for the `simplify` function into Sphinx and corrects its formatting.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing involves building the SymPy documentation locally using Sphinx and verifying the `simplify` section is correctly rendered."
       },
-      "priority_score": 49.0,
+      "priority_score": 48.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3730,13 +3780,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/864",
+      "url": "https://github.com/sympy/sympy/pull/755",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 864,
-      "title": "Imported simplify docs into Sphinx",
-      "changed_files": 5,
-      "additions": 252,
-      "deletions": 174,
+      "number": 755,
+      "title": "Printing logic in LaTeX (fixed issue #2760)",
+      "changed_files": 2,
+      "additions": 61,
+      "deletions": 0,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -3752,25 +3802,74 @@
       "analysis": {
         "domain": "library",
         "skills_required": [
-          "documentation",
-          "rst",
-          "sphinx",
-          "python"
+          "python",
+          "latex",
+          "printing",
+          "symbolic-math"
         ],
-        "difficulty": "junior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR imports the documentation for the `simplify` function into Sphinx and corrects its formatting.",
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR fixes an issue with LaTeX printing logic and adds simple printing capabilities for SymPy expressions.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing involves building the SymPy documentation locally using Sphinx and verifying the `simplify` section is correctly rendered."
+        "feasibility_notes": "Testing would involve evaluating various SymPy expressions and checking their LaTeX output."
       },
-      "priority_score": 48.0,
+      "priority_score": 47.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/644",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 644,
+      "title": "Added missing `assert` keywords",
+      "changed_files": 3,
+      "additions": 181,
+      "deletions": 184,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "testing",
+          "refactoring"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR adds missing `assert` keywords to existing tests, likely as a code style or functionality improvement.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running the modified tests to ensure they still function correctly after adding `assert` keywords."
+      },
+      "priority_score": 47.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3813,56 +3912,6 @@
         "pr_summary": "This PR modifies functionality originally introduced in #2125 to specifically support `SparseMatrix` objects.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
         "feasibility_notes": "Without more context from #2125, testing would be challenging, requiring understanding the original feature and how it applies to sparse matrices."
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/755",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 755,
-      "title": "Printing logic in LaTeX (fixed issue #2760)",
-      "changed_files": 2,
-      "additions": 61,
-      "deletions": 0,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "latex",
-          "printing",
-          "symbolic-math"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR fixes an issue with LaTeX printing logic and adds simple printing capabilities for SymPy expressions.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing would involve evaluating various SymPy expressions and checking their LaTeX output."
       },
       "priority_score": 47.0,
       "priority_tier": "C",
@@ -3930,13 +3979,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/644",
+      "url": "https://github.com/sympy/sympy/pull/1316",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 644,
-      "title": "Added missing `assert` keywords",
-      "changed_files": 3,
-      "additions": 181,
-      "deletions": 184,
+      "number": 1316,
+      "title": "Vector analysis 2",
+      "changed_files": 2,
+      "additions": 253,
+      "deletions": 16,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -3953,23 +4002,25 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "testing",
-          "refactoring"
+          "differential-geometry",
+          "calculus",
+          "symbolic-math",
+          "mathematical-modeling"
         ],
-        "difficulty": "junior",
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR adds missing `assert` keywords to existing tests, likely as a code style or functionality improvement.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves setting up a Python environment, installing SymPy, and running the modified tests to ensure they still function correctly after adding `assert` keywords."
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR extends the `differential_geometry` module by adding `intcurve_series` to compute series expansions of integral curves and `intcurve_diffequ` to return systems of differential equations for them.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing requires familiarity with integral curves and differential equations in differential geometry to verify the correctness of the series expansions and equation generation."
       },
-      "priority_score": 47.0,
+      "priority_score": 46.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4030,108 +4081,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/1316",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1316,
-      "title": "Vector analysis 2",
-      "changed_files": 2,
-      "additions": 253,
-      "deletions": 16,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "differential-geometry",
-          "calculus",
-          "symbolic-math",
-          "mathematical-modeling"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR extends the `differential_geometry` module by adding `intcurve_series` to compute series expansions of integral curves and `intcurve_diffequ` to return systems of differential equations for them.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing capabilities for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing requires familiarity with integral curves and differential equations in differential geometry to verify the correctness of the series expansions and equation generation."
-      },
-      "priority_score": 46.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/568",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 568,
-      "title": "add preprocessing to dsolve (autodetection of function, etc.)",
-      "changed_files": 3,
-      "additions": 521,
-      "deletions": 328,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "calculus",
-          "differential-equations",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds preprocessing to the `dsolve` function, allowing autodetection of the function to be solved for and making the `func` argument optional.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves running the SymPy test suite for ODEs and observing the behavior of `dsolve` with and without the `func` argument."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/1529",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 1529,
@@ -4174,55 +4123,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/1589",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 1589,
-      "title": "pep8 E271 (at beginning of lines)",
-      "changed_files": 5,
-      "additions": 169,
-      "deletions": 168,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "code-formatting",
-          "linting"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR addresses PEP8 E271 style violations, likely related to whitespace at the beginning of lines, by reformatting code.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Testing involves running PEP8 or a linter tool over the changed files to confirm the specific E271 errors are resolved."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4331,13 +4231,13 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/8064",
+      "url": "https://github.com/sympy/sympy/pull/1589",
       "repo_url": "https://github.com/sympy/sympy",
-      "number": 8064,
-      "title": "make _sanitize a staticmethod of Symbol; use for Wild, too",
-      "changed_files": 2,
-      "additions": 28,
-      "deletions": 27,
+      "number": 1589,
+      "title": "pep8 E271 (at beginning of lines)",
+      "changed_files": 5,
+      "additions": 169,
+      "deletions": 168,
       "labels": [],
       "repo_size_mb": 191.65,
       "repo_language": "Python",
@@ -4354,24 +4254,74 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "object-oriented-programming",
-          "refactoring",
-          "api-design"
+          "code-formatting",
+          "linting"
         ],
-        "difficulty": "mid",
+        "difficulty": "junior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR refactors the `_sanitize` method by making it a staticmethod of `Symbol` and reusing it for `Wild` objects, standardizing symbol validation.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete mathematics, and more.",
-        "feasibility_notes": "Testing would involve ensuring that `Symbol` and `Wild` objects are still created correctly with various inputs after the `_sanitize` refactoring."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR addresses PEP8 E271 style violations, likely related to whitespace at the beginning of lines, by reformatting code.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Testing involves running PEP8 or a linter tool over the changed files to confirm the specific E271 errors are resolved."
       },
-      "priority_score": 44.0,
+      "priority_score": 45.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/568",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 568,
+      "title": "add preprocessing to dsolve (autodetection of function, etc.)",
+      "changed_files": 3,
+      "additions": 521,
+      "deletions": 328,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "calculus",
+          "differential-equations",
+          "testing"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds preprocessing to the `dsolve` function, allowing autodetection of the function to be solved for and making the `func` argument optional.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves running the SymPy test suite for ODEs and observing the behavior of `dsolve` with and without the `func` argument."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4472,6 +4422,56 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/8064",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 8064,
+      "title": "make _sanitize a staticmethod of Symbol; use for Wild, too",
+      "changed_files": 2,
+      "additions": 28,
+      "deletions": 27,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "object-oriented-programming",
+          "refactoring",
+          "api-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 1,
+        "pr_summary": "This PR refactors the `_sanitize` method by making it a staticmethod of `Symbol` and reusing it for `Wild` objects, standardizing symbol validation.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete mathematics, and more.",
+        "feasibility_notes": "Testing would involve ensuring that `Symbol` and `Wild` objects are still created correctly with various inputs after the `_sanitize` refactoring."
+      },
+      "priority_score": 44.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4582,6 +4582,57 @@
       ]
     },
     {
+      "url": "https://github.com/sympy/sympy/pull/577",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 577,
+      "title": "2651: _symbolic_factor_list returns Number coeff; _keep_coef optimized",
+      "changed_files": 2,
+      "additions": 67,
+      "deletions": 33,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "algebra",
+          "refactoring",
+          "data-structures"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes an issue in `_symbolic_factor_list` where a non-Number was incorrectly returned as a coefficient, and optimizes `_keep_coeff` using `_new_rawargs` for expression rebuilding.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
+        "feasibility_notes": "Reproducing involves constructing symbolic expressions that trigger the `_symbolic_factor_list` and `_keep_coeff` functions with non-number coefficients and observing the corrected behavior."
+      },
+      "priority_score": 43.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/sympy/sympy/pull/453",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 453,
@@ -4674,57 +4725,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/sympy/sympy/pull/577",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 577,
-      "title": "2651: _symbolic_factor_list returns Number coeff; _keep_coef optimized",
-      "changed_files": 2,
-      "additions": 67,
-      "deletions": 33,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "algebra",
-          "refactoring",
-          "data-structures"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes an issue in `_symbolic_factor_list` where a non-Number was incorrectly returned as a coefficient, and optimizes `_keep_coeff` using `_new_rawargs` for expression rebuilding.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing features for algebra, calculus, discrete math, and more.",
-        "feasibility_notes": "Reproducing involves constructing symbolic expressions that trigger the `_symbolic_factor_list` and `_keep_coeff` functions with non-number coefficients and observing the corrected behavior."
-      },
-      "priority_score": 43.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4884,56 +4884,6 @@
       ]
     },
     {
-      "url": "https://github.com/sympy/sympy/pull/910",
-      "repo_url": "https://github.com/sympy/sympy",
-      "number": 910,
-      "title": "Sqden - enhancement of sqrtdenest",
-      "changed_files": 2,
-      "additions": 566,
-      "deletions": 110,
-      "labels": [],
-      "repo_size_mb": 191.65,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-algebra",
-        "hacktoberfest",
-        "math",
-        "python",
-        "science"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "symbolic-math",
-          "algorithms",
-          "algebra"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR introduces 'Sqden,' an enhancement to SymPy's square root denesting (`sqrtdenest`) algorithm.",
-        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
-        "feasibility_notes": "Reproducing requires generating test cases for square root denesting to compare the behavior and results of the old and new algorithms."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/sympy/sympy/pull/8028",
       "repo_url": "https://github.com/sympy/sympy",
       "number": 8028,
@@ -4968,6 +4918,56 @@
         "pr_summary": "This PR updates the `sign` function to correctly return `I` for symbolic expressions with well-defined negative arguments of `sqrt`, which are inherently imaginary.",
         "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete mathematics, and more.",
         "feasibility_notes": "Testing involves evaluating `sign(sqrt(1-sqrt(2)))` and similar expressions to confirm the correct symbolic evaluation to `I`."
+      },
+      "priority_score": 37.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/sympy/sympy/pull/910",
+      "repo_url": "https://github.com/sympy/sympy",
+      "number": 910,
+      "title": "Sqden - enhancement of sqrtdenest",
+      "changed_files": 2,
+      "additions": 566,
+      "deletions": 110,
+      "labels": [],
+      "repo_size_mb": 191.65,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-algebra",
+        "hacktoberfest",
+        "math",
+        "python",
+        "science"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "symbolic-math",
+          "algorithms",
+          "algebra"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR introduces 'Sqden,' an enhancement to SymPy's square root denesting (`sqrtdenest`) algorithm.",
+        "repo_summary": "SymPy is a Python library for symbolic mathematics, providing tools for algebra, calculus, discrete math, quantum physics, and more.",
+        "feasibility_notes": "Reproducing requires generating test cases for square root denesting to compare the behavior and results of the old and new algorithms."
       },
       "priority_score": 37.0,
       "priority_tier": "C",
