@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-15T13:59:19.594277+00:00",
+    "enriched_at": "2026-03-15T14:30:26.606435+00:00",
     "total_repos_input": 2,
     "repos_passed_filter": 2,
     "total_prs_input": 9,
@@ -12,11 +12,11 @@
     "tier_b": 1,
     "tier_c": 2,
     "workers": 5,
-    "elapsed_seconds": 0.19,
+    "elapsed_seconds": 0.2,
     "incremental": true,
     "prs_from_cache": 9,
     "prs_new": 0,
-    "prs_disappeared": 2
+    "prs_disappeared": 0
   },
   "scored_prs": [
     {
