@@ -1,174 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-15T15:01:14.594132+00:00",
+    "enriched_at": "2026-03-15T15:32:20.929104+00:00",
     "total_repos_input": 2,
     "repos_passed_filter": 2,
-    "total_prs_input": 7,
-    "prs_after_repo_filter": 7,
-    "prs_after_pr_filter": 3,
+    "total_prs_input": 3,
+    "prs_after_repo_filter": 3,
+    "prs_after_pr_filter": 0,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 1,
-    "tier_c": 2,
+    "tier_b": 0,
+    "tier_c": 0,
     "workers": 5,
     "elapsed_seconds": 0.22,
     "incremental": true,
-    "prs_from_cache": 7,
+    "prs_from_cache": 3,
     "prs_new": 0,
-    "prs_disappeared": 2
+    "prs_disappeared": 4
   },
-  "scored_prs": [
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5257",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 5257,
-      "title": "[MRG+1] split installation into simple and advanced part",
-      "changed_files": 4,
-      "additions": 463,
-      "deletions": 422,
-      "labels": [
-        "Easy",
-        "Documentation",
-        "Build / CI",
-        "Blocker"
-      ],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 55.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/54220",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 54220,
-      "title": "DOC: Simplify contributing intro",
-      "changed_files": 2,
-      "additions": 135,
-      "deletions": 179,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/3802",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 3802,
-      "title": "DOC: add link to tips data set in rplot docs",
-      "changed_files": 2,
-      "additions": 265,
-      "deletions": 253,
-      "labels": [],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "documentation",
-          "sphinx"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a link to the \"tips\" dataset within the `rplot` documentation.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves building the documentation locally and verifying the presence and correctness of the added link."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    }
-  ],
+  "scored_prs": [],
   "repos_filtered_out": [],
   "prs_filtered_out": []
 }
