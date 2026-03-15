@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-15T02:42:08.841694+00:00",
+    "enriched_at": "2026-03-15T03:12:46.766379+00:00",
     "total_repos_input": 3,
     "repos_passed_filter": 3,
-    "total_prs_input": 209,
-    "prs_after_repo_filter": 209,
-    "prs_after_pr_filter": 72,
-    "prs_analyzed_by_llm": 72,
+    "total_prs_input": 205,
+    "prs_after_repo_filter": 205,
+    "prs_after_pr_filter": 70,
+    "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 17,
+    "tier_b": 15,
     "tier_c": 55,
     "workers": 5,
-    "elapsed_seconds": 128.58,
+    "elapsed_seconds": 0.13,
     "incremental": true,
-    "prs_from_cache": 0,
-    "prs_new": 209,
-    "prs_disappeared": 149
+    "prs_from_cache": 205,
+    "prs_new": 0,
+    "prs_disappeared": 4
   },
   "scored_prs": [
     {
@@ -61,6 +61,116 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/8767",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 8767,
+      "title": "ENH: Add categorical support for Stata export",
+      "changed_files": 4,
+      "additions": 313,
+      "deletions": 29,
+      "labels": [
+        "Categorical",
+        "IO Stata"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "pandas",
+          "data types",
+          "categorical data",
+          "data formats (Stata)"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": true,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds support for exporting DataFrames containing categorical data to the Stata file format, addressing previous errors.",
+        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
+        "feasibility_notes": "Testing requires creating DataFrames with categorical data, exporting them to Stata format, and potentially verifying the output using a Stata reader or by inspecting the file."
+      },
+      "priority_score": 71.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/7874",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 7874,
+      "title": "ENH add level argument to set_names, set_levels and set_labels (GH7792)",
+      "changed_files": 4,
+      "additions": 326,
+      "deletions": 45,
+      "labels": [
+        "API Design",
+        "MultiIndex"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "pandas",
+          "data structures",
+          "multiindex",
+          "api design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": true,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR enhances `set_names`, `set_levels`, and `set_labels` methods by adding a `level` argument, allowing more targeted modification of specific levels within a MultiIndex.",
+        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
+        "feasibility_notes": "Reproducible examples are provided in both the PR body and the linked issue, making local testing and verification of the new functionality easy."
+      },
+      "priority_score": 71.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -181,165 +291,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/7874",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 7874,
-      "title": "ENH add level argument to set_names, set_levels and set_labels (GH7792)",
-      "changed_files": 4,
-      "additions": 326,
-      "deletions": 45,
-      "labels": [
-        "API Design",
-        "MultiIndex"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "data structures",
-          "multiindex",
-          "api design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": true,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR enhances `set_names`, `set_levels`, and `set_labels` methods by adding a `level` argument, allowing more targeted modification of specific levels within a MultiIndex.",
-        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
-        "feasibility_notes": "Reproducible examples are provided in both the PR body and the linked issue, making local testing and verification of the new functionality easy."
-      },
-      "priority_score": 71.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/8767",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 8767,
-      "title": "ENH: Add categorical support for Stata export",
-      "changed_files": 4,
-      "additions": 313,
-      "deletions": 29,
-      "labels": [
-        "Categorical",
-        "IO Stata"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "data types",
-          "categorical data",
-          "data formats (Stata)"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": true,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds support for exporting DataFrames containing categorical data to the Stata file format, addressing previous errors.",
-        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
-        "feasibility_notes": "Testing requires creating DataFrames with categorical data, exporting them to Stata format, and potentially verifying the output using a Stata reader or by inspecting the file."
-      },
-      "priority_score": 71.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/26953",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 26953,
-      "title": "TYP: Replace ``typing.Union`` with ``|`` in ``numpy._typing``",
-      "changed_files": 3,
-      "additions": 196,
-      "deletions": 204,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static typing",
-          "mypy",
-          "code refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR modernizes NumPy's type hints by replacing `typing.Union` with the `|` operator, consistent with Python 3.10's updated syntax.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves running static type checkers (e.g., mypy) and ensuring no new type errors are introduced, potentially checking compatibility with older Python versions if relevant."
-      },
-      "priority_score": 61.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/49466",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 49466,
@@ -380,157 +331,6 @@
         "feasibility_notes": "Reproducing requires specialized tools for memory profiling (e.g., `valgrind`, `tracemalloc`) on a C extension, making it very difficult for an average developer."
       },
       "priority_score": 61.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/20185",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 20185,
-      "title": "DOC: Added explanation document on interoperability",
-      "changed_files": 6,
-      "additions": 445,
-      "deletions": 13,
-      "labels": [
-        "04 - Documentation"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "documentation",
-          "technical writing",
-          "pandas",
-          "pytorch"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds a comprehensive documentation explaining NumPy's interoperability features with various data science libraries like Pandas, CuPy, Dask, and PyTorch.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves building the documentation locally and reviewing the rendered HTML page for accuracy and clarity, as hinted by the provided artifact link."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/24725",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 24725,
-      "title": "MAINT: Update main after 1.26.0 release.",
-      "changed_files": 4,
-      "additions": 335,
-      "deletions": 1,
-      "labels": [
-        "04 - Documentation",
-        "03 - Maintenance"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "git",
-          "documentation",
-          "rst",
-          "release management"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR performs routine maintenance by updating the `.mailmap`, adding release notes, and a changelog for the 1.26.0 NumPy release.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves checking the updated files for correctness and ensuring the documentation builds without errors, typical for release updates."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/20697",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 20697,
-      "title": "REL: Update main after 1.22.0 release.",
-      "changed_files": 3,
-      "additions": 1221,
-      "deletions": 11,
-      "labels": [
-        "14 - Release",
-        "04 - Documentation",
-        "component: documentation"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "git",
-          "documentation",
-          "release management",
-          "rst"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR updates the main branch of NumPy following the 1.22.0 release, likely incorporating changelogs and other release-related documentation.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves verifying the merge and new files, typically part of a release manager's checklist to ensure integrity."
-      },
-      "priority_score": 56.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -600,16 +400,17 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/28511",
+      "url": "https://github.com/numpy/numpy/pull/20697",
       "repo_url": "https://github.com/numpy/numpy",
-      "number": 28511,
-      "title": "TYP: fix stubtest errors in ``numpy._core``",
+      "number": 20697,
+      "title": "REL: Update main after 1.22.0 release.",
       "changed_files": 3,
-      "additions": 556,
-      "deletions": 309,
+      "additions": 1221,
+      "deletions": 11,
       "labels": [
-        "41 - Static typing",
-        "numtype"
+        "14 - Release",
+        "04 - Documentation",
+        "component: documentation"
       ],
       "repo_size_mb": 168.04,
       "repo_language": "Python",
@@ -622,17 +423,112 @@
       "analysis": {
         "domain": "library",
         "skills_required": [
-          "python",
-          "static typing",
-          "mypy",
-          "stub files"
+          "git",
+          "documentation",
+          "release management",
+          "rst"
         ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR updates the main branch of NumPy following the 1.22.0 release, likely incorporating changelogs and other release-related documentation.",
+        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Testing involves verifying the merge and new files, typically part of a release manager's checklist to ensure integrity."
+      },
+      "priority_score": 56.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/numpy/numpy/pull/24725",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 24725,
+      "title": "MAINT: Update main after 1.26.0 release.",
+      "changed_files": 4,
+      "additions": 335,
+      "deletions": 1,
+      "labels": [
+        "04 - Documentation",
+        "03 - Maintenance"
+      ],
+      "repo_size_mb": 168.04,
+      "repo_language": "Python",
+      "repo_topics": [
+        "numpy",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "git",
+          "documentation",
+          "rst",
+          "release management"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR performs routine maintenance by updating the `.mailmap`, adding release notes, and a changelog for the 1.26.0 NumPy release.",
+        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing involves checking the updated files for correctness and ensuring the documentation builds without errors, typical for release updates."
+      },
+      "priority_score": 56.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/32766",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 32766,
+      "title": "Release 1.8.0rc1",
+      "changed_files": 3,
+      "additions": 590,
+      "deletions": 5,
+      "labels": [],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR resolves `stubtest` errors within NumPy's `_core` module by porting fixes from a related `numtype` project.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing requires running `stubtest` and potentially other static type checkers to confirm the errors are resolved and no new issues are introduced."
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
       },
       "priority_score": 55.0,
       "priority_tier": "B",
@@ -700,81 +596,39 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/32766",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 32766,
-      "title": "Release 1.8.0rc1",
+      "url": "https://github.com/numpy/numpy/pull/28511",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 28511,
+      "title": "TYP: fix stubtest errors in ``numpy._core``",
       "changed_files": 3,
-      "additions": 590,
-      "deletions": 5,
-      "labels": [],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 55.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/32642",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 32642,
-      "title": "DOC Update sponsor page: reorganize sponsors and add BNP Paribas Group",
-      "changed_files": 3,
-      "additions": 123,
-      "deletions": 233,
+      "additions": 556,
+      "deletions": 309,
       "labels": [
-        "Documentation"
+        "41 - Static typing",
+        "numtype"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 168.04,
       "repo_language": "Python",
       "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
+        "numpy",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "other",
-        "skills_required": [],
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "static typing",
+          "mypy",
+          "stub files"
+        ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
+        "pr_summary": "This PR resolves `stubtest` errors within NumPy's `_core` module by porting fixes from a related `numtype` project.",
+        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Testing requires running `stubtest` and potentially other static type checkers to confirm the errors are resolved and no new issues are introduced."
       },
       "priority_score": 55.0,
       "priority_tier": "B",
@@ -887,39 +741,89 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/28512",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 28512,
-      "title": "TYP: Typing fixes backported from #28452, #28491, #28494",
-      "changed_files": 6,
-      "additions": 271,
-      "deletions": 236,
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/32642",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 32642,
+      "title": "DOC Update sponsor page: reorganize sponsors and add BNP Paribas Group",
+      "changed_files": 3,
+      "additions": 123,
+      "deletions": 233,
       "labels": [
-        "08 - Backport",
-        "41 - Static typing"
+        "Documentation"
       ],
-      "repo_size_mb": 168.04,
+      "repo_size_mb": 175.85,
       "repo_language": "Python",
       "repo_topics": [
-        "numpy",
-        "python"
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "library",
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 55.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/24128",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 24128,
+      "title": "DOC Fixes search on webpage",
+      "changed_files": 5,
+      "additions": 65,
+      "deletions": 657,
+      "labels": [
+        "Documentation",
+        "To backport"
+      ],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
         "skills_required": [
-          "python",
-          "static typing",
-          "git",
-          "release management"
+          "documentation",
+          "javascript",
+          "sphinx",
+          "web development"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR backports several static typing fixes from previously merged pull requests to an older branch of NumPy.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves running static type checkers on the target branch to ensure the backported fixes are correctly applied and resolve the original issues without regressions."
+        "pr_summary": "This PR fixes the search functionality on the scikit-learn webpage by leveraging Sphinx's `searchtools.js` directly, reducing maintenance overhead.",
+        "repo_summary": "Scikit-learn is a Python machine learning library providing various algorithms for classification, regression, clustering, and more.",
+        "feasibility_notes": "Testing involves building the documentation locally with Sphinx and verifying that the search feature works correctly on the generated static site."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -927,7 +831,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -991,42 +895,39 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/24128",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 24128,
-      "title": "DOC Fixes search on webpage",
-      "changed_files": 5,
-      "additions": 65,
-      "deletions": 657,
+      "url": "https://github.com/numpy/numpy/pull/28512",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 28512,
+      "title": "TYP: Typing fixes backported from #28452, #28491, #28494",
+      "changed_files": 6,
+      "additions": 271,
+      "deletions": 236,
       "labels": [
-        "Documentation",
-        "To backport"
+        "08 - Backport",
+        "41 - Static typing"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 168.04,
       "repo_language": "Python",
       "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
+        "numpy",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "ml-ai",
+        "domain": "library",
         "skills_required": [
-          "documentation",
-          "javascript",
-          "sphinx",
-          "web development"
+          "python",
+          "static typing",
+          "git",
+          "release management"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes the search functionality on the scikit-learn webpage by leveraging Sphinx's `searchtools.js` directly, reducing maintenance overhead.",
-        "repo_summary": "Scikit-learn is a Python machine learning library providing various algorithms for classification, regression, clustering, and more.",
-        "feasibility_notes": "Testing involves building the documentation locally with Sphinx and verifying that the search feature works correctly on the generated static site."
+        "pr_summary": "This PR backports several static typing fixes from previously merged pull requests to an older branch of NumPy.",
+        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Testing involves running static type checkers on the target branch to ensure the backported fixes are correctly applied and resolve the original issues without regressions."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -1034,7 +935,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1094,6 +995,98 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/3438",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 3438,
+      "title": "[MRG+1] Sparse Target Dummy Classifier",
+      "changed_files": 6,
+      "additions": 466,
+      "deletions": 32,
+      "labels": [],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/5371",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 5371,
+      "title": "[MRG + 1] Increase length of array indexing type in ArrayDataset",
+      "changed_files": 2,
+      "additions": 196,
+      "deletions": 196,
+      "labels": [
+        "Bug"
+      ],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-learn/scikit-learn/pull/30253",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
       "number": 30253,
@@ -1105,6 +1098,51 @@
         "Documentation",
         "No Changelog Needed"
       ],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/4505",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 4505,
+      "title": "FIX _make_unique of _isotonic.pyx avoids coercing float64 to float",
+      "changed_files": 2,
+      "additions": 236,
+      "deletions": 232,
+      "labels": [],
       "repo_size_mb": 175.85,
       "repo_language": "Python",
       "repo_topics": [
@@ -1191,96 +1229,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/3438",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 3438,
-      "title": "[MRG+1] Sparse Target Dummy Classifier",
-      "changed_files": 6,
-      "additions": 466,
-      "deletions": 32,
-      "labels": [],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/4505",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 4505,
-      "title": "FIX _make_unique of _isotonic.pyx avoids coercing float64 to float",
-      "changed_files": 2,
-      "additions": 236,
-      "deletions": 232,
-      "labels": [],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-learn/scikit-learn/pull/3982",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
       "number": 3982,
@@ -1326,44 +1274,46 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5371",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 5371,
-      "title": "[MRG + 1] Increase length of array indexing type in ArrayDataset",
-      "changed_files": 2,
-      "additions": 196,
-      "deletions": 196,
+      "url": "https://github.com/numpy/numpy/pull/30535",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 30535,
+      "title": "TYP: inline declarations for ``empty``, ``zeros``, and ``ones``",
+      "changed_files": 3,
+      "additions": 334,
+      "deletions": 147,
       "labels": [
-        "Bug"
+        "41 - Static typing"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 168.04,
       "repo_language": "Python",
       "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
+        "numpy",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "static typing",
+          "mypy",
+          "type hints"
+        ],
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR refactors the static type declarations for NumPy's `empty`, `zeros`, and `ones` functions to use inline declarations, improving type-checker and IDE behavior.",
+        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Testing involves running static type checkers to ensure the changes are valid and improve type inference, and potentially verifying IDE autocompletion behavior."
       },
-      "priority_score": 50.0,
+      "priority_score": 48.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1428,55 +1378,6 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/30535",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 30535,
-      "title": "TYP: inline declarations for ``empty``, ``zeros``, and ``ones``",
-      "changed_files": 3,
-      "additions": 334,
-      "deletions": 147,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static typing",
-          "mypy",
-          "type hints"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors the static type declarations for NumPy's `empty`, `zeros`, and `ones` functions to use inline declarations, improving type-checker and IDE behavior.",
-        "repo_summary": "NumPy is the fundamental package for numerical computation in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves running static type checkers to ensure the changes are valid and improve type inference, and potentially verifying IDE autocompletion behavior."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/31559",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 31559,
@@ -1524,6 +1425,102 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/40224",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 40224,
+      "title": "STYLE: Inconsistent namespace - arithmetic (#39992)",
+      "changed_files": 3,
+      "additions": 187,
+      "deletions": 189,
+      "labels": [
+        "Code Style"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 47.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/59001",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 59001,
+      "title": "DOC: Miss. -> Miss and Master. -> Master",
+      "changed_files": 3,
+      "additions": 223,
+      "deletions": 223,
+      "labels": [
+        "Docs"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 47.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1637,162 +1634,15 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/40224",
+      "url": "https://github.com/pandas-dev/pandas/pull/52007",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 40224,
-      "title": "STYLE: Inconsistent namespace - arithmetic (#39992)",
-      "changed_files": 3,
-      "additions": 187,
-      "deletions": 189,
-      "labels": [
-        "Code Style"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42932",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 42932,
-      "title": "TST: reorganize misplaced quarter / business quarter tests (#27085)",
-      "changed_files": 3,
-      "additions": 609,
-      "deletions": 563,
-      "labels": [
-        "Testing",
-        "Frequency"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42930",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 42930,
-      "title": "TST: reorganize misplaced year / business year tests (#27085)",
-      "changed_files": 3,
-      "additions": 542,
-      "deletions": 508,
-      "labels": [
-        "Testing",
-        "Frequency"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/44129",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 44129,
-      "title": "TST: Move test_moments_rolling.py to approproate files",
+      "number": 52007,
+      "title": "TYP/CLN: remove no-longer-needed overrides",
       "changed_files": 4,
-      "additions": 637,
-      "deletions": 648,
+      "additions": 15,
+      "deletions": 500,
       "labels": [
-        "Testing",
-        "Window"
+        "Typing"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -1832,15 +1682,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/52007",
+      "url": "https://github.com/pandas-dev/pandas/pull/44129",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 52007,
-      "title": "TYP/CLN: remove no-longer-needed overrides",
+      "number": 44129,
+      "title": "TST: Move test_moments_rolling.py to approproate files",
       "changed_files": 4,
-      "additions": 15,
-      "deletions": 500,
+      "additions": 637,
+      "deletions": 648,
       "labels": [
-        "Typing"
+        "Testing",
+        "Window"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -1929,6 +1780,55 @@
       ]
     },
     {
+      "url": "https://github.com/pandas-dev/pandas/pull/42930",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 42930,
+      "title": "TST: reorganize misplaced year / business year tests (#27085)",
+      "changed_files": 3,
+      "additions": 542,
+      "deletions": 508,
+      "labels": [
+        "Testing",
+        "Frequency"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 47.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/pandas-dev/pandas/pull/59533",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 59533,
@@ -1977,15 +1877,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/59001",
+      "url": "https://github.com/pandas-dev/pandas/pull/42932",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 59001,
-      "title": "DOC: Miss. -> Miss and Master. -> Master",
+      "number": 42932,
+      "title": "TST: reorganize misplaced quarter / business quarter tests (#27085)",
       "changed_files": 3,
-      "additions": 223,
-      "deletions": 223,
+      "additions": 609,
+      "deletions": 563,
       "labels": [
-        "Docs"
+        "Testing",
+        "Frequency"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2135,16 +2036,15 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/29303",
+      "url": "https://github.com/pandas-dev/pandas/pull/54465",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 29303,
-      "title": "CLN: Consistent pandas.util.testing imports in pandas/tests/frame - part 4",
-      "changed_files": 4,
-      "additions": 278,
-      "deletions": 269,
+      "number": 54465,
+      "title": "DOC: Simplify reshaping.rst",
+      "changed_files": 2,
+      "additions": 254,
+      "deletions": 510,
       "labels": [
-        "Testing",
-        "Clean"
+        "Docs"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2159,19 +2059,14 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "refactoring",
-          "unit testing"
-        ],
-        "difficulty": "junior",
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR cleans up testing imports in `pandas/tests/frame` to ensure consistency, as part of a larger refactoring effort.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves checking the import consistency across the specified test files, which can be verified by running the test suite."
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2179,7 +2074,55 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/54220",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 54220,
+      "title": "DOC: Simplify contributing intro",
+      "changed_files": 2,
+      "additions": 135,
+      "deletions": 179,
+      "labels": [
+        "Docs"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2244,15 +2187,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/37353",
+      "url": "https://github.com/pandas-dev/pandas/pull/8073",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 37353,
-      "title": "TST: collect indexing tests by method",
-      "changed_files": 4,
-      "additions": 154,
-      "deletions": 150,
+      "number": 8073,
+      "title": "PERF: StataReader is slow",
+      "changed_files": 6,
+      "additions": 232,
+      "deletions": 85,
       "labels": [
-        "Testing"
+        "Performance",
+        "IO Stata"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2270,17 +2214,16 @@
         "domain": "data-science",
         "skills_required": [
           "python",
-          "pandas",
-          "unit testing",
-          "refactoring",
-          "indexing"
+          "numpy",
+          "performance optimization",
+          "data formats (Stata)"
         ],
-        "difficulty": "junior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR reorganizes indexing tests by collecting them based on the specific method they test for better structure.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves verifying that indexing tests are correctly grouped by method and still pass after the reorganization."
+        "pr_summary": "This PR improves the performance of `StataReader` by using vectorized NumPy operations for data reading and date conversion, and removing unreachable private functions.",
+        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
+        "feasibility_notes": "Testing requires Stata files to read and performance benchmarking tools to verify the improvements."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2288,7 +2231,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2298,16 +2241,167 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/41472",
+      "url": "https://github.com/pandas-dev/pandas/pull/56057",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 41472,
-      "title": "REF: collect methods in NumericIndex",
+      "number": 56057,
+      "title": "TST: Make test_user_agent run in CI",
       "changed_files": 2,
-      "additions": 199,
-      "deletions": 167,
+      "additions": 172,
+      "deletions": 403,
       "labels": [
-        "Refactor",
-        "Index"
+        "Testing",
+        "IO Network"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/51857",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 51857,
+      "title": "Backport PR #51704 on branch 2.0.x (DOC: Improve groupby in the User Guide)",
+      "changed_files": 3,
+      "additions": 330,
+      "deletions": 210,
+      "labels": [
+        "Docs"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [
+          "technical-writing",
+          "restructuredtext",
+          "python",
+          "pandas"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR backports improvements to the `groupby` section of the pandas User Guide to the 2.0.x branch.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing involves building the pandas documentation locally and visually inspecting the `groupby` section for the applied improvements, which is easy once the dev environment is set up."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/56435",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 56435,
+      "title": "TST: de-duplicate PeriodIndex constructor tests",
+      "changed_files": 5,
+      "additions": 232,
+      "deletions": 264,
+      "labels": [
+        "Testing",
+        "Period"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/55898",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 55898,
+      "title": "PERF: array_strptime",
+      "changed_files": 2,
+      "additions": 238,
+      "deletions": 77,
+      "labels": [
+        "Datetime",
+        "Performance"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2396,15 +2490,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/45906",
+      "url": "https://github.com/pandas-dev/pandas/pull/41472",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45906,
-      "title": "TST: Use more pytest idioms in test_reductions, test_generic",
+      "number": 41472,
+      "title": "REF: collect methods in NumericIndex",
       "changed_files": 2,
-      "additions": 189,
-      "deletions": 212,
+      "additions": 199,
+      "deletions": 167,
       "labels": [
-        "Testing"
+        "Refactor",
+        "Index"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2493,62 +2588,15 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/4645",
+      "url": "https://github.com/pandas-dev/pandas/pull/29303",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 4645,
-      "title": "API: remove the table keyword, replaced by fmt='s|t'",
-      "changed_files": 5,
-      "additions": 612,
-      "deletions": 308,
-      "labels": [],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49157",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 49157,
-      "title": "TST/CLN: Use fixtures instead of setup_method in tests/indexing",
-      "changed_files": 5,
-      "additions": 230,
-      "deletions": 237,
+      "number": 29303,
+      "title": "CLN: Consistent pandas.util.testing imports in pandas/tests/frame - part 4",
+      "changed_files": 4,
+      "additions": 278,
+      "deletions": 269,
       "labels": [
         "Testing",
-        "Indexing",
         "Clean"
       ],
       "repo_size_mb": 376.38,
@@ -2564,72 +2612,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "testing",
+        "domain": "data-science",
         "skills_required": [
           "python",
-          "pytest",
+          "pandas",
           "refactoring",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors indexing tests to use `pytest` fixtures instead of `setup_method` for better test organization and clarity.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves running `pytest` for the `tests/indexing` module after setting up the pandas development environment, which is straightforward."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/51857",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 51857,
-      "title": "Backport PR #51704 on branch 2.0.x (DOC: Improve groupby in the User Guide)",
-      "changed_files": 3,
-      "additions": 330,
-      "deletions": 210,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "technical-writing",
-          "restructuredtext",
-          "python",
-          "pandas"
+          "unit testing"
         ],
         "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR backports improvements to the `groupby` section of the pandas User Guide to the 2.0.x branch.",
+        "pr_summary": "This PR cleans up testing imports in `pandas/tests/frame` to ensure consistency, as part of a larger refactoring effort.",
         "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves building the pandas documentation locally and visually inspecting the `groupby` section for the applied improvements, which is easy once the dev environment is set up."
+        "feasibility_notes": "Reproducing involves checking the import consistency across the specified test files, which can be verified by running the test suite."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2637,7 +2632,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2647,211 +2642,14 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/54220",
+      "url": "https://github.com/pandas-dev/pandas/pull/4645",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 54220,
-      "title": "DOC: Simplify contributing intro",
-      "changed_files": 2,
-      "additions": 135,
-      "deletions": 179,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/54465",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 54465,
-      "title": "DOC: Simplify reshaping.rst",
-      "changed_files": 2,
-      "additions": 254,
-      "deletions": 510,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/55898",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 55898,
-      "title": "PERF: array_strptime",
-      "changed_files": 2,
-      "additions": 238,
-      "deletions": 77,
-      "labels": [
-        "Datetime",
-        "Performance"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/56057",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 56057,
-      "title": "TST: Make test_user_agent run in CI",
-      "changed_files": 2,
-      "additions": 172,
-      "deletions": 403,
-      "labels": [
-        "Testing",
-        "IO Network"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/56435",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 56435,
-      "title": "TST: de-duplicate PeriodIndex constructor tests",
+      "number": 4645,
+      "title": "API: remove the table keyword, replaced by fmt='s|t'",
       "changed_files": 5,
-      "additions": 232,
-      "deletions": 264,
-      "labels": [
-        "Testing",
-        "Period"
-      ],
+      "additions": 612,
+      "deletions": 308,
+      "labels": [],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
       "repo_topics": [
@@ -2939,16 +2737,15 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/8073",
+      "url": "https://github.com/pandas-dev/pandas/pull/37353",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 8073,
-      "title": "PERF: StataReader is slow",
-      "changed_files": 6,
-      "additions": 232,
-      "deletions": 85,
+      "number": 37353,
+      "title": "TST: collect indexing tests by method",
+      "changed_files": 4,
+      "additions": 154,
+      "deletions": 150,
       "labels": [
-        "Performance",
-        "IO Stata"
+        "Testing"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2966,16 +2763,17 @@
         "domain": "data-science",
         "skills_required": [
           "python",
-          "numpy",
-          "performance optimization",
-          "data formats (Stata)"
+          "pandas",
+          "unit testing",
+          "refactoring",
+          "indexing"
         ],
-        "difficulty": "mid",
+        "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR improves the performance of `StataReader` by using vectorized NumPy operations for data reading and date conversion, and removing unreachable private functions.",
-        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
-        "feasibility_notes": "Testing requires Stata files to read and performance benchmarking tools to verify the improvements."
+        "pr_summary": "This PR reorganizes indexing tests by collecting them based on the specific method they test for better structure.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Reproducing involves verifying that indexing tests are correctly grouped by method and still pass after the reorganization."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2983,7 +2781,161 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/49157",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 49157,
+      "title": "TST/CLN: Use fixtures instead of setup_method in tests/indexing",
+      "changed_files": 5,
+      "additions": 230,
+      "deletions": 237,
+      "labels": [
+        "Testing",
+        "Indexing",
+        "Clean"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "testing",
+        "skills_required": [
+          "python",
+          "pytest",
+          "refactoring",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors indexing tests to use `pytest` fixtures instead of `setup_method` for better test organization and clarity.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing involves running `pytest` for the `tests/indexing` module after setting up the pandas development environment, which is straightforward."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/45906",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 45906,
+      "title": "TST: Use more pytest idioms in test_reductions, test_generic",
+      "changed_files": 2,
+      "additions": 189,
+      "deletions": 212,
+      "labels": [
+        "Testing"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/2931",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 2931,
+      "title": "[MRG]: MAINT: remove our solve_triangular",
+      "changed_files": 5,
+      "additions": 770,
+      "deletions": 690,
+      "labels": [],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy",
+          "linear algebra",
+          "refactoring"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR removes the internal `solve_triangular` implementation, fully transitioning to SciPy's version and completing the removal of compatibility layers for older SciPy versions.",
+        "repo_summary": "Scikit-learn is a Python machine learning library providing various algorithms for classification, regression, clustering, and more.",
+        "feasibility_notes": "Testing involves running the full test suite to ensure that all parts of scikit-learn that previously used the internal `solve_triangular` now correctly use the SciPy version without regressions or performance issues."
+      },
+      "priority_score": 40.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3046,13 +2998,13 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/2931",
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/5565",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 2931,
-      "title": "[MRG]: MAINT: remove our solve_triangular",
-      "changed_files": 5,
-      "additions": 770,
-      "deletions": 690,
+      "number": 5565,
+      "title": "[MRG+1] HOTFIX for incorrect cast in liblinear.pyx",
+      "changed_files": 3,
+      "additions": 185,
+      "deletions": 183,
       "labels": [],
       "repo_size_mb": 175.85,
       "repo_language": "Python",
@@ -3069,25 +3021,23 @@
         "domain": "ml-ai",
         "skills_required": [
           "python",
-          "numpy",
-          "scipy",
-          "linear algebra",
-          "refactoring"
+          "cython",
+          "numerical-methods"
         ],
         "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR removes the internal `solve_triangular` implementation, fully transitioning to SciPy's version and completing the removal of compatibility layers for older SciPy versions.",
-        "repo_summary": "Scikit-learn is a Python machine learning library providing various algorithms for classification, regression, clustering, and more.",
-        "feasibility_notes": "Testing involves running the full test suite to ensure that all parts of scikit-learn that previously used the internal `solve_triangular` now correctly use the SciPy version without regressions or performance issues."
+        "issue_clarity_score": 1,
+        "pr_summary": "This PR provides a hotfix for an incorrect type cast within the liblinear.pyx file, addressing a bug in the low-level implementation.",
+        "repo_summary": "scikit-learn is a popular open-source machine learning library for Python, offering various classification, regression, and clustering algorithms.",
+        "feasibility_notes": "Without more context or the specific error leading to the hotfix, reproducing or testing this locally would require deep understanding of the `liblinear` implementation."
       },
-      "priority_score": 40.0,
+      "priority_score": 39.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3142,55 +3092,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5565",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 5565,
-      "title": "[MRG+1] HOTFIX for incorrect cast in liblinear.pyx",
-      "changed_files": 3,
-      "additions": 185,
-      "deletions": 183,
-      "labels": [],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "cython",
-          "numerical-methods"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR provides a hotfix for an incorrect type cast within the liblinear.pyx file, addressing a bug in the low-level implementation.",
-        "repo_summary": "scikit-learn is a popular open-source machine learning library for Python, offering various classification, regression, and clustering algorithms.",
-        "feasibility_notes": "Without more context or the specific error leading to the hotfix, reproducing or testing this locally would require deep understanding of the `liblinear` implementation."
-      },
-      "priority_score": 39.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3256,59 +3157,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/32250",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 32250,
-      "title": "TST: method-specific file for select_dtypes",
-      "changed_files": 2,
-      "additions": 329,
-      "deletions": 319,
-      "labels": [
-        "Testing"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "unit testing",
-          "refactoring"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR creates a dedicated method-specific test file for the `select_dtypes` function to improve test organization.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves verifying that `select_dtypes` tests have been correctly moved and still pass after the reorganization."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/35918",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 35918,
@@ -3347,57 +3195,6 @@
         "pr_summary": "This PR refactors the `window/test_dtypes.py` file to utilize modern `pytest` idioms for improved testing practices.",
         "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
         "feasibility_notes": "Testing involves running the `window` test suite and ensuring that all tests pass after the refactoring to `pytest` idioms."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/3802",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 3802,
-      "title": "DOC: add link to tips data set in rplot docs",
-      "changed_files": 2,
-      "additions": 265,
-      "deletions": 253,
-      "labels": [],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "pandas",
-          "documentation",
-          "sphinx"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a link to the \"tips\" dataset within the `rplot` documentation.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves building the documentation locally and verifying the presence and correctness of the added link."
       },
       "priority_score": 37.0,
       "priority_tier": "C",
@@ -3466,16 +3263,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/52228",
+      "url": "https://github.com/pandas-dev/pandas/pull/8353",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 52228,
-      "title": "REF: de-duplicate some test code",
-      "changed_files": 5,
-      "additions": 270,
-      "deletions": 380,
+      "number": 8353,
+      "title": "DOC: move trellis under visualization.rst",
+      "changed_files": 2,
+      "additions": 180,
+      "deletions": 179,
       "labels": [
-        "Testing",
-        "NA - MaskedArrays"
+        "Docs",
+        "Visualization"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -3490,19 +3287,18 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "testing",
+        "domain": "library",
         "skills_required": [
-          "python",
-          "pytest",
-          "refactoring",
-          "testing"
+          "documentation",
+          "sphinx",
+          "restructuredtext"
         ],
         "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors and de-duplicates common test code, particularly in areas related to NA/MaskedArrays, to improve test maintainability.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves running `pytest` for the affected test modules after setting up the pandas development environment, which is straightforward."
+        "pr_summary": "This PR moves the \"trellis\" documentation section under `visualization.rst` and adjusts heading levels, effectively organizing the documentation.",
+        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
+        "feasibility_notes": "Testing involves building the documentation locally with Sphinx and verifying the new location and structure of the trellis content."
       },
       "priority_score": 37.0,
       "priority_tier": "C",
@@ -3510,7 +3306,58 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/3802",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 3802,
+      "title": "DOC: add link to tips data set in rplot docs",
+      "changed_files": 2,
+      "additions": 265,
+      "deletions": 253,
+      "labels": [],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "pandas",
+          "documentation",
+          "sphinx"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds a link to the \"tips\" dataset within the `rplot` documentation.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Reproducing involves building the documentation locally and verifying the presence and correctness of the added link."
+      },
+      "priority_score": 37.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3573,16 +3420,15 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/8353",
+      "url": "https://github.com/pandas-dev/pandas/pull/32250",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 8353,
-      "title": "DOC: move trellis under visualization.rst",
+      "number": 32250,
+      "title": "TST: method-specific file for select_dtypes",
       "changed_files": 2,
-      "additions": 180,
-      "deletions": 179,
+      "additions": 329,
+      "deletions": 319,
       "labels": [
-        "Docs",
-        "Visualization"
+        "Testing"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -3597,18 +3443,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "library",
+        "domain": "data-science",
         "skills_required": [
-          "documentation",
-          "sphinx",
-          "restructuredtext"
+          "python",
+          "pandas",
+          "unit testing",
+          "refactoring"
         ],
         "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR moves the \"trellis\" documentation section under `visualization.rst` and adjusts heading levels, effectively organizing the documentation.",
-        "repo_summary": "pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools, primarily DataFrames.",
-        "feasibility_notes": "Testing involves building the documentation locally with Sphinx and verifying the new location and structure of the trellis content."
+        "pr_summary": "This PR creates a dedicated method-specific test file for the `select_dtypes` function to improve test organization.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Reproducing involves verifying that `select_dtypes` tests have been correctly moved and still pass after the reorganization."
       },
       "priority_score": 37.0,
       "priority_tier": "C",
@@ -3617,6 +3464,60 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/52228",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 52228,
+      "title": "REF: de-duplicate some test code",
+      "changed_files": 5,
+      "additions": 270,
+      "deletions": 380,
+      "labels": [
+        "Testing",
+        "NA - MaskedArrays"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "testing",
+        "skills_required": [
+          "python",
+          "pytest",
+          "refactoring",
+          "testing"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors and de-duplicates common test code, particularly in areas related to NA/MaskedArrays, to improve test maintainability.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing involves running `pytest` for the affected test modules after setting up the pandas development environment, which is straightforward."
+      },
+      "priority_score": 37.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3682,554 +3583,5 @@
     }
   ],
   "repos_filtered_out": [],
-  "prs_filtered_out": [
-    {
-      "url": "https://github.com/numpy/numpy/pull/22261",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/23537",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/25542",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/26680",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/28981",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/5548",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/27949",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/31557",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/32744",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/31060",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/34065",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/33183",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/35168",
-      "reason": "17 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/36815",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/36369",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37349",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37403",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37456",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37678",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37773",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37959",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37953",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/38589",
-      "reason": "13 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/38554",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/38383",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/38993",
-      "reason": "13 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/39832",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/39601",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/39917",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/40042",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/40058",
-      "reason": "13 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41484",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/40422",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41153",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/40869",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41910",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42494",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42140",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42233",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42959",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/44876",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/44960",
-      "reason": "14 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/4498",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/45975",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/45407",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/46725",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/47367",
-      "reason": "13 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/47553",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49454",
-      "reason": "17 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49423",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49611",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/50956",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/50674",
-      "reason": "18 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/51473",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/51545",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/51781",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/51799",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/53544",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/53087",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/53803",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/53873",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/53869",
-      "reason": "15 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/54202",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/55269",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/54713",
-      "reason": "14 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/55959",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/55612",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/55740",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/56254",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/56521",
-      "reason": "17 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/56720",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57231",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57477",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57428",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57234",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57760",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57742",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/58413",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/58551",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/57764",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/59481",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/59610",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/60046",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/60916",
-      "reason": "13 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/62165",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/63770",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/62988",
-      "reason": "18 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/6380",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/6516",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/8288",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/9843",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/13569",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/20933",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/23762",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/26442",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/26881",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/27240",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/273",
-      "reason": "14 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/27216",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/27944",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/26636",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/2804",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/28331",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/28620",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29134",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/28132",
-      "reason": "18 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29090",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29388",
-      "reason": "19 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29400",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29486",
-      "reason": "14 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/29625",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/30438",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/30165",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31299",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31716",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31552",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31758",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31394",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31918",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/3182",
-      "reason": "1 changed file(s) < minimum 2"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31846",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/32859",
-      "reason": "12 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/3327",
-      "reason": "8 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/32100",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/396",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/456",
-      "reason": "14 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/467",
-      "reason": "19 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/478",
-      "reason": "10 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5195",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/4550",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/4905",
-      "reason": "9 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5295",
-      "reason": "7 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/5451",
-      "reason": "20 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/6396",
-      "reason": "16 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/7986",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/8222",
-      "reason": "11 changed file(s) > maximum 6"
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/9078",
-      "reason": "8 changed file(s) > maximum 6"
-    }
-  ]
+  "prs_filtered_out": []
 }
