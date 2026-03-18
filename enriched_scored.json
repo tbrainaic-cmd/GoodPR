@@ -1,35 +1,35 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-18T06:59:37.644311+00:00",
+    "enriched_at": "2026-03-18T07:39:33.510193+00:00",
     "total_repos_input": 3,
     "repos_passed_filter": 3,
-    "total_prs_input": 44,
-    "prs_after_repo_filter": 44,
-    "prs_after_pr_filter": 10,
+    "total_prs_input": 36,
+    "prs_after_repo_filter": 36,
+    "prs_after_pr_filter": 8,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 3,
-    "tier_c": 7,
+    "tier_b": 2,
+    "tier_c": 6,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.11,
     "incremental": true,
-    "prs_from_cache": 44,
+    "prs_from_cache": 36,
     "prs_new": 0,
-    "prs_disappeared": 11
+    "prs_disappeared": 8
   },
   "scored_prs": [
     {
-      "url": "https://github.com/numpy/numpy/pull/28303",
+      "url": "https://github.com/numpy/numpy/pull/30067",
       "repo_url": "https://github.com/numpy/numpy",
-      "number": 28303,
-      "title": "TYP: stub ``lib._datasource`` and fix ``lib._npyio_impl``",
-      "changed_files": 3,
-      "additions": 174,
-      "deletions": 216,
+      "number": 30067,
+      "title": "TYP: ``numpy.ma``: Annotate 27 functions related to masks and fill-values",
+      "changed_files": 2,
+      "additions": 373,
+      "deletions": 51,
       "labels": [
-        "41 - Static typing",
-        "numtype"
+        "component: numpy.ma",
+        "41 - Static typing"
       ],
       "repo_size_mb": 168.04,
       "repo_language": "Python",
@@ -43,24 +43,24 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "type-hinting",
-          "static-analysis",
-          "code-refactoring"
+          "static-typing",
+          "numpy",
+          "code-modernization"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds type stubs for `lib._datasource` and implements several type-related fixes and refactorings within `lib._npyio_impl` to improve static typing and conform to style guides.",
-        "repo_summary": "NumPy is a fundamental package for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves building NumPy and running a static type checker (like MyPy) against relevant internal modules and user code to verify the correctness of the stubs and fixes."
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds static type annotations to 27 previously untyped public functions within the `numpy.ma` module, improving typing coverage for masked arrays.",
+        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing involves running a type checker like `mypy` on the `numpy.ma` module before and after the changes to confirm that the new annotations are valid and contribute to improved type checking coverage."
       },
-      "priority_score": 58.0,
+      "priority_score": 56.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -111,56 +111,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/30067",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 30067,
-      "title": "TYP: ``numpy.ma``: Annotate 27 functions related to masks and fill-values",
-      "changed_files": 2,
-      "additions": 373,
-      "deletions": 51,
-      "labels": [
-        "component: numpy.ma",
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "numpy",
-          "code-modernization"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds static type annotations to 27 previously untyped public functions within the `numpy.ma` module, improving typing coverage for masked arrays.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves running a type checker like `mypy` on the `numpy.ma` module before and after the changes to confirm that the new annotations are valid and contribute to improved type checking coverage."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -409,59 +359,6 @@
         "feasibility_notes": "Testing involves running `pre-commit run --all-files` and checking for any new formatting or linting issues introduced by the updates."
       },
       "priority_score": 40.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/45842",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45842,
-      "title": "TST: Use fixtures instead of setup_method",
-      "changed_files": 5,
-      "additions": 169,
-      "deletions": 149,
-      "labels": [
-        "Testing"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "pytest",
-          "testing",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR refactors pandas tests to replace `setup_method` with pytest fixtures for improved test organization.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves running the modified tests to ensure they still pass and behave as expected, and that the refactoring doesn't break test setup."
-      },
-      "priority_score": 39.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
