@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-18T03:19:39.308532+00:00",
+    "enriched_at": "2026-03-18T03:53:55.511900+00:00",
     "total_repos_input": 3,
     "repos_passed_filter": 3,
-    "total_prs_input": 173,
-    "prs_after_repo_filter": 173,
-    "prs_after_pr_filter": 59,
+    "total_prs_input": 139,
+    "prs_after_repo_filter": 139,
+    "prs_after_pr_filter": 46,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 9,
-    "tier_c": 50,
+    "tier_b": 8,
+    "tier_c": 38,
     "workers": 5,
     "elapsed_seconds": 0.14,
     "incremental": true,
-    "prs_from_cache": 173,
+    "prs_from_cache": 139,
     "prs_new": 0,
-    "prs_disappeared": 18
+    "prs_disappeared": 34
   },
   "scored_prs": [
     {
@@ -60,58 +60,6 @@
         "feasibility_notes": "Easily reproducible by running the provided code sample and comparing the Styler output before and after the PR changes."
       },
       "priority_score": 71.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/22024",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 22024,
-      "title": "BUG: Expose string_heapsort algorithm in a shared header",
-      "changed_files": 3,
-      "additions": 233,
-      "deletions": 232,
-      "labels": [
-        "00 - Bug",
-        "component: numpy._core",
-        "C++"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "c++",
-          "compilers",
-          "build-systems",
-          "debugging",
-          "algorithm-design"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": true,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR fixes a build issue with the Intel compiler by exposing the `string_heapsort` algorithm in a shared header, resolving `undefined reference` errors during linking.",
-        "repo_summary": "NumPy is a fundamental Python library for numerical computing, providing support for large, multi-dimensional arrays and matrices, along with a collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing locally requires access to the Intel OneAPI compilers, which might be a barrier for some, but the issue provides clear Spack commands or manual installation steps."
-      },
-      "priority_score": 69.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -227,6 +175,55 @@
       ]
     },
     {
+      "url": "https://github.com/numpy/numpy/pull/29733",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 29733,
+      "title": "TYP: fix method declarations in ``floating``, ``timedelta64``, and ``datetime64``",
+      "changed_files": 4,
+      "additions": 248,
+      "deletions": 206,
+      "labels": [
+        "41 - Static typing"
+      ],
+      "repo_size_mb": 168.04,
+      "repo_language": "Python",
+      "repo_topics": [
+        "numpy",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "static-typing",
+          "mypy",
+          "type-systems"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR completes the series of static typing fixes by correcting method declarations for `floating`, `timedelta64`, and `datetime64` scalar types, building on previous related PRs.",
+        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing involves applying the typing fixes for the specified scalar types and verifying their correctness with `mypy` and other type checkers, ensuring consistency with previous related changes."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/numpy/numpy/pull/28303",
       "repo_url": "https://github.com/numpy/numpy",
       "number": 28303,
@@ -268,55 +265,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29733",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29733,
-      "title": "TYP: fix method declarations in ``floating``, ``timedelta64``, and ``datetime64``",
-      "changed_files": 4,
-      "additions": 248,
-      "deletions": 206,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "mypy",
-          "type-systems"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR completes the series of static typing fixes by correcting method declarations for `floating`, `timedelta64`, and `datetime64` scalar types, building on previous related PRs.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves applying the typing fixes for the specified scalar types and verifying their correctness with `mypy` and other type checkers, ensuring consistency with previous related changes."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -531,6 +479,56 @@
       ]
     },
     {
+      "url": "https://github.com/numpy/numpy/pull/29784",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 29784,
+      "title": "TYP: fix np.number and np.*integer method declaration",
+      "changed_files": 6,
+      "additions": 583,
+      "deletions": 257,
+      "labels": [
+        "08 - Backport",
+        "41 - Static typing"
+      ],
+      "repo_size_mb": 168.04,
+      "repo_language": "Python",
+      "repo_topics": [
+        "numpy",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "static-typing",
+          "mypy",
+          "git-backport"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR backports a fix for method declarations of `np.number` and `np.*integer` scalar types, continuing the series of static typing improvements from previous PRs.",
+        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing involves applying the backported changes to the target branch and verifying that the typing fixes for `np.number` and `np.*integer` are correctly applied and pass type checking."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-learn/scikit-learn/pull/25337",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
       "number": 25337,
@@ -638,260 +636,6 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/29616",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29616,
-      "title": "TST: Replace xunit setup with methods",
-      "changed_files": 2,
-      "additions": 218,
-      "deletions": 220,
-      "labels": [
-        "05 - Testing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "pytest",
-          "refactoring",
-          "concurrency"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors test setup methods in two `numpy/_core` test files to improve the thread safety of NumPy's testing suite, addressing issues with `unittest.mock.Mock`.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves setting up the NumPy development environment, running tests with `pytest-run-parallel`, and observing the failures or warnings related to thread safety."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29141",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29141,
-      "title": "MAINT: Update main after 2.3.0 release.",
-      "changed_files": 3,
-      "additions": 1254,
-      "deletions": 6,
-      "labels": [
-        "03 - Maintenance"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "git",
-          "documentation",
-          "release-management"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR performs a routine maintenance update to the `main` branch by forwardporting release notes, changelog, and mailmap after the 2.3.0 release.",
-        "repo_summary": "NumPy is a fundamental package for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Testing involves checking the updated files to ensure they contain the correct content from the 2.3.0 release and that the repository history is clean."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29784",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29784,
-      "title": "TYP: fix np.number and np.*integer method declaration",
-      "changed_files": 6,
-      "additions": 583,
-      "deletions": 257,
-      "labels": [
-        "08 - Backport",
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "mypy",
-          "git-backport"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR backports a fix for method declarations of `np.number` and `np.*integer` scalar types, continuing the series of static typing improvements from previous PRs.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves applying the backported changes to the target branch and verifying that the typing fixes for `np.number` and `np.*integer` are correctly applied and pass type checking."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/30327",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 30327,
-      "title": "MAINT conversion old->new/new->old tags (bis)",
-      "changed_files": 3,
-      "additions": 840,
-      "deletions": 12,
-      "labels": [
-        "module:utils",
-        "To backport",
-        "No Changelog Needed"
-      ],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "object-oriented programming",
-          "API design",
-          "backward compatibility",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR reintroduces internal tag-related methods (`_get_tags`, `_more_tags`, `_safe_tags`) with deprecation warnings to ensure backward compatibility during the transition from old to new estimator tagging APIs.",
-        "repo_summary": "Scikit-learn is a popular open-source machine learning library for Python, providing various classification, regression, and clustering algorithms.",
-        "feasibility_notes": "Testing requires setting up a scikit-learn development environment and running comprehensive tests covering various old and new estimator tag combinations and mixins to ensure proper conversion and deprecation warnings."
-      },
-      "priority_score": 51.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/31335",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 31335,
-      "title": "Release 1.7.0rc1",
-      "changed_files": 3,
-      "additions": 421,
-      "deletions": 5,
-      "labels": [],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "git",
-          "CI/CD",
-          "packaging",
-          "release management",
-          "scripting"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR orchestrates the release process for scikit-learn version 1.7.0rc1, including version updates, changelog generation, wheel building, and deployment to PyPI.",
-        "repo_summary": "Scikit-learn is a popular open-source machine learning library for Python, providing various classification, regression, and clustering algorithms.",
-        "feasibility_notes": "Reproducing or testing this involves access to release credentials and infrastructure, and following a multi-step, highly coordinated process for building and publishing the release artifacts."
-      },
-      "priority_score": 51.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-learn/scikit-learn/pull/7818",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
       "number": 7818,
@@ -945,14 +689,16 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/4193",
+      "url": "https://github.com/numpy/numpy/pull/29166",
       "repo_url": "https://github.com/numpy/numpy",
-      "number": 4193,
-      "title": "MAINT: linalg: prune unused routines from lapack_lite",
+      "number": 29166,
+      "title": "TYP: Fix missing ``_core.numeric`` (re-)exports",
       "changed_files": 2,
-      "additions": 6,
-      "deletions": 595,
-      "labels": [],
+      "additions": 661,
+      "deletions": 210,
+      "labels": [
+        "41 - Static typing"
+      ],
       "repo_size_mb": 168.04,
       "repo_language": "Python",
       "repo_topics": [
@@ -964,17 +710,66 @@
       "analysis": {
         "domain": "library",
         "skills_required": [
-          "c",
-          "linear algebra",
-          "lapack",
-          "build systems"
+          "python",
+          "static-typing",
+          "mypy",
+          "numpy-internals"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR performs maintenance by removing unused C routines from the `lapack_lite` module within the linear algebra component.",
+        "pr_summary": "This PR fixes missing static typing re-exports in `_core.numeric` to reduce type checker warnings and align stubs with `numtype` verification.",
+        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing likely involves setting up a development environment with `mypy` and other type checkers, then running them against the NumPy codebase to observe the 'red squigglies'."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/numpy/numpy/pull/30581",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 30581,
+      "title": "TYP: move ``{flat,nd}iter`` stubs from ``__init__.pyi`` to ``_core/multiarray.pyi``",
+      "changed_files": 2,
+      "additions": 166,
+      "deletions": 151,
+      "labels": [
+        "41 - Static typing"
+      ],
+      "repo_size_mb": 168.04,
+      "repo_language": "Python",
+      "repo_topics": [
+        "numpy",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "static typing",
+          "mypy",
+          "numpy"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR moves type stubs for `flatiter` and `nditer` from `__init__.pyi` to `_core/multiarray.pyi` to improve static typing organization.",
         "repo_summary": "NumPy is a fundamental Python library for numerical computing, providing powerful array objects and mathematical functions.",
-        "feasibility_notes": "Testing requires compiling NumPy, potentially running extensive test suites (especially linear algebra tests) to ensure no regressions from removing the code."
+        "feasibility_notes": "Reproducing involves setting up a development environment with `mypy` and checking if type-checking passes and if the stubs are correctly resolved."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -1042,55 +837,6 @@
       ]
     },
     {
-      "url": "https://github.com/numpy/numpy/pull/30581",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 30581,
-      "title": "TYP: move ``{flat,nd}iter`` stubs from ``__init__.pyi`` to ``_core/multiarray.pyi``",
-      "changed_files": 2,
-      "additions": 166,
-      "deletions": 151,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static typing",
-          "mypy",
-          "numpy"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR moves type stubs for `flatiter` and `nditer` from `__init__.pyi` to `_core/multiarray.pyi` to improve static typing organization.",
-        "repo_summary": "NumPy is a fundamental Python library for numerical computing, providing powerful array objects and mathematical functions.",
-        "feasibility_notes": "Reproducing involves setting up a development environment with `mypy` and checking if type-checking passes and if the stubs are correctly resolved."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/numpy/numpy/pull/28284",
       "repo_url": "https://github.com/numpy/numpy",
       "number": 28284,
@@ -1123,55 +869,6 @@
         "pr_summary": "This PR adds type stubs for the `numpy.matlib` module, improving static type checking capabilities.",
         "repo_summary": "NumPy is a fundamental package for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
         "feasibility_notes": "Testing involves building NumPy and then running a static type checker (like MyPy) against code that uses `numpy.matlib` to ensure the stubs are correct and complete."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29166",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29166,
-      "title": "TYP: Fix missing ``_core.numeric`` (re-)exports",
-      "changed_files": 2,
-      "additions": 661,
-      "deletions": 210,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "mypy",
-          "numpy-internals"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes missing static typing re-exports in `_core.numeric` to reduce type checker warnings and align stubs with `numtype` verification.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing likely involves setting up a development environment with `mypy` and other type checkers, then running them against the NumPy codebase to observe the 'red squigglies'."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -1240,26 +937,26 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/20627",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 20627,
-      "title": "STY Removes trailing comma for nicer black formatting",
+      "url": "https://github.com/pandas-dev/pandas/pull/51117",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 51117,
+      "title": "REF: remove group_selection_context",
       "changed_files": 3,
-      "additions": 26,
-      "deletions": 424,
+      "additions": 152,
+      "deletions": 224,
       "labels": [
-        "module:svm",
-        "module:tree",
-        "No Changelog Needed"
+        "Refactor",
+        "Groupby"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 376.38,
       "repo_language": "Python",
       "repo_topics": [
+        "alignment",
         "data-analysis",
         "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
+        "flexible",
+        "pandas",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
@@ -1267,18 +964,18 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "code-formatting",
-          "black",
-          "git"
+          "refactoring",
+          "data structures",
+          "groupby"
         ],
-        "difficulty": "junior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR removes trailing commas in various parts of the codebase to allow for nicer formatting by the `black` code formatter.",
-        "repo_summary": "Scikit-learn is a free software machine learning library for Python, offering various classification, regression, and clustering algorithms designed to interoperate with NumPy and SciPy.",
-        "feasibility_notes": "Reproducing involves running `black` formatter on the changed files or checking the diff for comma removal; no functional testing needed."
+        "pr_summary": "This PR refactors the pandas codebase by removing the `group_selection_context` internal utility to simplify GroupBy operations.",
+        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing requires verifying that GroupBy operations continue to function correctly and without regressions after the removal of the context manager."
       },
-      "priority_score": 50.0,
+      "priority_score": 47.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -1294,46 +991,45 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/25785",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 25785,
-      "title": "MNT Clean deprecations in glms for 1.3",
+      "url": "https://github.com/pandas-dev/pandas/pull/47552",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 47552,
+      "title": "ENH/TST: Add BaseMethodsTests tests for ArrowExtensionArray",
       "changed_files": 4,
-      "additions": 1,
-      "deletions": 544,
+      "additions": 317,
+      "deletions": 10,
       "labels": [
-        "module:linear_model",
-        "No Changelog Needed",
-        "Quick Review"
+        "Testing",
+        "Arrow"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 376.38,
       "repo_language": "Python",
       "repo_topics": [
+        "alignment",
         "data-analysis",
         "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
+        "flexible",
+        "pandas",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "ml-ai",
+        "domain": "library",
         "skills_required": [
           "python",
-          "refactoring",
-          "api-maintenance",
-          "linear-models",
-          "testing"
+          "testing",
+          "pyarrow",
+          "data structures"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR cleans up deprecated code within the generalized linear models module of scikit-learn for the upcoming 1.3 release.",
-        "repo_summary": "Scikit-learn is a free software machine learning library for the Python programming language.",
-        "feasibility_notes": "Reproducing involves checking if any warnings or specific behaviors related to the deprecated code were present before and are now removed, likely by running the test suite."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR enhances test coverage by adding BaseMethodsTests for the ArrowExtensionArray to ensure proper method behavior.",
+        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing requires a pandas development setup with PyArrow installed and running the relevant test suite for Arrow Extension Arrays."
       },
-      "priority_score": 49.0,
+      "priority_score": 47.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -1402,60 +1098,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/51117",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 51117,
-      "title": "REF: remove group_selection_context",
-      "changed_files": 3,
-      "additions": 152,
-      "deletions": 224,
-      "labels": [
-        "Refactor",
-        "Groupby"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "refactoring",
-          "data structures",
-          "groupby"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the pandas codebase by removing the `group_selection_context` internal utility to simplify GroupBy operations.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing requires verifying that GroupBy operations continue to function correctly and without regressions after the removal of the context manager."
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/39288",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 39288,
@@ -1490,60 +1132,6 @@
         "pr_summary": "This PR backports the changes from PR #39239, which deprecates non-aligned NumPy ufuncs on DataFrames and provides a fallback to pre-1.2.0 behavior, to the 1.2.x branch.",
         "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
         "feasibility_notes": "Testing involves running the existing test suite for PR #39239 against the 1.2.x branch and verifying the deprecation warnings and fallback behavior."
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/47552",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 47552,
-      "title": "ENH/TST: Add BaseMethodsTests tests for ArrowExtensionArray",
-      "changed_files": 4,
-      "additions": 317,
-      "deletions": 10,
-      "labels": [
-        "Testing",
-        "Arrow"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "pyarrow",
-          "data structures"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR enhances test coverage by adding BaseMethodsTests for the ArrowExtensionArray to ensure proper method behavior.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing requires a pandas development setup with PyArrow installed and running the relevant test suite for Arrow Extension Arrays."
       },
       "priority_score": 47.0,
       "priority_tier": "C",
@@ -1611,60 +1199,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/32536",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 32536,
-      "title": "TST: separate out pd.crosstab tests from test_pivot",
-      "changed_files": 2,
-      "additions": 701,
-      "deletions": 706,
-      "labels": [
-        "Testing",
-        "Clean"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "refactoring",
-          "file-organization"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR separates `pd.crosstab` tests into their own file, moving them out of `test_pivot` for better organization.",
-        "repo_summary": "Pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "Testing involves running all relevant tests for both `crosstab` and `pivot` to ensure no regressions after the separation."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/numpy/numpy/pull/28480",
       "repo_url": "https://github.com/numpy/numpy",
       "number": 28480,
@@ -1705,60 +1239,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49917",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 49917,
-      "title": "BLD: Move options to pyproject.toml",
-      "changed_files": 5,
-      "additions": 142,
-      "deletions": 186,
-      "labels": [
-        "Build"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "build systems",
-          "toml",
-          "configuration management",
-          "versioneer"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR moves build and project options to pyproject.toml and updates Versioneer to support this configuration standard.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves building pandas locally, verifying that Versioneer correctly extracts version information, and ensuring all build-related processes function as expected."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2077,6 +1557,58 @@
       ]
     },
     {
+      "url": "https://github.com/pandas-dev/pandas/pull/34742",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 34742,
+      "title": "CLN: remove the old 'nature_with_gtoc' sphinx doc theme",
+      "changed_files": 3,
+      "additions": 0,
+      "deletions": 471,
+      "labels": [
+        "Clean"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "sphinx",
+          "documentation"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR cleans up the documentation by removing an old, unused 'nature_with_gtoc' Sphinx theme.",
+        "repo_summary": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Reproducing/testing involves cloning the pandas repository, building the documentation locally, and visually confirming the old theme components are gone and the current documentation renders correctly."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/pandas-dev/pandas/pull/32994",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 32994,
@@ -2174,113 +1706,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/34742",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 34742,
-      "title": "CLN: remove the old 'nature_with_gtoc' sphinx doc theme",
-      "changed_files": 3,
-      "additions": 0,
-      "deletions": 471,
-      "labels": [
-        "Clean"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "sphinx",
-          "documentation"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR cleans up the documentation by removing an old, unused 'nature_with_gtoc' Sphinx theme.",
-        "repo_summary": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing/testing involves cloning the pandas repository, building the documentation locally, and visually confirming the old theme components are gone and the current documentation renders correctly."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/37487",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 37487,
-      "title": "TST/REF: loc/iloc/at/iat tests go in tests.indexing",
-      "changed_files": 6,
-      "additions": 178,
-      "deletions": 191,
-      "labels": [
-        "Testing",
-        "Indexing"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "refactoring",
-          "pandas",
-          "indexing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors and reorganizes existing `loc`/`iloc`/`at`/`iat` tests into the dedicated `tests.indexing` module within the pandas library.",
-        "repo_summary": "Pandas is a powerful Python library that provides fast, flexible, and expressive data structures designed to make working with \"relational\" or \"labeled\" data both easy and intuitive.",
-        "feasibility_notes": "Reproducing involves checking out the branch and running the relevant pandas test suite to ensure no regressions."
-      },
-      "priority_score": 40.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2437,6 +1862,114 @@
         "feasibility_notes": "Testing involves running `pre-commit run --all-files` and checking for any new formatting or linting issues introduced by the updates."
       },
       "priority_score": 40.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/37487",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 37487,
+      "title": "TST/REF: loc/iloc/at/iat tests go in tests.indexing",
+      "changed_files": 6,
+      "additions": 178,
+      "deletions": 191,
+      "labels": [
+        "Testing",
+        "Indexing"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "testing",
+        "skills_required": [
+          "python",
+          "testing",
+          "refactoring",
+          "pandas",
+          "indexing"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR refactors and reorganizes existing `loc`/`iloc`/`at`/`iat` tests into the dedicated `tests.indexing` module within the pandas library.",
+        "repo_summary": "Pandas is a powerful Python library that provides fast, flexible, and expressive data structures designed to make working with \"relational\" or \"labeled\" data both easy and intuitive.",
+        "feasibility_notes": "Reproducing involves checking out the branch and running the relevant pandas test suite to ensure no regressions."
+      },
+      "priority_score": 40.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/45842",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 45842,
+      "title": "TST: Use fixtures instead of setup_method",
+      "changed_files": 5,
+      "additions": 169,
+      "deletions": 149,
+      "labels": [
+        "Testing"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "testing",
+        "skills_required": [
+          "python",
+          "pytest",
+          "testing",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR refactors pandas tests to replace `setup_method` with pytest fixtures for improved test organization.",
+        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing involves running the modified tests to ensure they still pass and behave as expected, and that the refactoring doesn't break test setup."
+      },
+      "priority_score": 39.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -2613,15 +2146,16 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/45842",
+      "url": "https://github.com/pandas-dev/pandas/pull/37946",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45842,
-      "title": "TST: Use fixtures instead of setup_method",
-      "changed_files": 5,
-      "additions": 169,
-      "deletions": 149,
+      "number": 37946,
+      "title": "CLN: test_moments_rolling_consistency.py",
+      "changed_files": 2,
+      "additions": 280,
+      "deletions": 317,
       "labels": [
-        "Testing"
+        "Clean",
+        "Window"
       ],
       "repo_size_mb": 376.38,
       "repo_language": "Python",
@@ -2639,71 +2173,18 @@
         "domain": "testing",
         "skills_required": [
           "python",
-          "pytest",
-          "testing",
-          "refactoring"
+          "code style",
+          "refactoring",
+          "testing"
         ],
-        "difficulty": "mid",
+        "difficulty": "junior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR refactors pandas tests to replace `setup_method` with pytest fixtures for improved test organization.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves running the modified tests to ensure they still pass and behave as expected, and that the refactoring doesn't break test setup."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR cleans up the `test_moments_rolling_consistency.py` file, applying similar changes as a related PR for consistency.",
+        "repo_summary": "Pandas is a powerful Python library that provides fast, flexible, and expressive data structures designed to make working with \"relational\" or \"labeled\" data both easy and intuitive.",
+        "feasibility_notes": "Testing involves checking out the branch and running the relevant windowing tests to verify no changes in behavior and that the cleanup is applied correctly."
       },
-      "priority_score": 39.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/49694",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 49694,
-      "title": "PDEP-5: NoRowIndex",
-      "changed_files": 2,
-      "additions": 387,
-      "deletions": 1,
-      "labels": [
-        "PDEP"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "api design",
-          "data structures",
-          "software architecture"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR presents an initial draft proposal for PDEP-5, which suggests a \"no index by default\" mode for pandas DataFrames.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "This PR is a proposal, so local \"testing\" would involve reviewing the conceptual changes, discussing implications, and perhaps running small code examples to demonstrate the proposed behavior."
-      },
-      "priority_score": 38.0,
+      "priority_score": 37.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -2773,60 +2254,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/37946",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 37946,
-      "title": "CLN: test_moments_rolling_consistency.py",
-      "changed_files": 2,
-      "additions": 280,
-      "deletions": 317,
-      "labels": [
-        "Clean",
-        "Window"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "code style",
-          "refactoring",
-          "testing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR cleans up the `test_moments_rolling_consistency.py` file, applying similar changes as a related PR for consistency.",
-        "repo_summary": "Pandas is a powerful Python library that provides fast, flexible, and expressive data structures designed to make working with \"relational\" or \"labeled\" data both easy and intuitive.",
-        "feasibility_notes": "Testing involves checking out the branch and running the relevant windowing tests to verify no changes in behavior and that the cleanup is applied correctly."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/4613",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 4613,
@@ -2879,63 +2306,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/47205",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 47205,
-      "title": "REF: share DTA/TDA/PA arithmetic methods",
-      "changed_files": 5,
-      "additions": 176,
-      "deletions": 204,
-      "labels": [
-        "Refactor",
-        "Datetime",
-        "Timedelta",
-        "Period"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "data analysis",
-          "refactoring",
-          "datetime",
-          "object-oriented design"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors and shares arithmetic methods across DatetimeArray, TimedeltaArray, and PeriodArray classes to reduce code duplication.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing would involve setting up the pandas development environment and running relevant unit tests for datetime/timedelta/period arithmetic."
-      },
-      "priority_score": 32.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/5219",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 5219,
@@ -2979,61 +2349,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41200",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 41200,
-      "title": "REF: move DataFrame-specific methods from NDFrame",
-      "changed_files": 5,
-      "additions": 426,
-      "deletions": 407,
-      "labels": [
-        "Refactor",
-        "Internals"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "refactoring",
-          "object-oriented-design",
-          "pandas-internals",
-          "data-structures"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the pandas codebase by moving DataFrame-specific methods out of the generic `NDFrame` base class, which facilitates further refactoring for `BlockManager` and `ArrayManager`.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing requires running the comprehensive pandas test suite to ensure that no behavior regressions or errors were introduced across `DataFrame` and other `NDFrame`-derived objects due to the method relocation."
-      },
-      "priority_score": 32.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
