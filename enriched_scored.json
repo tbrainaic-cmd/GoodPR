@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-18T09:26:26.598663+00:00",
+    "enriched_at": "2026-03-18T09:59:30.417859+00:00",
     "total_repos_input": 1,
     "repos_passed_filter": 1,
     "total_prs_input": 4,
@@ -16,7 +16,7 @@
     "incremental": true,
     "prs_from_cache": 4,
     "prs_new": 0,
-    "prs_disappeared": 19
+    "prs_disappeared": 0
   },
   "scored_prs": [
     {
