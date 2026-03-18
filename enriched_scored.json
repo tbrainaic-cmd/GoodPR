@@ -1,173 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-18T08:51:42.831641+00:00",
-    "total_repos_input": 3,
-    "repos_passed_filter": 3,
-    "total_prs_input": 23,
-    "prs_after_repo_filter": 23,
-    "prs_after_pr_filter": 6,
+    "enriched_at": "2026-03-18T09:26:26.598663+00:00",
+    "total_repos_input": 1,
+    "repos_passed_filter": 1,
+    "total_prs_input": 4,
+    "prs_after_repo_filter": 4,
+    "prs_after_pr_filter": 2,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 1,
-    "tier_c": 5,
+    "tier_b": 0,
+    "tier_c": 2,
     "workers": 5,
-    "elapsed_seconds": 0.14,
+    "elapsed_seconds": 0.13,
     "incremental": true,
-    "prs_from_cache": 23,
+    "prs_from_cache": 4,
     "prs_new": 0,
-    "prs_disappeared": 11
+    "prs_disappeared": 19
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/numpy/numpy/pull/30067",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 30067,
-      "title": "TYP: ``numpy.ma``: Annotate 27 functions related to masks and fill-values",
-      "changed_files": 2,
-      "additions": 373,
-      "deletions": 51,
-      "labels": [
-        "component: numpy.ma",
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "numpy",
-          "code-modernization"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds static type annotations to 27 previously untyped public functions within the `numpy.ma` module, improving typing coverage for masked arrays.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves running a type checker like `mypy` on the `numpy.ma` module before and after the changes to confirm that the new annotations are valid and contribute to improved type checking coverage."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29784",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29784,
-      "title": "TYP: fix np.number and np.*integer method declaration",
-      "changed_files": 6,
-      "additions": 583,
-      "deletions": 257,
-      "labels": [
-        "08 - Backport",
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "mypy",
-          "git-backport"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR backports a fix for method declarations of `np.number` and `np.*integer` scalar types, continuing the series of static typing improvements from previous PRs.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing involves applying the backported changes to the target branch and verifying that the typing fixes for `np.number` and `np.*integer` are correctly applied and pass type checking."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/29166",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 29166,
-      "title": "TYP: Fix missing ``_core.numeric`` (re-)exports",
-      "changed_files": 2,
-      "additions": 661,
-      "deletions": 210,
-      "labels": [
-        "41 - Static typing"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "static-typing",
-          "mypy",
-          "numpy-internals"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes missing static typing re-exports in `_core.numeric` to reduce type checker warnings and align stubs with `numtype` verification.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
-        "feasibility_notes": "Reproducing likely involves setting up a development environment with `mypy` and other type checkers, then running them against the NumPy codebase to observe the 'red squigglies'."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/numpy/numpy/pull/28284",
       "repo_url": "https://github.com/numpy/numpy",
@@ -218,102 +69,46 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/24147",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 24147,
-      "title": "DOC Backport documentation search fix to 1.1.X",
-      "changed_files": 5,
-      "additions": 65,
-      "deletions": 657,
+      "url": "https://github.com/numpy/numpy/pull/29166",
+      "repo_url": "https://github.com/numpy/numpy",
+      "number": 29166,
+      "title": "TYP: Fix missing ``_core.numeric`` (re-)exports",
+      "changed_files": 2,
+      "additions": 661,
+      "deletions": 210,
       "labels": [
-        "Documentation"
+        "41 - Static typing"
       ],
-      "repo_size_mb": 175.85,
+      "repo_size_mb": 168.04,
       "repo_language": "Python",
       "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "documentation",
-          "git",
-          "sphinx",
-          "technical writing"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR backports a fix for the documentation search functionality to the 1.1.X branch.",
-        "repo_summary": "Scikit-learn is a popular open-source Python library for machine learning, providing various classification, regression, clustering, and dimensionality reduction algorithms.",
-        "feasibility_notes": "Testing involves building the documentation locally and verifying the search functionality works correctly."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/46437",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 46437,
-      "title": "BLD: Remove windows shim",
-      "changed_files": 5,
-      "additions": 15,
-      "deletions": 578,
-      "labels": [
-        "Build"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
+        "numpy",
         "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "devops",
+        "domain": "library",
         "skills_required": [
           "python",
-          "windows",
-          "ci-cd",
-          "build-systems"
+          "static-typing",
+          "mypy",
+          "numpy-internals"
         ],
-        "difficulty": "senior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR removes a Windows-specific build shim to test its impact on the pandas build process.",
-        "repo_summary": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing this locally would involve setting up multiple build environments (especially Windows), compiling pandas, and running the full test suite to check for regressions or build failures."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR fixes missing static typing re-exports in `_core.numeric` to reduce type checker warnings and align stubs with `numtype` verification.",
+        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+        "feasibility_notes": "Reproducing likely involves setting up a development environment with `mypy` and other type checkers, then running them against the NumPy codebase to observe the 'red squigglies'."
       },
-      "priority_score": 26.0,
+      "priority_score": 50.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
