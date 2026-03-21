@@ -1,147 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-21T18:01:22.001181+00:00",
-    "total_repos_input": 4,
-    "repos_passed_filter": 4,
-    "total_prs_input": 41,
-    "prs_after_repo_filter": 41,
-    "prs_after_pr_filter": 13,
+    "enriched_at": "2026-03-21T18:34:52.779274+00:00",
+    "total_repos_input": 2,
+    "repos_passed_filter": 2,
+    "total_prs_input": 25,
+    "prs_after_repo_filter": 25,
+    "prs_after_pr_filter": 6,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 1,
-    "tier_c": 12,
+    "tier_b": 0,
+    "tier_c": 6,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.11,
     "incremental": true,
-    "prs_from_cache": 41,
+    "prs_from_cache": 25,
     "prs_new": 0,
     "prs_disappeared": 16
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/fastapi/fastapi/pull/11094",
-      "repo_url": "https://github.com/fastapi/fastapi",
-      "number": 11094,
-      "title": "🌐 Update Turkish translation for `docs/tr/docs/tutorial/first-steps.md`",
-      "changed_files": 2,
-      "additions": 333,
-      "deletions": 336,
-      "labels": [
-        "lang-all",
-        "lang-tr",
-        "approved-1"
-      ],
-      "repo_size_mb": 36.2,
-      "repo_language": "Python",
-      "repo_topics": [
-        "api",
-        "async",
-        "asyncio",
-        "fastapi",
-        "framework",
-        "json",
-        "json-schema",
-        "openapi",
-        "openapi3",
-        "pydantic",
-        "python",
-        "python-types",
-        "python3",
-        "redoc",
-        "rest",
-        "starlette",
-        "swagger",
-        "swagger-ui",
-        "uvicorn",
-        "web"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "documentation",
-        "skills_required": [
-          "turkish",
-          "english",
-          "markdown",
-          "i18n"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR updates the Turkish translation for the `first-steps.md` tutorial documentation, addressing outdated content and mistranslations.",
-        "repo_summary": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.8+ based on standard Python type hints.",
-        "feasibility_notes": "Testing requires reviewing the updated Turkish translation against the English original for accuracy and clarity, and ensuring the Markdown formatting is correct when rendered."
-      },
-      "priority_score": 64.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/63971",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 63971,
-      "title": "DOC: Consolidate migration guides",
-      "changed_files": 3,
-      "additions": 370,
-      "deletions": 362,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "documentation",
-          "rst",
-          "technical writing",
-          "information architecture",
-          "git"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR consolidates existing and future migration guides into a single page within the pandas User Guide for better organization and accessibility.",
-        "repo_summary": "pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing locally involves cloning the pandas repository, building the documentation, and reviewing the consolidated migration guide to ensure logical flow and correct content."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/scikit-learn/scikit-learn/pull/15789",
       "repo_url": "https://github.com/scikit-learn/scikit-learn",
@@ -232,110 +109,6 @@
         "feasibility_notes": "Reproducing involves running the modified Pandas test suite to ensure all `resample` tests pass and are correctly parameterized."
       },
       "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/numpy/numpy/pull/23579",
-      "repo_url": "https://github.com/numpy/numpy",
-      "number": 23579,
-      "title": "NEP: Create draft NEP for C-API evolution",
-      "changed_files": 2,
-      "additions": 318,
-      "deletions": 0,
-      "labels": [
-        "component: NEP"
-      ],
-      "repo_size_mb": 168.04,
-      "repo_language": "Python",
-      "repo_topics": [
-        "numpy",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "c-api",
-          "api-design",
-          "python-c-extension",
-          "versioning",
-          "documentation"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR creates a draft NumPy Enhancement Proposal (NEP) outlining a strategy for the evolution of NumPy's C-API, including requiring recompilation and a `numpy2_compat` module.",
-        "repo_summary": "NumPy is a fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions.",
-        "feasibility_notes": "Testing this locally would involve building a new NumPy version with the proposed API changes and attempting to compile/run existing C-extensions against it, which is a complex task."
-      },
-      "priority_score": 46.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41430",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 41430,
-      "title": "CLN: Create tests/window/moments/conftest for specific fixtures",
-      "changed_files": 3,
-      "additions": 186,
-      "deletions": 181,
-      "labels": [
-        "Testing",
-        "Clean"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "pytest",
-          "refactoring"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR cleans up the test suite by moving window/moments specific test fixtures into a `conftest.py` file within their dedicated directory.",
-        "repo_summary": "Pandas is an open-source data analysis and manipulation library for Python.",
-        "feasibility_notes": "Reproducing/testing involves running the `window/moments` test suite to ensure the moved fixtures are correctly discovered and tests pass, verifying no regressions."
-      },
-      "priority_score": 45.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -459,60 +232,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/48428",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 48428,
-      "title": "BUG/TST: fix a bunch of arraymanager+pyarrow tests",
-      "changed_files": 2,
-      "additions": 27,
-      "deletions": 335,
-      "labels": [
-        "Testing",
-        "Arrow"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "testing",
-          "pyarrow",
-          "numpy"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR fixes multiple tests related to pandas' internal array management and its integration with PyArrow.",
-        "repo_summary": "Pandas is an open-source Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "Reproducing this requires setting up a development environment with PyArrow and running specific test suites."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/42284",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 42284,
@@ -609,113 +328,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/25550",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 25550,
-      "title": " TST/CLN: Remove more Panel tests",
-      "changed_files": 5,
-      "additions": 4,
-      "deletions": 799,
-      "labels": [
-        "Testing",
-        "Clean"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "pandas"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR removes tests related to the deprecated `Panel` data structure from the Pandas library.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing involves running the remaining test suite to ensure no regressions, which is a standard procedure after removing tests for a deprecated feature."
-      },
-      "priority_score": 34.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/23022",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 23022,
-      "title": "REF: Fuse all the types",
-      "changed_files": 5,
-      "additions": 295,
-      "deletions": 278,
-      "labels": [
-        "Refactor",
-        "Internals"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "type-systems",
-          "refactoring",
-          "internals"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR refactors internal type handling within the Pandas library by fusing related types.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing and testing locally would require extensive knowledge of the Pandas internals and its build/test system to understand the impact of type changes."
-      },
-      "priority_score": 26.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
