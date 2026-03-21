@@ -1,91 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-21T16:21:24.297113+00:00",
+    "enriched_at": "2026-03-21T16:55:12.808144+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 4,
-    "total_prs_input": 89,
-    "prs_after_repo_filter": 89,
-    "prs_after_pr_filter": 31,
+    "total_prs_input": 73,
+    "prs_after_repo_filter": 73,
+    "prs_after_pr_filter": 28,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 4,
-    "tier_c": 27,
+    "tier_b": 3,
+    "tier_c": 25,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.14,
     "incremental": true,
-    "prs_from_cache": 89,
+    "prs_from_cache": 73,
     "prs_new": 0,
-    "prs_disappeared": 112
+    "prs_disappeared": 16
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/fastapi/fastapi/pull/12822",
-      "repo_url": "https://github.com/fastapi/fastapi",
-      "number": 12822,
-      "title": "📝 Update includes for `docs/en/docs/tutorial/schema-extra-example.md`",
-      "changed_files": 5,
-      "additions": 25,
-      "deletions": 577,
-      "labels": [
-        "docs"
-      ],
-      "repo_size_mb": 36.2,
-      "repo_language": "Python",
-      "repo_topics": [
-        "api",
-        "async",
-        "asyncio",
-        "fastapi",
-        "framework",
-        "json",
-        "json-schema",
-        "openapi",
-        "openapi3",
-        "pydantic",
-        "python",
-        "python-types",
-        "python3",
-        "redoc",
-        "rest",
-        "starlette",
-        "swagger",
-        "swagger-ui",
-        "uvicorn",
-        "web"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "web-backend",
-        "skills_required": [
-          "python",
-          "pydantic",
-          "mkdocs",
-          "documentation"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR updates documentation includes and adjusts the Pydantic v1 example variant tag to ensure compatibility with new Pydantic plugin syntax.",
-        "repo_summary": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.8+ based on standard Python type hints.",
-        "feasibility_notes": "Testing involves building the documentation locally with MkDocs and verifying the `schema-extra-example.md` page renders correctly and examples are functional."
-      },
-      "priority_score": 69.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/fastapi/fastapi/pull/4999",
       "repo_url": "https://github.com/fastapi/fastapi",
@@ -486,59 +419,6 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/45709",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45709,
-      "title": "DOC: Improve pull request template and contributing_codebase.rst",
-      "changed_files": 3,
-      "additions": 66,
-      "deletions": 266,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "documentation",
-          "git",
-          "pre-commit",
-          "rst"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR updates and clarifies the pandas pull request template and contributing documentation, consolidating code style guidelines and promoting pre-commit usage.",
-        "repo_summary": "Pandas is an open-source Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "It is easy to test by reviewing the changed `.rst` and `.md` files locally and observing the rendered output."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/47692",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 47692,
@@ -695,6 +575,60 @@
       ]
     },
     {
+      "url": "https://github.com/pandas-dev/pandas/pull/41430",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 41430,
+      "title": "CLN: Create tests/window/moments/conftest for specific fixtures",
+      "changed_files": 3,
+      "additions": 186,
+      "deletions": 181,
+      "labels": [
+        "Testing",
+        "Clean"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "testing",
+        "skills_required": [
+          "python",
+          "testing",
+          "pytest",
+          "refactoring"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR cleans up the test suite by moving window/moments specific test fixtures into a `conftest.py` file within their dedicated directory.",
+        "repo_summary": "Pandas is an open-source data analysis and manipulation library for Python.",
+        "feasibility_notes": "Reproducing/testing involves running the `window/moments` test suite to ensure the moved fixtures are correctly discovered and tests pass, verifying no regressions."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/pandas-dev/pandas/pull/37951",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 37951,
@@ -732,6 +666,60 @@
         "pr_summary": "This PR cleans up `test_ewm_rolling_consistency.py` and removes redundant common test utility files.",
         "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
         "feasibility_notes": "Testing involves running the relevant EWM/rolling window tests to confirm that cleanup has not introduced regressions."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/30861",
+      "repo_url": "https://github.com/scikit-learn/scikit-learn",
+      "number": 30861,
+      "title": "DOC merge plot_ward_structured_vs_unstructured and plot_agglomerative_clustering",
+      "changed_files": 5,
+      "additions": 147,
+      "deletions": 189,
+      "labels": [
+        "Documentation",
+        "module:cluster"
+      ],
+      "repo_size_mb": 175.85,
+      "repo_language": "Python",
+      "repo_topics": [
+        "data-analysis",
+        "data-science",
+        "machine-learning",
+        "python",
+        "statistics"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "documentation",
+        "skills_required": [
+          "restructuredtext",
+          "python",
+          "scikit-learn",
+          "documentation-writing",
+          "git"
+        ],
+        "difficulty": "junior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR improves scikit-learn documentation by merging and linking related examples for Ward hierarchical clustering and AgglomerativeClustering, specifically referencing structured vs unstructured examples.",
+        "repo_summary": "scikit-learn is a popular open-source Python machine learning library providing various algorithms for classification, regression, clustering, and dimensionality reduction.",
+        "feasibility_notes": "Reproducing involves installing scikit-learn from source, building the documentation locally, and verifying the merged content and updated links in the generated docs."
       },
       "priority_score": 45.0,
       "priority_tier": "C",
@@ -804,60 +792,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/30861",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 30861,
-      "title": "DOC merge plot_ward_structured_vs_unstructured and plot_agglomerative_clustering",
-      "changed_files": 5,
-      "additions": 147,
-      "deletions": 189,
-      "labels": [
-        "Documentation",
-        "module:cluster"
-      ],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "documentation",
-        "skills_required": [
-          "restructuredtext",
-          "python",
-          "scikit-learn",
-          "documentation-writing",
-          "git"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR improves scikit-learn documentation by merging and linking related examples for Ward hierarchical clustering and AgglomerativeClustering, specifically referencing structured vs unstructured examples.",
-        "repo_summary": "scikit-learn is a popular open-source Python machine learning library providing various algorithms for classification, regression, clustering, and dimensionality reduction.",
-        "feasibility_notes": "Reproducing involves installing scikit-learn from source, building the documentation locally, and verifying the merged content and updated links in the generated docs."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/50253",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 50253,
@@ -903,60 +837,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/41430",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 41430,
-      "title": "CLN: Create tests/window/moments/conftest for specific fixtures",
-      "changed_files": 3,
-      "additions": 186,
-      "deletions": 181,
-      "labels": [
-        "Testing",
-        "Clean"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "testing",
-          "pytest",
-          "refactoring"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR cleans up the test suite by moving window/moments specific test fixtures into a `conftest.py` file within their dedicated directory.",
-        "repo_summary": "Pandas is an open-source data analysis and manipulation library for Python.",
-        "feasibility_notes": "Reproducing/testing involves running the `window/moments` test suite to ensure the moved fixtures are correctly discovered and tests pass, verifying no regressions."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1127,6 +1007,54 @@
       ]
     },
     {
+      "url": "https://github.com/pandas-dev/pandas/pull/18193",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 18193,
+      "title": "DOC: Remove vendored IPython.sphinext",
+      "changed_files": 6,
+      "additions": 6,
+      "deletions": 1213,
+      "labels": [
+        "Docs"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/pandas-dev/pandas/pull/45209",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 45209,
@@ -1226,107 +1154,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/18193",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 18193,
-      "title": "DOC: Remove vendored IPython.sphinext",
-      "changed_files": 6,
-      "additions": 6,
-      "deletions": 1213,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/9797",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 9797,
-      "title": "DOC: regenerate CONTRIBUTING.md",
-      "changed_files": 2,
-      "additions": 650,
-      "deletions": 184,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "documentation",
-          "restructuredtext",
-          "markdown",
-          "git"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR regenerates the CONTRIBUTING.md file after making adjustments to its reStructuredText source to improve markdown formatting and reduce nesting.",
-        "repo_summary": "Pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "Easy to verify by building the documentation locally and inspecting the generated `CONTRIBUTING.md` for improved readability and formatting."
-      },
-      "priority_score": 40.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
