@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-21T19:08:11.558687+00:00",
+    "enriched_at": "2026-03-21T19:41:53.900888+00:00",
     "total_repos_input": 2,
     "repos_passed_filter": 2,
-    "total_prs_input": 20,
-    "prs_after_repo_filter": 20,
-    "prs_after_pr_filter": 3,
+    "total_prs_input": 17,
+    "prs_after_repo_filter": 17,
+    "prs_after_pr_filter": 2,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
     "tier_b": 0,
-    "tier_c": 3,
+    "tier_c": 2,
     "workers": 5,
-    "elapsed_seconds": 0.16,
+    "elapsed_seconds": 0.15,
     "incremental": true,
-    "prs_from_cache": 20,
+    "prs_from_cache": 17,
     "prs_new": 0,
-    "prs_disappeared": 5
+    "prs_disappeared": 3
   },
   "scored_prs": [
     {
@@ -114,61 +114,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/45209",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45209,
-      "title": "TST/REF: port coercion tests to SetitemCastingEquivalents",
-      "changed_files": 2,
-      "additions": 208,
-      "deletions": 379,
-      "labels": [
-        "Testing",
-        "Dtype Conversions"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "pandas",
-          "testing",
-          "refactoring",
-          "data-types"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors and ports existing type coercion tests to use the `SetitemCastingEquivalents` framework for consistency and maintainability.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves running the Pandas test suite and verifying that the ported tests function correctly within the new `SetitemCastingEquivalents` framework."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
