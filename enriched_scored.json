@@ -1,20 +1,20 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-21T17:28:19.695738+00:00",
+    "enriched_at": "2026-03-21T18:01:22.001181+00:00",
     "total_repos_input": 4,
     "repos_passed_filter": 4,
-    "total_prs_input": 57,
-    "prs_after_repo_filter": 57,
-    "prs_after_pr_filter": 18,
+    "total_prs_input": 41,
+    "prs_after_repo_filter": 41,
+    "prs_after_pr_filter": 13,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
     "tier_b": 1,
-    "tier_c": 17,
+    "tier_c": 12,
     "workers": 5,
-    "elapsed_seconds": 0.13,
+    "elapsed_seconds": 0.12,
     "incremental": true,
-    "prs_from_cache": 57,
+    "prs_from_cache": 41,
     "prs_new": 0,
     "prs_disappeared": 16
   },
@@ -89,13 +89,13 @@
       ]
     },
     {
-      "url": "https://github.com/pandas-dev/pandas/pull/9899",
+      "url": "https://github.com/pandas-dev/pandas/pull/63971",
       "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 9899,
-      "title": "DOC: Revise merging.rst with graphical examples",
+      "number": 63971,
+      "title": "DOC: Consolidate migration guides",
       "changed_files": 3,
-      "additions": 756,
-      "deletions": 222,
+      "additions": 370,
+      "deletions": 362,
       "labels": [
         "Docs"
       ],
@@ -112,21 +112,22 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "other",
         "skills_required": [
           "documentation",
-          "data visualization",
-          "pandas",
-          "rst"
+          "rst",
+          "technical writing",
+          "information architecture",
+          "git"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR revises the pandas merging documentation to include clearer graphical examples and introduces a table plotter utility for generating them.",
-        "repo_summary": "Pandas is a Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "Requires building the pandas documentation locally and reviewing the updated `merging.rst` output to assess the clarity of the new diagrams."
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR consolidates existing and future migration guides into a single page within the pandas User Guide for better organization and accessibility.",
+        "repo_summary": "pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Reproducing locally involves cloning the pandas repository, building the documentation, and reviewing the consolidated migration guide to ensure logical flow and correct content."
       },
-      "priority_score": 53.0,
+      "priority_score": 50.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -183,112 +184,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/63971",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 63971,
-      "title": "DOC: Consolidate migration guides",
-      "changed_files": 3,
-      "additions": 370,
-      "deletions": 362,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "documentation",
-          "rst",
-          "technical writing",
-          "information architecture",
-          "git"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR consolidates existing and future migration guides into a single page within the pandas User Guide for better organization and accessibility.",
-        "repo_summary": "pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing locally involves cloning the pandas repository, building the documentation, and reviewing the consolidated migration guide to ensure logical flow and correct content."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/47692",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 47692,
-      "title": "DOC: Centeralized testing guidance for contributions",
-      "changed_files": 3,
-      "additions": 186,
-      "deletions": 223,
-      "labels": [
-        "Docs"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "documentation",
-          "rst",
-          "git"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR centralizes pandas testing guidance by moving and consolidating existing documentation into a single `contributing_codebase.rst` section.",
-        "repo_summary": "Pandas is an open-source Python library providing high-performance, easy-to-use data structures and data analysis tools.",
-        "feasibility_notes": "It is easy to test by reviewing the changed `.rst` files locally and observing the rendered documentation."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -402,169 +297,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-learn/scikit-learn/pull/30861",
-      "repo_url": "https://github.com/scikit-learn/scikit-learn",
-      "number": 30861,
-      "title": "DOC merge plot_ward_structured_vs_unstructured and plot_agglomerative_clustering",
-      "changed_files": 5,
-      "additions": 147,
-      "deletions": 189,
-      "labels": [
-        "Documentation",
-        "module:cluster"
-      ],
-      "repo_size_mb": 175.85,
-      "repo_language": "Python",
-      "repo_topics": [
-        "data-analysis",
-        "data-science",
-        "machine-learning",
-        "python",
-        "statistics"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "documentation",
-        "skills_required": [
-          "restructuredtext",
-          "python",
-          "scikit-learn",
-          "documentation-writing",
-          "git"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR improves scikit-learn documentation by merging and linking related examples for Ward hierarchical clustering and AgglomerativeClustering, specifically referencing structured vs unstructured examples.",
-        "repo_summary": "scikit-learn is a popular open-source Python machine learning library providing various algorithms for classification, regression, clustering, and dimensionality reduction.",
-        "feasibility_notes": "Reproducing involves installing scikit-learn from source, building the documentation locally, and verifying the merged content and updated links in the generated docs."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/50253",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 50253,
-      "title": "REF: refactor implementation of to_dict out of frame.py and into core.methods.to_dict",
-      "changed_files": 2,
-      "additions": 204,
-      "deletions": 140,
-      "labels": [
-        "Refactor",
-        "IO Data"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "pandas",
-          "refactoring",
-          "software-architecture"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors the `to_dict` implementation by moving it from `frame.py` to `pandas.core.methods.to_dict` for better code organization.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing locally involves setting up a pandas development environment, running existing tests to ensure no regressions, and verifying the new module structure."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/5638",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 5638,
-      "title": "VIS: added ability to plot DataFrames and Series with errorbars",
-      "changed_files": 5,
-      "additions": 347,
-      "deletions": 20,
-      "labels": [
-        "Enhancement",
-        "Visualization"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "python",
-          "matplotlib",
-          "data visualization",
-          "api design",
-          "numerical computing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances pandas' plotting capabilities by adding support for error bars to `DataFrame.plot()` and `Series.plot()` functions via `xerr` and `yerr` keyword arguments.",
-        "repo_summary": "pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing locally involves cloning the pandas repository, installing visualization dependencies like Matplotlib, and running the provided examples or new tests to verify the error bar functionality."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/pandas-dev/pandas/pull/41430",
       "repo_url": "https://github.com/pandas-dev/pandas",
       "number": 41430,
@@ -610,6 +342,59 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/pandas-dev/pandas/pull/52694",
+      "repo_url": "https://github.com/pandas-dev/pandas",
+      "number": 52694,
+      "title": "CI: Combine unit test workflows",
+      "changed_files": 6,
+      "additions": 317,
+      "deletions": 381,
+      "labels": [
+        "CI"
+      ],
+      "repo_size_mb": 376.38,
+      "repo_language": "Python",
+      "repo_topics": [
+        "alignment",
+        "data-analysis",
+        "data-science",
+        "flexible",
+        "pandas",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "github-actions",
+          "ci/cd",
+          "yaml",
+          "devops"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR combines multiple unit test workflows in GitHub Actions to make all test jobs viewable in a single tab.",
+        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
+        "feasibility_notes": "Testing this locally would primarily involve pushing changes to a fork or a test branch and observing the behavior of the GitHub Actions workflow output."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -665,59 +450,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/52694",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 52694,
-      "title": "CI: Combine unit test workflows",
-      "changed_files": 6,
-      "additions": 317,
-      "deletions": 381,
-      "labels": [
-        "CI"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "github-actions",
-          "ci/cd",
-          "yaml",
-          "devops"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR combines multiple unit test workflows in GitHub Actions to make all test jobs viewable in a single tab.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing this locally would primarily involve pushing changes to a fork or a test branch and observing the behavior of the GitHub Actions workflow output."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
