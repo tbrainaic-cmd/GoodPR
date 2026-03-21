@@ -1,22 +1,22 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-21T18:34:52.779274+00:00",
+    "enriched_at": "2026-03-21T19:08:11.558687+00:00",
     "total_repos_input": 2,
     "repos_passed_filter": 2,
-    "total_prs_input": 25,
-    "prs_after_repo_filter": 25,
-    "prs_after_pr_filter": 6,
+    "total_prs_input": 20,
+    "prs_after_repo_filter": 20,
+    "prs_after_pr_filter": 3,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
     "tier_b": 0,
-    "tier_c": 6,
+    "tier_c": 3,
     "workers": 5,
-    "elapsed_seconds": 0.11,
+    "elapsed_seconds": 0.16,
     "incremental": true,
-    "prs_from_cache": 25,
+    "prs_from_cache": 20,
     "prs_new": 0,
-    "prs_disappeared": 16
+    "prs_disappeared": 5
   },
   "scored_prs": [
     {
@@ -61,60 +61,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/45281",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 45281,
-      "title": "TST: Parameterize / split resample tests",
-      "changed_files": 3,
-      "additions": 207,
-      "deletions": 195,
-      "labels": [
-        "Testing"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "pytest",
-          "testing",
-          "refactoring",
-          "time-series"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors `resample` tests by parameterizing and splitting them into smaller, more focused units.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing involves running the modified Pandas test suite to ensure all `resample` tests pass and are correctly parameterized."
-      },
-      "priority_score": 47.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -223,111 +169,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/42284",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 42284,
-      "title": "TST: move custom business month tests to own file (#27085)",
-      "changed_files": 2,
-      "additions": 343,
-      "deletions": 320,
-      "labels": [
-        "Testing",
-        "Frequency"
-      ],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "testing",
-        "skills_required": [
-          "python",
-          "pandas",
-          "testing",
-          "refactoring"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR reorganizes existing custom business month tests into a dedicated file for better maintainability and clarity.",
-        "repo_summary": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Testing simply involves running the Pandas test suite locally, which is standard practice for contributors."
-      },
-      "priority_score": 37.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/pandas-dev/pandas/pull/5615",
-      "repo_url": "https://github.com/pandas-dev/pandas",
-      "number": 5615,
-      "title": "DOC: SQL to pandas comparison (#4524)",
-      "changed_files": 4,
-      "additions": 388,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 376.38,
-      "repo_language": "Python",
-      "repo_topics": [
-        "alignment",
-        "data-analysis",
-        "data-science",
-        "flexible",
-        "pandas",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [
-          "documentation",
-          "sql",
-          "pandas",
-          "rst"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR adds documentation comparing SQL operations to their pandas equivalents.",
-        "repo_summary": "pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language.",
-        "feasibility_notes": "Reproducing locally involves cloning the pandas repository, building the documentation, and reviewing the generated SQL to pandas comparison guide."
-      },
-      "priority_score": 36.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
