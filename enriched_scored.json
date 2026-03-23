@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-23T15:04:28.257984+00:00",
+    "enriched_at": "2026-03-23T15:48:27.399600+00:00",
     "total_repos_input": 7,
     "repos_passed_filter": 7,
     "total_prs_input": 274,
@@ -12,11 +12,11 @@
     "tier_b": 70,
     "tier_c": 45,
     "workers": 5,
-    "elapsed_seconds": 0.21,
+    "elapsed_seconds": 0.18,
     "incremental": true,
     "prs_from_cache": 274,
     "prs_new": 0,
-    "prs_disappeared": 64
+    "prs_disappeared": 0
   },
   "scored_prs": [
     {
@@ -71,55 +71,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/1634",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 1634,
-      "title": "FIX/STY: Remove magic and enforce PEP8 in plugins.",
-      "changed_files": 6,
-      "additions": 209,
-      "deletions": 180,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image-io",
-          "error-handling",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": true,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR fixes a bug in `skimage.io.imsave` where images with dimensions of size 1 are incorrectly squeezed, and also refactors plugin code to enforce PEP8.",
-        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
-        "feasibility_notes": "Testing is very easy; follow the provided reproduction steps in the linked issue body, verify the error occurs, then apply the PR and confirm the images are saved and loaded correctly for various 1-dimensional edge cases."
-      },
-      "priority_score": 81.0,
-      "priority_tier": "A",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-image/scikit-image/pull/3809",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 3809,
@@ -152,6 +103,55 @@
         "pr_summary": "This PR fixes a bug in the watershed segmentation method where masks were not respected and allows the function to use local minima as auto-markers.",
         "repo_summary": "scikit-image is an open-source image processing library for Python.",
         "feasibility_notes": "Very easy to reproduce/test locally by running the provided Python script and images from the linked issue to confirm the bug fix and new functionality."
+      },
+      "priority_score": 81.0,
+      "priority_tier": "A",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/1634",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 1634,
+      "title": "FIX/STY: Remove magic and enforce PEP8 in plugins.",
+      "changed_files": 6,
+      "additions": 209,
+      "deletions": 180,
+      "labels": [],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "image-io",
+          "error-handling",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": true,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR fixes a bug in `skimage.io.imsave` where images with dimensions of size 1 are incorrectly squeezed, and also refactors plugin code to enforce PEP8.",
+        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
+        "feasibility_notes": "Testing is very easy; follow the provided reproduction steps in the linked issue body, verify the error occurs, then apply the PR and confirm the images are saved and loaded correctly for various 1-dimensional edge cases."
       },
       "priority_score": 81.0,
       "priority_tier": "A",
@@ -386,6 +386,59 @@
       ]
     },
     {
+      "url": "https://github.com/redis/redis-py/pull/3489",
+      "repo_url": "https://github.com/redis/redis-py",
+      "number": 3489,
+      "title": "Adding tests for modules ACL and modules config changes in 8.0",
+      "changed_files": 3,
+      "additions": 427,
+      "deletions": 0,
+      "labels": [
+        "maintenance"
+      ],
+      "repo_size_mb": 11.86,
+      "repo_language": "Python",
+      "repo_topics": [
+        "python",
+        "redis",
+        "redis-client",
+        "redis-cluster",
+        "redis-py"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "redis",
+          "testing",
+          "redis-modules",
+          "configuration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds unit tests to cover Redis 8.0 module integration, specifically for ACL configurations and module configuration manipulations.",
+        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
+        "feasibility_notes": "Reproducing requires a running Redis 8.0 instance with modules, which might need specific setup, but running the tests locally should be straightforward."
+      },
+      "priority_score": 75.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/redis/redis-py/pull/3927",
       "repo_url": "https://github.com/redis/redis-py",
       "number": 3927,
@@ -491,59 +544,6 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3489",
-      "repo_url": "https://github.com/redis/redis-py",
-      "number": 3489,
-      "title": "Adding tests for modules ACL and modules config changes in 8.0",
-      "changed_files": 3,
-      "additions": 427,
-      "deletions": 0,
-      "labels": [
-        "maintenance"
-      ],
-      "repo_size_mb": 11.86,
-      "repo_language": "Python",
-      "repo_topics": [
-        "python",
-        "redis",
-        "redis-client",
-        "redis-cluster",
-        "redis-py"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "redis",
-          "testing",
-          "redis-modules",
-          "configuration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds unit tests to cover Redis 8.0 module integration, specifically for ACL configurations and module configuration manipulations.",
-        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
-        "feasibility_notes": "Reproducing requires a running Redis 8.0 instance with modules, which might need specific setup, but running the tests locally should be straightforward."
-      },
-      "priority_score": 75.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/redis/redis-py/pull/3521",
       "repo_url": "https://github.com/redis/redis-py",
       "number": 3521,
@@ -588,57 +588,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/redis/redis-py/pull/3953",
-      "repo_url": "https://github.com/redis/redis-py",
-      "number": 3953,
-      "title": "Remove async instrumentations",
-      "changed_files": 4,
-      "additions": 0,
-      "deletions": 1457,
-      "labels": [],
-      "repo_size_mb": 11.86,
-      "repo_language": "Python",
-      "repo_topics": [
-        "python",
-        "redis",
-        "redis-client",
-        "redis-cluster",
-        "redis-py"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "asyncio",
-          "instrumentation",
-          "refactoring",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR removes existing asynchronous instrumentations from the redis-py library, indicating a refactoring or deprecation of this specific functionality.",
-        "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
-        "feasibility_notes": "Reproducing/testing would involve verifying that functionality previously covered by async instrumentation still works as expected, or that the removal causes no regressions, potentially requiring setup with async Redis clients."
-      },
-      "priority_score": 72.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -700,16 +649,14 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3926",
+      "url": "https://github.com/redis/redis-py/pull/3953",
       "repo_url": "https://github.com/redis/redis-py",
-      "number": 3926,
-      "title": "Adds support for the new Idempotent Producers feature in Redis 8.6",
-      "changed_files": 3,
-      "additions": 527,
-      "deletions": 4,
-      "labels": [
-        "feature"
-      ],
+      "number": 3953,
+      "title": "Remove async instrumentations",
+      "changed_files": 4,
+      "additions": 0,
+      "deletions": 1457,
+      "labels": [],
       "repo_size_mb": 11.86,
       "repo_language": "Python",
       "repo_topics": [
@@ -725,25 +672,25 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "redis",
-          "streams",
-          "api design",
-          "concurrency"
+          "asyncio",
+          "instrumentation",
+          "refactoring",
+          "testing"
         ],
-        "difficulty": "senior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds comprehensive client-side support for the new Idempotent Producers feature in Redis 8.6, including updates to XADD, XCFGSET, and XINFO STREAM commands.",
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR removes existing asynchronous instrumentations from the redis-py library, indicating a refactoring or deprecation of this specific functionality.",
         "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
-        "feasibility_notes": "Testing requires a Redis 8.6 server (or compatible version) to verify the new Idempotent Producers functionality and the updated command behaviors."
+        "feasibility_notes": "Reproducing/testing would involve verifying that functionality previously covered by async instrumentation still works as expected, or that the removal causes no regressions, potentially requiring setup with async Redis clients."
       },
-      "priority_score": 71.0,
+      "priority_score": 72.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -802,16 +749,15 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3939",
+      "url": "https://github.com/redis/redis-py/pull/3926",
       "repo_url": "https://github.com/redis/redis-py",
-      "number": 3939,
-      "title": "Extending the tests to validate more supported scorers for hybrid search. Adding experimental_method annotation to hybrid_search commands.",
-      "changed_files": 6,
-      "additions": 417,
-      "deletions": 62,
+      "number": 3926,
+      "title": "Adds support for the new Idempotent Producers feature in Redis 8.6",
+      "changed_files": 3,
+      "additions": 527,
+      "deletions": 4,
       "labels": [
-        "maintenance",
-        "experimental"
+        "feature"
       ],
       "repo_size_mb": 11.86,
       "repo_language": "Python",
@@ -829,24 +775,24 @@
         "skills_required": [
           "python",
           "redis",
-          "testing",
-          "search",
-          "annotations"
+          "streams",
+          "api design",
+          "concurrency"
         ],
-        "difficulty": "mid",
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR extends existing tests to validate additional supported scorers for hybrid search and adds an `experimental_method` annotation to relevant hybrid search commands.",
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds comprehensive client-side support for the new Idempotent Producers feature in Redis 8.6, including updates to XADD, XCFGSET, and XINFO STREAM commands.",
         "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
-        "feasibility_notes": "Requires a running Redis server with the RedisSearch module enabled to execute the extended hybrid search tests and verify scorer behavior."
+        "feasibility_notes": "Testing requires a Redis 8.6 server (or compatible version) to verify the new Idempotent Producers functionality and the updated command behaviors."
       },
-      "priority_score": 70.0,
+      "priority_score": 71.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -945,6 +891,60 @@
         "pr_summary": "This PR updates existing hybrid tests to ensure compatibility with Redis versions 8.4 and 8.6, and incorporates the 8.6 RC1 image into the test matrix.",
         "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
         "feasibility_notes": "Reproducing requires running the test suite against different Redis versions, potentially using Docker for the test matrix images, to verify compatibility."
+      },
+      "priority_score": 70.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/redis/redis-py/pull/3939",
+      "repo_url": "https://github.com/redis/redis-py",
+      "number": 3939,
+      "title": "Extending the tests to validate more supported scorers for hybrid search. Adding experimental_method annotation to hybrid_search commands.",
+      "changed_files": 6,
+      "additions": 417,
+      "deletions": 62,
+      "labels": [
+        "maintenance",
+        "experimental"
+      ],
+      "repo_size_mb": 11.86,
+      "repo_language": "Python",
+      "repo_topics": [
+        "python",
+        "redis",
+        "redis-client",
+        "redis-cluster",
+        "redis-py"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "redis",
+          "testing",
+          "search",
+          "annotations"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR extends existing tests to validate additional supported scorers for hybrid search and adds an `experimental_method` annotation to relevant hybrid search commands.",
+        "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
+        "feasibility_notes": "Requires a running Redis server with the RedisSearch module enabled to execute the extended hybrid search tests and verify scorer behavior."
       },
       "priority_score": 70.0,
       "priority_tier": "B",
@@ -1062,13 +1062,13 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3933",
+      "url": "https://github.com/redis/redis-py/pull/3903",
       "repo_url": "https://github.com/redis/redis-py",
-      "number": 3933,
-      "title": "Added memory and CPU usage",
-      "changed_files": 6,
-      "additions": 403,
-      "deletions": 95,
+      "number": 3903,
+      "title": "Added OTel benchmark test",
+      "changed_files": 5,
+      "additions": 535,
+      "deletions": 23,
       "labels": [],
       "repo_size_mb": 11.86,
       "repo_language": "Python",
@@ -1086,16 +1086,16 @@
         "skills_required": [
           "python",
           "redis",
-          "system monitoring",
-          "performance",
-          "testing"
+          "benchmarking",
+          "testing",
+          "opentelemetry"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 2,
-        "pr_summary": "This PR adds functionality related to reporting or tracking memory and CPU usage within the redis-py client or its interactions with Redis.",
+        "pr_summary": "This PR adds a new benchmark test for OpenTelemetry (OTel) integration within the redis-py library.",
         "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
-        "feasibility_notes": "Requires a running Redis server to observe the added memory and CPU usage metrics, likely by running specific commands or application scenarios."
+        "feasibility_notes": "Reproducing requires setting up a Redis server, installing OpenTelemetry dependencies, and running the specific benchmark tests locally."
       },
       "priority_score": 67.0,
       "priority_tier": "B",
@@ -1103,7 +1103,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1168,13 +1168,13 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3903",
+      "url": "https://github.com/redis/redis-py/pull/3933",
       "repo_url": "https://github.com/redis/redis-py",
-      "number": 3903,
-      "title": "Added OTel benchmark test",
-      "changed_files": 5,
-      "additions": 535,
-      "deletions": 23,
+      "number": 3933,
+      "title": "Added memory and CPU usage",
+      "changed_files": 6,
+      "additions": 403,
+      "deletions": 95,
       "labels": [],
       "repo_size_mb": 11.86,
       "repo_language": "Python",
@@ -1192,16 +1192,16 @@
         "skills_required": [
           "python",
           "redis",
-          "benchmarking",
-          "testing",
-          "opentelemetry"
+          "system monitoring",
+          "performance",
+          "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 2,
-        "pr_summary": "This PR adds a new benchmark test for OpenTelemetry (OTel) integration within the redis-py library.",
+        "pr_summary": "This PR adds functionality related to reporting or tracking memory and CPU usage within the redis-py client or its interactions with Redis.",
         "repo_summary": "redis-py is a Python client library for interacting with a Redis key-value store.",
-        "feasibility_notes": "Reproducing requires setting up a Redis server, installing OpenTelemetry dependencies, and running the specific benchmark tests locally."
+        "feasibility_notes": "Requires a running Redis server to observe the added memory and CPU usage metrics, likely by running specific commands or application scenarios."
       },
       "priority_score": 67.0,
       "priority_tier": "B",
@@ -1209,7 +1209,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1325,109 +1325,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4097",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4097,
-      "title": "Log polar",
-      "changed_files": 4,
-      "additions": 360,
-      "deletions": 4,
-      "labels": [
-        ":monocle_face: Needs review",
-        ":pray: Feature request"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "geometric-transformations",
-          "signal-processing",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces a `warp_polar` function to scikit-image for log-polar image transformation, useful for scale and rotation invariant tasks.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Easy to reproduce by applying the `warp_polar` function to test images and observing the geometric transformation, verifying against known properties of the log-polar transform."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/6251",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 6251,
-      "title": "improve butterworth docstring and add new kwargs and gallery example",
-      "changed_files": 3,
-      "additions": 280,
-      "deletions": 23,
-      "labels": [
-        ":fast_forward: type: Enhancement"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "signal-processing",
-          "image-processing",
-          "documentation",
-          "api-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances the Butterworth filter by adding options for traditional vs. squared variants and boundary padding, alongside updating documentation and providing a new gallery example.",
-        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Testing locally involves verifying the functionality of the new `square_butterworth` and `npad` arguments, checking the mathematical correctness of the filter, and reviewing the updated documentation and example."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-image/scikit-image/pull/3429",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 3429,
@@ -1462,57 +1359,6 @@
         "pr_summary": "This PR refactors scikit-image to use colormaps directly from matplotlib, eliminating redundant internal versions.",
         "repo_summary": "scikit-image is an open-source image processing library for Python.",
         "feasibility_notes": "Reproducing involves checking if the library correctly uses matplotlib's colormaps after the change, likely verifiable through existing tests."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/redis/redis-py/pull/3716",
-      "repo_url": "https://github.com/redis/redis-py",
-      "number": 3716,
-      "title": "Adding handling of FAILING_OVER and FAILED_OVER events/push notifications",
-      "changed_files": 3,
-      "additions": 385,
-      "deletions": 37,
-      "labels": [],
-      "repo_size_mb": 11.86,
-      "repo_language": "Python",
-      "repo_topics": [
-        "python",
-        "redis",
-        "redis-client",
-        "redis-cluster",
-        "redis-py"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "redis",
-          "high-availability",
-          "event-driven-programming",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds handling for `FAILING_OVER` and `FAILED_OVER` events and push notifications within `redis-py`.",
-        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
-        "feasibility_notes": "Reproducing these events locally requires a sophisticated Redis Sentinel or Cluster setup that can simulate failover scenarios."
       },
       "priority_score": 65.0,
       "priority_tier": "B",
@@ -1581,13 +1427,64 @@
       ]
     },
     {
-      "url": "https://github.com/redis/redis-py/pull/3747",
+      "url": "https://github.com/scikit-image/scikit-image/pull/6251",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 6251,
+      "title": "improve butterworth docstring and add new kwargs and gallery example",
+      "changed_files": 3,
+      "additions": 280,
+      "deletions": 23,
+      "labels": [
+        ":fast_forward: type: Enhancement"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "signal-processing",
+          "image-processing",
+          "documentation",
+          "api-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR enhances the Butterworth filter by adding options for traditional vs. squared variants and boundary padding, alongside updating documentation and providing a new gallery example.",
+        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
+        "feasibility_notes": "Testing locally involves verifying the functionality of the new `square_butterworth` and `npad` arguments, checking the mathematical correctness of the filter, and reviewing the updated documentation and example."
+      },
+      "priority_score": 65.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/redis/redis-py/pull/3716",
       "repo_url": "https://github.com/redis/redis-py",
-      "number": 3747,
-      "title": "Refactored healthcheck and failure detector to extend default one",
-      "changed_files": 6,
-      "additions": 104,
-      "deletions": 207,
+      "number": 3716,
+      "title": "Adding handling of FAILING_OVER and FAILED_OVER events/push notifications",
+      "changed_files": 3,
+      "additions": 385,
+      "deletions": 37,
       "labels": [],
       "repo_size_mb": 11.86,
       "repo_language": "Python",
@@ -1604,25 +1501,77 @@
         "domain": "library",
         "skills_required": [
           "python",
-          "refactoring",
-          "object-oriented-programming",
-          "testing",
-          "design-patterns"
+          "redis",
+          "high-availability",
+          "event-driven-programming",
+          "testing"
         ],
-        "difficulty": "mid",
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR refactors the healthcheck and failure detector components to extend a default implementation, though specific details are not provided in the PR description.",
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds handling for `FAILING_OVER` and `FAILED_OVER` events and push notifications within `redis-py`.",
         "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
-        "feasibility_notes": "Testing would involve examining the refactored code and ensuring existing healthcheck and failure detection logic still functions correctly, likely requiring specific test scenarios."
+        "feasibility_notes": "Reproducing these events locally requires a sophisticated Redis Sentinel or Cluster setup that can simulate failover scenarios."
       },
-      "priority_score": 64.0,
+      "priority_score": 65.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/4097",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4097,
+      "title": "Log polar",
+      "changed_files": 4,
+      "additions": 360,
+      "deletions": 4,
+      "labels": [
+        ":monocle_face: Needs review",
+        ":pray: Feature request"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "image-processing",
+          "geometric-transformations",
+          "signal-processing",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR introduces a `warp_polar` function to scikit-image for log-polar image transformation, useful for scale and rotation invariant tasks.",
+        "repo_summary": "scikit-image is an open-source image processing library for Python.",
+        "feasibility_notes": "Easy to reproduce by applying the `warp_polar` function to test images and observing the geometric transformation, verifying against known properties of the log-polar transform."
+      },
+      "priority_score": 65.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1689,40 +1638,42 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4795",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4795,
-      "title": "Add expand_labels function to dilate segments while avoiding overlaps",
+      "url": "https://github.com/redis/redis-py/pull/3747",
+      "repo_url": "https://github.com/redis/redis-py",
+      "number": 3747,
+      "title": "Refactored healthcheck and failure detector to extend default one",
       "changed_files": 6,
-      "additions": 370,
-      "deletions": 23,
+      "additions": 104,
+      "deletions": 207,
       "labels": [],
-      "repo_size_mb": 80.43,
+      "repo_size_mb": 11.86,
       "repo_language": "Python",
       "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
+        "python",
+        "redis",
+        "redis-client",
+        "redis-cluster",
+        "redis-py"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "library",
         "skills_required": [
           "python",
-          "numpy",
-          "image-processing",
-          "algorithm-design",
-          "spatial-analysis"
+          "refactoring",
+          "object-oriented-programming",
+          "testing",
+          "design-patterns"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds an `expand_labels` function that allows connected component regions in a label array to grow by a specified amount without overlapping, adapted from CellProfiler's \"Distance N\" method.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves using the provided demo notebook to understand the functionality, then creating label arrays and applying the function to verify that regions expand correctly without merging."
+        "issue_clarity_score": 1,
+        "pr_summary": "This PR refactors the healthcheck and failure detector components to extend a default implementation, though specific details are not provided in the PR description.",
+        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
+        "feasibility_notes": "Testing would involve examining the refactored code and ensuring existing healthcheck and failure detection logic still functions correctly, likely requiring specific test scenarios."
       },
-      "priority_score": 63.0,
+      "priority_score": 64.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -1788,6 +1739,105 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-image/scikit-image/pull/4795",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4795,
+      "title": "Add expand_labels function to dilate segments while avoiding overlaps",
+      "changed_files": 6,
+      "additions": 370,
+      "deletions": 23,
+      "labels": [],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "image-processing",
+          "algorithm-design",
+          "spatial-analysis"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds an `expand_labels` function that allows connected component regions in a label array to grow by a specified amount without overlapping, adapted from CellProfiler's \"Distance N\" method.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
+        "feasibility_notes": "Testing involves using the provided demo notebook to understand the functionality, then creating label arrays and applying the function to verify that regions expand correctly without merging."
+      },
+      "priority_score": 63.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/4342",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4342,
+      "title": "Refactor canny edge detector",
+      "changed_files": 3,
+      "additions": 206,
+      "deletions": 156,
+      "labels": [
+        ":wrench: type: Maintenance"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "image-processing",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors the `skimage.feature._canny` module by introducing new intermediary functions, deprecating `smooth_with_function_and_mask`, and adding validation for threshold values.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
+        "feasibility_notes": "Testing involves running existing Canny tests, new validation tests for thresholds, and potentially comparing output behavior before and after refactoring."
+      },
+      "priority_score": 62.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-image/scikit-image/pull/798",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 798,
@@ -1837,14 +1887,15 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/2449",
+      "url": "https://github.com/scikit-image/scikit-image/pull/2791",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 2449,
-      "title": "Detection of local extrema from morphology",
+      "number": 2791,
+      "title": "Implementation of the Morphological Snakes",
       "changed_files": 4,
-      "additions": 737,
+      "additions": 742,
       "deletions": 1,
       "labels": [
+        ":monocle_face: Needs review",
         ":pray: Feature request"
       ],
       "repo_size_mb": 80.43,
@@ -1865,6 +1916,54 @@
         "pr_summary": "",
         "repo_summary": "",
         "feasibility_notes": ""
+      },
+      "priority_score": 62.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/1292",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 1292,
+      "title": "Updated numpydoc files from the github package numpy/numpydoc",
+      "changed_files": 4,
+      "additions": 592,
+      "deletions": 609,
+      "labels": [],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "sphinx",
+          "numpydoc",
+          "documentation"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR updates the numpydoc configuration and files, aiming to resolve an attribute display issue in the documentation.",
+        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
+        "feasibility_notes": "Testing requires building the documentation locally and verifying that the attribute display issue, presumably in specific documentation sections, is resolved after the update."
       },
       "priority_score": 62.0,
       "priority_tier": "B",
@@ -1928,15 +2027,14 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/2791",
+      "url": "https://github.com/scikit-image/scikit-image/pull/2449",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 2791,
-      "title": "Implementation of the Morphological Snakes",
+      "number": 2449,
+      "title": "Detection of local extrema from morphology",
       "changed_files": 4,
-      "additions": 742,
+      "additions": 737,
       "deletions": 1,
       "labels": [
-        ":monocle_face: Needs review",
         ":pray: Feature request"
       ],
       "repo_size_mb": 80.43,
@@ -2017,104 +2115,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4342",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4342,
-      "title": "Refactor canny edge detector",
-      "changed_files": 3,
-      "additions": 206,
-      "deletions": 156,
-      "labels": [
-        ":wrench: type: Maintenance"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image-processing",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the `skimage.feature._canny` module by introducing new intermediary functions, deprecating `smooth_with_function_and_mask`, and adding validation for threshold values.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves running existing Canny tests, new validation tests for thresholds, and potentially comparing output behavior before and after refactoring."
-      },
-      "priority_score": 62.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/1292",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 1292,
-      "title": "Updated numpydoc files from the github package numpy/numpydoc",
-      "changed_files": 4,
-      "additions": 592,
-      "deletions": 609,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "sphinx",
-          "numpydoc",
-          "documentation"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR updates the numpydoc configuration and files, aiming to resolve an attribute display issue in the documentation.",
-        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
-        "feasibility_notes": "Testing requires building the documentation locally and verifying that the attribute display issue, presumably in specific documentation sections, is resolved after the update."
-      },
-      "priority_score": 62.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-image/scikit-image/pull/2773",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 2773,
@@ -2145,58 +2145,6 @@
         "feasibility_notes": ""
       },
       "priority_score": 62.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-rf/scikit-rf/pull/957",
-      "repo_url": "https://github.com/scikit-rf/scikit-rf",
-      "number": 957,
-      "title": "Avoid running constructor multiple times when import skrf",
-      "changed_files": 4,
-      "additions": 518,
-      "deletions": 114,
-      "labels": [
-        "Improvements"
-      ],
-      "repo_size_mb": 102.87,
-      "repo_language": "Python",
-      "repo_topics": [
-        "electronics",
-        "engineering",
-        "microwave-engineering",
-        "python",
-        "scikit-rf"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "software architecture",
-          "performance optimization",
-          "object-oriented programming"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR optimizes `scikit-rf` by preventing the `Network` class constructor from executing multiple times upon import, instead loading static data on demand.",
-        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
-        "feasibility_notes": "Reproducing/testing locally involves profiling `skrf` import times before and after the change, and ensuring all functionalities remain correct."
-      },
-      "priority_score": 61.0,
       "priority_tier": "B",
       "filter_verdicts": [
         {
@@ -2258,6 +2206,109 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-rf/scikit-rf/pull/248",
+      "repo_url": "https://github.com/scikit-rf/scikit-rf",
+      "number": 248,
+      "title": "ABCD parameters correction",
+      "changed_files": 3,
+      "additions": 301,
+      "deletions": 10,
+      "labels": [],
+      "repo_size_mb": 102.87,
+      "repo_language": "Python",
+      "repo_topics": [
+        "electronics",
+        "engineering",
+        "microwave-engineering",
+        "python",
+        "scikit-rf"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "numpy",
+          "mathematics",
+          "rf engineering",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR corrects the calculation of ABCD parameters by deriving them from S-parameters instead of Z-parameters to prevent errors with specific components like series impedance.",
+        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
+        "feasibility_notes": "Reproducing/testing locally is feasible by running the added test cases and comparing results for known problematic network types."
+      },
+      "priority_score": 61.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-rf/scikit-rf/pull/957",
+      "repo_url": "https://github.com/scikit-rf/scikit-rf",
+      "number": 957,
+      "title": "Avoid running constructor multiple times when import skrf",
+      "changed_files": 4,
+      "additions": 518,
+      "deletions": 114,
+      "labels": [
+        "Improvements"
+      ],
+      "repo_size_mb": 102.87,
+      "repo_language": "Python",
+      "repo_topics": [
+        "electronics",
+        "engineering",
+        "microwave-engineering",
+        "python",
+        "scikit-rf"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "software architecture",
+          "performance optimization",
+          "object-oriented programming"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR optimizes `scikit-rf` by preventing the `Network` class constructor from executing multiple times upon import, instead loading static data on demand.",
+        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
+        "feasibility_notes": "Reproducing/testing locally involves profiling `skrf` import times before and after the change, and ensuring all functionalities remain correct."
+      },
+      "priority_score": 61.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2374,67 +2425,16 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-rf/scikit-rf/pull/248",
-      "repo_url": "https://github.com/scikit-rf/scikit-rf",
-      "number": 248,
-      "title": "ABCD parameters correction",
-      "changed_files": 3,
-      "additions": 301,
-      "deletions": 10,
-      "labels": [],
-      "repo_size_mb": 102.87,
-      "repo_language": "Python",
-      "repo_topics": [
-        "electronics",
-        "engineering",
-        "microwave-engineering",
-        "python",
-        "scikit-rf"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "numpy",
-          "mathematics",
-          "rf engineering",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR corrects the calculation of ABCD parameters by deriving them from S-parameters instead of Z-parameters to prevent errors with specific components like series impedance.",
-        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
-        "feasibility_notes": "Reproducing/testing locally is feasible by running the added test cases and comparing results for known problematic network types."
-      },
-      "priority_score": 61.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4209",
+      "url": "https://github.com/scikit-image/scikit-image/pull/4752",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4209,
-      "title": "Refactor/move neighborhood utility functions in morphology",
+      "number": 4752,
+      "title": "Deprecate indices in peak_local_max",
       "changed_files": 5,
-      "additions": 328,
-      "deletions": 147,
+      "additions": 218,
+      "deletions": 83,
       "labels": [
         ":wrench: type: Maintenance",
-        ":adhesive_bandage: type: Bug fix"
+        ":arrow_down_small: Deprecation"
       ],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -2446,71 +2446,20 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "ml-ai",
+        "domain": "data-science",
         "skills_required": [
           "python",
+          "numpy",
+          "api-design",
           "refactoring",
-          "debugging",
-          "image-processing",
-          "code-organization"
+          "testing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors and consolidates internal neighborhood utility functions within the morphology module and fixes a bug related to structuring element size versus image dimensions.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Reproducing would involve checking if the refactored code maintains existing functionality and verifying the bug fix by calling `_offsets_to_raveled_neighbors` with specific small image shapes."
-      },
-      "priority_score": 60.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/redis/redis-py/pull/3735",
-      "repo_url": "https://github.com/redis/redis-py",
-      "number": 3735,
-      "title": "Hitless handshake",
-      "changed_files": 5,
-      "additions": 509,
-      "deletions": 82,
-      "labels": [],
-      "repo_size_mb": 11.86,
-      "repo_language": "Python",
-      "repo_topics": [
-        "python",
-        "redis",
-        "redis-client",
-        "redis-cluster",
-        "redis-py"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "redis",
-          "network-programming",
-          "protocol-design",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR implements a handshake mechanism for hitless Redis server upgrades and updates the server maintenance message format.",
-        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
-        "feasibility_notes": "Testing hitless upgrades requires a Redis server setup capable of receiving maintenance messages and simulating an upgrade process while clients remain connected."
+        "pr_summary": "This PR deprecates the `indices` argument in the `peak_local_max` function, using a `remove_arg` decorator, as part of an API cleanup.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
+        "feasibility_notes": "Testing involves calling `peak_local_max` with the `indices` argument to verify that the deprecation warning is correctly issued, and ensuring existing functionality remains intact."
       },
       "priority_score": 60.0,
       "priority_tier": "B",
@@ -2579,16 +2528,67 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4752",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4752,
-      "title": "Deprecate indices in peak_local_max",
+      "url": "https://github.com/redis/redis-py/pull/3735",
+      "repo_url": "https://github.com/redis/redis-py",
+      "number": 3735,
+      "title": "Hitless handshake",
       "changed_files": 5,
-      "additions": 218,
-      "deletions": 83,
+      "additions": 509,
+      "deletions": 82,
+      "labels": [],
+      "repo_size_mb": 11.86,
+      "repo_language": "Python",
+      "repo_topics": [
+        "python",
+        "redis",
+        "redis-client",
+        "redis-cluster",
+        "redis-py"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "redis",
+          "network-programming",
+          "protocol-design",
+          "testing"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR implements a handshake mechanism for hitless Redis server upgrades and updates the server maintenance message format.",
+        "repo_summary": "redis-py is a Python client library for Redis, providing a way to interact with Redis from Python applications.",
+        "feasibility_notes": "Testing hitless upgrades requires a Redis server setup capable of receiving maintenance messages and simulating an upgrade process while clients remain connected."
+      },
+      "priority_score": 60.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/4209",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4209,
+      "title": "Refactor/move neighborhood utility functions in morphology",
+      "changed_files": 5,
+      "additions": 328,
+      "deletions": 147,
       "labels": [
         ":wrench: type: Maintenance",
-        ":arrow_down_small: Deprecation"
+        ":adhesive_bandage: type: Bug fix"
       ],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -2600,20 +2600,20 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "ml-ai",
         "skills_required": [
           "python",
-          "numpy",
-          "api-design",
           "refactoring",
-          "testing"
+          "debugging",
+          "image-processing",
+          "code-organization"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR deprecates the `indices` argument in the `peak_local_max` function, using a `remove_arg` decorator, as part of an API cleanup.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves calling `peak_local_max` with the `indices` argument to verify that the deprecation warning is correctly issued, and ensuring existing functionality remains intact."
+        "pr_summary": "This PR refactors and consolidates internal neighborhood utility functions within the morphology module and fixes a bug related to structuring element size versus image dimensions.",
+        "repo_summary": "scikit-image is an open-source image processing library for Python.",
+        "feasibility_notes": "Reproducing would involve checking if the refactored code maintains existing functionality and verifying the bug fix by calling `_offsets_to_raveled_neighbors` with specific small image shapes."
       },
       "priority_score": 60.0,
       "priority_tier": "B",
@@ -2622,6 +2622,171 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scipy/scipy/pull/22814",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 22814,
+      "title": "BUG: signal.resample: Fix bug for parameter num=2 (including refactor and improved docstr)",
+      "changed_files": 3,
+      "additions": 364,
+      "deletions": 186,
+      "labels": [
+        "defect",
+        "scipy.signal"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy.signal",
+          "bug fixing",
+          "unit testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR refactors `scipy.signal.resample` to fix several bugs, including an indexing error for `num=2` and a corner case for integer `t`, while also improving documentation and test coverage.",
+        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
+        "feasibility_notes": "Testing involves running the added unit tests for `resample` to verify the bug fixes and edge cases, and manually checking the improved docstrings."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scipy/scipy/pull/23898",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 23898,
+      "title": "ENH: stats.wilcoxon: add array API support",
+      "changed_files": 3,
+      "additions": 258,
+      "deletions": 197,
+      "labels": [
+        "scipy.stats",
+        "enhancement",
+        "array types"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy",
+          "array-api",
+          "statistics",
+          "performance"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR vectorizes and adds Array API support to `scipy.stats.bws_test`, noting difficulties in applying the `_axis_nan_policy` decorator.",
+        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
+        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1`, running tests for `bws_test`, and verifying both vectorization and Array API compatibility."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scipy/scipy/pull/23891",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 23891,
+      "title": "ENH: stats.iqr: add array API support",
+      "changed_files": 4,
+      "additions": 201,
+      "deletions": 159,
+      "labels": [
+        "scipy.stats",
+        "enhancement",
+        "array types"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy",
+          "array-api",
+          "statistics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds Array API support to `scipy.stats.mannwhitneyu`, noting current limitations with `rankdata` for CuPy/Dask and input validation for lazy JAX.",
+        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
+        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1` and running `mannwhitneyu` tests, potentially with CuPy, Dask, or JAX backends to observe noted limitations."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2740,44 +2905,41 @@
       ]
     },
     {
-      "url": "https://github.com/scipy/scipy/pull/22914",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 22914,
-      "title": "ENH: signal: Add Array API compatibility to the `filter_design` section",
-      "changed_files": 3,
-      "additions": 375,
-      "deletions": 284,
+      "url": "https://github.com/scikit-image/scikit-image/pull/4418",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4418,
+      "title": "Add nD support to colorconv module",
+      "changed_files": 4,
+      "additions": 317,
+      "deletions": 296,
       "labels": [
-        "enhancement",
-        "scipy.signal",
-        "array types"
+        ":fast_forward: type: Enhancement",
+        ":arrow_down_small: Deprecation"
       ],
-      "repo_size_mb": 189.44,
+      "repo_size_mb": 80.43,
       "repo_language": "Python",
       "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
+        "computer-vision",
+        "image-processing",
+        "python"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "library",
+        "domain": "data-science",
         "skills_required": [
           "python",
           "numpy",
-          "scipy.signal",
-          "digital signal processing",
-          "array programming"
+          "image-processing",
+          "api-design",
+          "refactoring"
         ],
-        "difficulty": "mid",
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds Array API compatibility to various `scipy.signal` filter design functions, including `iir*`, `bilinear`, `gammatone`, and `group_delay`.",
-        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
-        "feasibility_notes": "Testing requires running unit tests for the modified `scipy.signal` filter design functions with different array backends to ensure correct behavior and numerical stability."
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds N-dimensional support to the `colorconv` module, deprecating existing `rgb2gray` conversions for gray level and RGBA images, to allow handling of high-dimensional multichannel image data.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
+        "feasibility_notes": "Testing requires generating or obtaining N-dimensional multichannel image data, applying the updated color conversion functions, and verifying correct output for various dimensions, including edge cases and deprecation warnings."
       },
       "priority_score": 58.0,
       "priority_tier": "B",
@@ -2785,7 +2947,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "4 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2850,6 +3012,167 @@
       ]
     },
     {
+      "url": "https://github.com/scipy/scipy/pull/22914",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 22914,
+      "title": "ENH: signal: Add Array API compatibility to the `filter_design` section",
+      "changed_files": 3,
+      "additions": 375,
+      "deletions": 284,
+      "labels": [
+        "enhancement",
+        "scipy.signal",
+        "array types"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy.signal",
+          "digital signal processing",
+          "array programming"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds Array API compatibility to various `scipy.signal` filter design functions, including `iir*`, `bilinear`, `gammatone`, and `group_delay`.",
+        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
+        "feasibility_notes": "Testing requires running unit tests for the modified `scipy.signal` filter design functions with different array backends to ensure correct behavior and numerical stability."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/3775",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 3775,
+      "title": "Implement Farid & Simoncelli derivatives",
+      "changed_files": 4,
+      "additions": 359,
+      "deletions": 42,
+      "labels": [
+        ":pray: Feature request"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "image-processing",
+          "numerical-methods",
+          "algorithm-implementation",
+          "testing"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds the implementation of Farid & Simoncelli derivative filters to scikit-image's image filtering module.",
+        "repo_summary": "scikit-image is an open-source image processing library for Python.",
+        "feasibility_notes": "Reproducing would involve running the new filters on sample images and comparing results to expected outputs from the referenced paper, requiring domain knowledge."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scipy/scipy/pull/23870",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 23870,
+      "title": "ENH: stats.mannwhitneyu: add array API support",
+      "changed_files": 4,
+      "additions": 301,
+      "deletions": 279,
+      "labels": [
+        "scipy.stats",
+        "enhancement",
+        "array types"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy",
+          "array-api",
+          "statistics"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds Array API support to the `scipy.stats.wilcoxon` function.",
+        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
+        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1` and running tests for `wilcoxon` with various array backends."
+      },
+      "priority_score": 58.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "4 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scipy/scipy/pull/21549",
       "repo_url": "https://github.com/scipy/scipy",
       "number": 21549,
@@ -2904,116 +3227,6 @@
       ]
     },
     {
-      "url": "https://github.com/scipy/scipy/pull/22896",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 22896,
-      "title": "ENH: signal: `tf2zpk` et al  Array API",
-      "changed_files": 3,
-      "additions": 302,
-      "deletions": 165,
-      "labels": [
-        "enhancement",
-        "scipy.signal",
-        "Meson",
-        "array types"
-      ],
-      "repo_size_mb": 189.44,
-      "repo_language": "Python",
-      "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "numpy",
-          "scipy.signal",
-          "digital signal processing",
-          "array programming"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR converts several `scipy.signal` functions related to transfer function, zero-pole-gain, and second-order section representations (`tf2zpk` et al.) to support the Array API standard.",
-        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
-        "feasibility_notes": "Testing involves running existing unit tests for these `scipy.signal` functions with various array API backends to ensure the conversions are correct and maintain numerical accuracy."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scipy/scipy/pull/22814",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 22814,
-      "title": "BUG: signal.resample: Fix bug for parameter num=2 (including refactor and improved docstr)",
-      "changed_files": 3,
-      "additions": 364,
-      "deletions": 186,
-      "labels": [
-        "defect",
-        "scipy.signal"
-      ],
-      "repo_size_mb": 189.44,
-      "repo_language": "Python",
-      "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "numpy",
-          "scipy.signal",
-          "bug fixing",
-          "unit testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors `scipy.signal.resample` to fix several bugs, including an indexing error for `num=2` and a corner case for integer `t`, while also improving documentation and test coverage.",
-        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
-        "feasibility_notes": "Testing involves running the added unit tests for `resample` to verify the bug fixes and edge cases, and manually checking the improved docstrings."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scikit-image/scikit-image/pull/6296",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 6296,
@@ -3048,57 +3261,6 @@
         "pr_summary": "This PR adds a `spacing` argument to `regionprops` and `moments` functions, allowing for accurate computation of physical quantities based on pixel or voxel spacing.",
         "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
         "feasibility_notes": "Testing locally would involve verifying that derived physical quantities are correctly calculated with varying `spacing` values, and ensuring that existing functionality maintains backward compatibility where appropriate."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/1691",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 1691,
-      "title": "New feature: Active contour model",
-      "changed_files": 4,
-      "additions": 451,
-      "deletions": 0,
-      "labels": [
-        ":fast_forward: type: Enhancement"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image-processing",
-          "segmentation-algorithms",
-          "computer-vision"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR implements the Active Contour Model (Snakes) and adds it as a new feature to the segmentation module, including illustrative examples.",
-        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
-        "feasibility_notes": "Testing involves running the provided examples and potentially experimenting with various images and parameters to verify the robustness and correctness of the active contour implementation."
       },
       "priority_score": 58.0,
       "priority_tier": "B",
@@ -3170,168 +3332,6 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3775",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3775,
-      "title": "Implement Farid & Simoncelli derivatives",
-      "changed_files": 4,
-      "additions": 359,
-      "deletions": 42,
-      "labels": [
-        ":pray: Feature request"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "numerical-methods",
-          "algorithm-implementation",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds the implementation of Farid & Simoncelli derivative filters to scikit-image's image filtering module.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Reproducing would involve running the new filters on sample images and comparing results to expected outputs from the referenced paper, requiring domain knowledge."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scipy/scipy/pull/23898",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 23898,
-      "title": "ENH: stats.wilcoxon: add array API support",
-      "changed_files": 3,
-      "additions": 258,
-      "deletions": 197,
-      "labels": [
-        "scipy.stats",
-        "enhancement",
-        "array types"
-      ],
-      "repo_size_mb": 189.44,
-      "repo_language": "Python",
-      "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "scipy",
-          "array-api",
-          "statistics",
-          "performance"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR vectorizes and adds Array API support to `scipy.stats.bws_test`, noting difficulties in applying the `_axis_nan_policy` decorator.",
-        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
-        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1`, running tests for `bws_test`, and verifying both vectorization and Array API compatibility."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scipy/scipy/pull/23870",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 23870,
-      "title": "ENH: stats.mannwhitneyu: add array API support",
-      "changed_files": 4,
-      "additions": 301,
-      "deletions": 279,
-      "labels": [
-        "scipy.stats",
-        "enhancement",
-        "array types"
-      ],
-      "repo_size_mb": 189.44,
-      "repo_language": "Python",
-      "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "scipy",
-          "array-api",
-          "statistics"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds Array API support to the `scipy.stats.wilcoxon` function.",
-        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
-        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1` and running tests for `wilcoxon` with various array backends."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scipy/scipy/pull/23959",
       "repo_url": "https://github.com/scipy/scipy",
       "number": 23959,
@@ -3388,16 +3388,15 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4418",
+      "url": "https://github.com/scikit-image/scikit-image/pull/1691",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4418,
-      "title": "Add nD support to colorconv module",
+      "number": 1691,
+      "title": "New feature: Active contour model",
       "changed_files": 4,
-      "additions": 317,
-      "deletions": 296,
+      "additions": 451,
+      "deletions": 0,
       "labels": [
-        ":fast_forward: type: Enhancement",
-        ":arrow_down_small: Deprecation"
+        ":fast_forward: type: Enhancement"
       ],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -3414,15 +3413,15 @@
           "python",
           "numpy",
           "image-processing",
-          "api-design",
-          "refactoring"
+          "segmentation-algorithms",
+          "computer-vision"
         ],
         "difficulty": "senior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 5,
-        "pr_summary": "This PR adds N-dimensional support to the `colorconv` module, deprecating existing `rgb2gray` conversions for gray level and RGBA images, to allow handling of high-dimensional multichannel image data.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing requires generating or obtaining N-dimensional multichannel image data, applying the updated color conversion functions, and verifying correct output for various dimensions, including edge cases and deprecation warnings."
+        "pr_summary": "This PR implements the Active Contour Model (Snakes) and adds it as a new feature to the segmentation module, including illustrative examples.",
+        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
+        "feasibility_notes": "Testing involves running the provided examples and potentially experimenting with various images and parameters to verify the robustness and correctness of the active contour implementation."
       },
       "priority_score": 58.0,
       "priority_tier": "B",
@@ -3440,16 +3439,17 @@
       ]
     },
     {
-      "url": "https://github.com/scipy/scipy/pull/23891",
+      "url": "https://github.com/scipy/scipy/pull/22896",
       "repo_url": "https://github.com/scipy/scipy",
-      "number": 23891,
-      "title": "ENH: stats.iqr: add array API support",
-      "changed_files": 4,
-      "additions": 201,
-      "deletions": 159,
+      "number": 22896,
+      "title": "ENH: signal: `tf2zpk` et al  Array API",
+      "changed_files": 3,
+      "additions": 302,
+      "deletions": 165,
       "labels": [
-        "scipy.stats",
         "enhancement",
+        "scipy.signal",
+        "Meson",
         "array types"
       ],
       "repo_size_mb": 189.44,
@@ -3464,20 +3464,20 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "library",
         "skills_required": [
           "python",
           "numpy",
-          "scipy",
-          "array-api",
-          "statistics"
+          "scipy.signal",
+          "digital signal processing",
+          "array programming"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR adds Array API support to `scipy.stats.mannwhitneyu`, noting current limitations with `rankdata` for CuPy/Dask and input validation for lazy JAX.",
-        "repo_summary": "SciPy is an open-source Python library for scientific and technical computing, offering modules for optimization, linear algebra, statistics, and more.",
-        "feasibility_notes": "Reproducing and testing locally involves setting `SCIPY_ARRAY_API=1` and running `mannwhitneyu` tests, potentially with CuPy, Dask, or JAX backends to observe noted limitations."
+        "pr_summary": "This PR converts several `scipy.signal` functions related to transfer function, zero-pole-gain, and second-order section representations (`tf2zpk` et al.) to support the Array API standard.",
+        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
+        "feasibility_notes": "Testing involves running existing unit tests for these `scipy.signal` functions with various array API backends to ensure the conversions are correct and maintain numerical accuracy."
       },
       "priority_score": 58.0,
       "priority_tier": "B",
@@ -3485,101 +3485,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3584",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3584,
-      "title": "Fix the data scaling and clipping behavior of denoise_wavelet",
-      "changed_files": 6,
-      "additions": 342,
-      "deletions": 114,
-      "labels": [
-        ":warning: Priority"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 57.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/694",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 694,
-      "title": "Refactor moments functions",
-      "changed_files": 5,
-      "additions": 301,
-      "deletions": 100,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "refactoring",
-          "testing",
-          "numpy"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors moments functions, making them publicly accessible, renaming them for consistency, using typed memoryviews, and adding explicit test cases.",
-        "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
-        "feasibility_notes": "Testing involves running the new explicit test cases and verifying the behavior of the now-public `moments` functions, which should be straightforward."
-      },
-      "priority_score": 57.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -3678,6 +3584,100 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-image/scikit-image/pull/3584",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 3584,
+      "title": "Fix the data scaling and clipping behavior of denoise_wavelet",
+      "changed_files": 6,
+      "additions": 342,
+      "deletions": 114,
+      "labels": [
+        ":warning: Priority"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 57.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/674",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 674,
+      "title": "Refactor regionprops",
+      "changed_files": 5,
+      "additions": 481,
+      "deletions": 418,
+      "labels": [],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "image-processing",
+          "refactoring",
+          "software-design",
+          "performance-optimization"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR refactors the `regionprops` implementation into a more flexible and extensible cached class, while preserving backward compatibility.",
+        "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
+        "feasibility_notes": "Reproducing likely involves running existing tests and comparing performance/behavior of the refactored `regionprops` against the old version, which should be relatively easy."
+      },
+      "priority_score": 57.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-image/scikit-image/pull/480",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 480,
@@ -3727,13 +3727,13 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/674",
+      "url": "https://github.com/scikit-image/scikit-image/pull/694",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 674,
-      "title": "Refactor regionprops",
+      "number": 694,
+      "title": "Refactor moments functions",
       "changed_files": 5,
-      "additions": 481,
-      "deletions": 418,
+      "additions": 301,
+      "deletions": 100,
       "labels": [],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -3750,15 +3750,15 @@
           "python",
           "image-processing",
           "refactoring",
-          "software-design",
-          "performance-optimization"
+          "testing",
+          "numpy"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the `regionprops` implementation into a more flexible and extensible cached class, while preserving backward compatibility.",
+        "pr_summary": "This PR refactors moments functions, making them publicly accessible, renaming them for consistency, using typed memoryviews, and adding explicit test cases.",
         "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
-        "feasibility_notes": "Reproducing likely involves running existing tests and comparing performance/behavior of the refactored `regionprops` against the old version, which should be relatively easy."
+        "feasibility_notes": "Testing involves running the new explicit test cases and verifying the behavior of the now-public `moments` functions, which should be straightforward."
       },
       "priority_score": 57.0,
       "priority_tier": "B",
@@ -3976,15 +3976,67 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4760",
+      "url": "https://github.com/scikit-image/scikit-image/pull/3824",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4760,
-      "title": "Refactor and fix peak_local_max",
-      "changed_files": 6,
-      "additions": 295,
-      "deletions": 161,
+      "number": 3824,
+      "title": "J-invariant denoising",
+      "changed_files": 5,
+      "additions": 795,
+      "deletions": 1,
       "labels": [
-        ":adhesive_bandage: type: Bug fix"
+        ":monocle_face: Needs review",
+        ":pray: Feature request"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "image-processing",
+          "machine-learning",
+          "signal-processing",
+          "algorithm-implementation"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR implements a J-invariant denoising method that allows principled hyperparameter calibration for denoising functions without clean data.",
+        "repo_summary": "scikit-image is an open-source image processing library for Python.",
+        "feasibility_notes": "Reproducing involves applying the new denoising method to noisy images and verifying its performance, likely requiring a deep understanding of the underlying algorithm."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/5240",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 5240,
+      "title": "Fast biharmonic  inpainting",
+      "changed_files": 6,
+      "additions": 472,
+      "deletions": 85,
+      "labels": [
+        ":chart_with_upwards_trend: type: Performance"
       ],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -3999,17 +4051,67 @@
         "domain": "data-science",
         "skills_required": [
           "python",
+          "numerical-optimization",
           "image-processing",
-          "numerical-algorithms",
-          "refactoring",
-          "numpy"
+          "cython",
+          "benchmarking"
         ],
         "difficulty": "senior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 5,
-        "pr_summary": "This PR extensively refactors and fixes `peak_local_max` to correctly handle `min_distance`, various edge cases, and optimize label management, also enabling the deprecation of `corner_peak`.",
+        "pr_summary": "This PR dramatically accelerates the `inpaint_biharmonic` function through algorithmic improvements, kernel caching, and Cythonization, making it comparable in performance to OpenCV while maintaining visual quality.",
         "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Reproducing and testing locally should be straightforward given the detailed issue description, code example, and provided image in the linked issue."
+        "feasibility_notes": "Testing locally would involve running existing and new tests, and potentially benchmarks, on images with large masks to verify both correctness and performance improvements."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-rf/scikit-rf/pull/177",
+      "repo_url": "https://github.com/scikit-rf/scikit-rf",
+      "number": 177,
+      "title": "add R&S ZVA instrument support",
+      "changed_files": 6,
+      "additions": 1432,
+      "deletions": 9,
+      "labels": [],
+      "repo_size_mb": 102.87,
+      "repo_language": "Python",
+      "repo_topics": [
+        "electronics",
+        "engineering",
+        "microwave-engineering",
+        "python",
+        "scikit-rf"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "library",
+        "skills_required": [
+          "python",
+          "yaml",
+          "instrument control",
+          "rf engineering"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds initial support for R&S ZVA instruments by extending the SCPI parser to handle a `help` field in YAML configuration files and adding basic commands.",
+        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
+        "feasibility_notes": "Reproducing/testing locally would likely require a simulated R&S ZVA instrument environment or actual hardware, making full verification potentially complex."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -4135,6 +4237,57 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-image/scikit-image/pull/4760",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 4760,
+      "title": "Refactor and fix peak_local_max",
+      "changed_files": 6,
+      "additions": 295,
+      "deletions": 161,
+      "labels": [
+        ":adhesive_bandage: type: Bug fix"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "image-processing",
+          "numerical-algorithms",
+          "refactoring",
+          "numpy"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR extensively refactors and fixes `peak_local_max` to correctly handle `min_distance`, various edge cases, and optimize label management, also enabling the deprecation of `corner_peak`.",
+        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
+        "feasibility_notes": "Reproducing and testing locally should be straightforward given the detailed issue description, code example, and provided image in the linked issue."
+      },
+      "priority_score": 53.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-image/scikit-image/pull/4161",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 4161,
@@ -4170,159 +4323,6 @@
         "pr_summary": "This PR adds an implementation of the iterative Lucas-Kanade (iLK) method for dense optical flow estimation.",
         "repo_summary": "scikit-image is an open-source image processing library for Python.",
         "feasibility_notes": "Reproducing would involve applying the iLK optical flow method to image sequences and verifying its output against known results or other implementations, which requires domain knowledge."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/5240",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 5240,
-      "title": "Fast biharmonic  inpainting",
-      "changed_files": 6,
-      "additions": 472,
-      "deletions": 85,
-      "labels": [
-        ":chart_with_upwards_trend: type: Performance"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numerical-optimization",
-          "image-processing",
-          "cython",
-          "benchmarking"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR dramatically accelerates the `inpaint_biharmonic` function through algorithmic improvements, kernel caching, and Cythonization, making it comparable in performance to OpenCV while maintaining visual quality.",
-        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Testing locally would involve running existing and new tests, and potentially benchmarks, on images with large masks to verify both correctness and performance improvements."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3824",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3824,
-      "title": "J-invariant denoising",
-      "changed_files": 5,
-      "additions": 795,
-      "deletions": 1,
-      "labels": [
-        ":monocle_face: Needs review",
-        ":pray: Feature request"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "machine-learning",
-          "signal-processing",
-          "algorithm-implementation"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR implements a J-invariant denoising method that allows principled hyperparameter calibration for denoising functions without clean data.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Reproducing involves applying the new denoising method to noisy images and verifying its performance, likely requiring a deep understanding of the underlying algorithm."
-      },
-      "priority_score": 53.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-rf/scikit-rf/pull/177",
-      "repo_url": "https://github.com/scikit-rf/scikit-rf",
-      "number": 177,
-      "title": "add R&S ZVA instrument support",
-      "changed_files": 6,
-      "additions": 1432,
-      "deletions": 9,
-      "labels": [],
-      "repo_size_mb": 102.87,
-      "repo_language": "Python",
-      "repo_topics": [
-        "electronics",
-        "engineering",
-        "microwave-engineering",
-        "python",
-        "scikit-rf"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "yaml",
-          "instrument control",
-          "rf engineering"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds initial support for R&S ZVA instruments by extending the SCPI parser to handle a `help` field in YAML configuration files and adding basic commands.",
-        "repo_summary": "scikit-rf is a Python package for RF (Radio Frequency) and microwave engineering, providing tools for network analysis, circuit simulation, and calibration.",
-        "feasibility_notes": "Reproducing/testing locally would likely require a simulated R&S ZVA instrument environment or actual hardware, making full verification potentially complex."
       },
       "priority_score": 53.0,
       "priority_tier": "C",
@@ -4601,66 +4601,13 @@
       ]
     },
     {
-      "url": "https://github.com/scikit-image/scikit-image/pull/2227",
+      "url": "https://github.com/scikit-image/scikit-image/pull/190",
       "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 2227,
-      "title": "TEST: define seed in setup() / Fix random test failure",
-      "changed_files": 2,
-      "additions": 661,
-      "deletions": 653,
-      "labels": [
-        ":monocle_face: Needs review",
-        ":computer: Arch specific"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image processing",
-          "optimization",
-          "numerical methods",
-          "signal processing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces a new, faster implementation of Total Variation (TV) denoising, which also fixes issues with multi-channel images and changes the behavior of the weight parameter.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, denoising, feature detection, and more.",
-        "feasibility_notes": "Reproducing involves installing the PR branch, running performance benchmarks and unit tests, and visually comparing denoising results on multi-channel images."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/440",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 440,
-      "title": "Line, Circle, Ellipse total least squares fitting and RANSAC algorithm",
-      "changed_files": 6,
-      "additions": 1085,
-      "deletions": 1,
+      "number": 190,
+      "title": "Replace `gen_rst` Sphinx extension with `plot2rst`",
+      "changed_files": 5,
+      "additions": 618,
+      "deletions": 376,
       "labels": [],
       "repo_size_mb": 80.43,
       "repo_language": "Python",
@@ -4672,20 +4619,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "library",
         "skills_required": [
           "python",
-          "numpy",
-          "image-processing",
-          "geometry",
-          "statistics"
+          "sphinx",
+          "documentation",
+          "build-systems"
         ],
         "difficulty": "senior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces new functionalities for fitting lines, circles, and ellipses using total least squares and implements the RANSAC algorithm for robust model fitting.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves generating data with outliers, applying the fitting algorithms, and verifying that the models are correctly identified."
+        "pr_summary": "This PR replaces the `gen_rst` Sphinx extension with `plot2rst` to enhance the documentation's ability to interweave code, text, and plots.",
+        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
+        "feasibility_notes": "Testing involves rebuilding the entire project documentation and thoroughly reviewing all examples to ensure that plots, code, and text are correctly rendered and that no regressions have been introduced."
       },
       "priority_score": 50.0,
       "priority_tier": "C",
@@ -4693,7 +4639,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -4754,6 +4700,108 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-image/scikit-image/pull/440",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 440,
+      "title": "Line, Circle, Ellipse total least squares fitting and RANSAC algorithm",
+      "changed_files": 6,
+      "additions": 1085,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "image-processing",
+          "geometry",
+          "statistics"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR introduces new functionalities for fitting lines, circles, and ellipses using total least squares and implements the RANSAC algorithm for robust model fitting.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
+        "feasibility_notes": "Testing involves generating data with outliers, applying the fitting algorithms, and verifying that the models are correctly identified."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scikit-image/scikit-image/pull/2227",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 2227,
+      "title": "TEST: define seed in setup() / Fix random test failure",
+      "changed_files": 2,
+      "additions": 661,
+      "deletions": 653,
+      "labels": [
+        ":monocle_face: Needs review",
+        ":computer: Arch specific"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "image processing",
+          "optimization",
+          "numerical methods",
+          "signal processing"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR introduces a new, faster implementation of Total Variation (TV) denoising, which also fixes issues with multi-channel images and changes the behavior of the weight parameter.",
+        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, denoising, feature detection, and more.",
+        "feasibility_notes": "Reproducing involves installing the PR branch, running performance benchmarks and unit tests, and visually comparing denoising results on multi-channel images."
+      },
+      "priority_score": 50.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "2 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-image/scikit-image/pull/1957",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 1957,
@@ -4796,106 +4844,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/190",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 190,
-      "title": "Replace `gen_rst` Sphinx extension with `plot2rst`",
-      "changed_files": 5,
-      "additions": 618,
-      "deletions": 376,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "sphinx",
-          "documentation",
-          "build-systems"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR replaces the `gen_rst` Sphinx extension with `plot2rst` to enhance the documentation's ability to interweave code, text, and plots.",
-        "repo_summary": "scikit-image is an open-source Python library for image processing, providing algorithms for segmentation, transformation, filtering, feature detection, and more.",
-        "feasibility_notes": "Testing involves rebuilding the entire project documentation and thoroughly reviewing all examples to ensure that plots, code, and text are correctly rendered and that no regressions have been introduced."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/24958",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 24958,
-      "title": "[App Service] Fix#16478: `az functionapp cors credentials`: Add enable/disable CORS creds command",
-      "changed_files": 6,
-      "additions": 1016,
-      "deletions": 0,
-      "labels": [
-        "App Services",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "web-backend",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "azure-app-service",
-          "web-development",
-          "api-management"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds `az functionapp cors credentials` commands to enable or disable CORS credentials for Azure Function Apps, resolving issue #16478.",
-        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
-        "feasibility_notes": "Testing involves an Azure subscription, creating an App Service plan and function app, then using the new `az` commands to enable/disable CORS credentials and verify the settings."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -5015,43 +4963,41 @@
       ]
     },
     {
-      "url": "https://github.com/scipy/scipy/pull/21389",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 21389,
-      "title": "ENH: `scipy.stats`: add normal-inverse-gamma distribution",
-      "changed_files": 3,
-      "additions": 504,
-      "deletions": 5,
+      "url": "https://github.com/Azure/azure-cli/pull/24958",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 24958,
+      "title": "[App Service] Fix#16478: `az functionapp cors credentials`: Add enable/disable CORS creds command",
+      "changed_files": 6,
+      "additions": 1016,
+      "deletions": 0,
       "labels": [
-        "scipy.stats",
-        "enhancement"
+        "App Services",
+        "Auto-Assign"
       ],
-      "repo_size_mb": 189.44,
+      "repo_size_mb": 885.28,
       "repo_language": "Python",
       "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
+        "azure",
+        "azure-cli",
+        "cloud"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "data-science",
+        "domain": "web-backend",
         "skills_required": [
           "python",
-          "numpy",
-          "scipy",
-          "statistics",
-          "probability"
+          "azure-cli",
+          "azure-app-service",
+          "web-development",
+          "api-management"
         ],
-        "difficulty": "senior",
+        "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR implements the normal-inverse-gamma distribution, a new bivariate statistical distribution in `scipy.stats` with support for broadcastable arrays.",
-        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing, building on the NumPy array object.",
-        "feasibility_notes": "Testing requires generating random variates, calculating PDFs/CDFs, and comparing them against theoretical properties or reference implementations for various parameter values, verifying correct broadcasting behavior."
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds `az functionapp cors credentials` commands to enable or disable CORS credentials for Azure Function Apps, resolving issue #16478.",
+        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
+        "feasibility_notes": "Testing involves an Azure subscription, creating an App Service plan and function app, then using the new `az` commands to enable/disable CORS credentials and verify the settings."
       },
       "priority_score": 48.0,
       "priority_tier": "C",
@@ -5059,7 +5005,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -5168,6 +5114,60 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/scipy/scipy/pull/21389",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 21389,
+      "title": "ENH: `scipy.stats`: add normal-inverse-gamma distribution",
+      "changed_files": 3,
+      "additions": 504,
+      "deletions": 5,
+      "labels": [
+        "scipy.stats",
+        "enhancement"
+      ],
+      "repo_size_mb": 189.44,
+      "repo_language": "Python",
+      "repo_topics": [
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "numpy",
+          "scipy",
+          "statistics",
+          "probability"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR implements the normal-inverse-gamma distribution, a new bivariate statistical distribution in `scipy.stats` with support for broadcastable arrays.",
+        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing, building on the NumPy array object.",
+        "feasibility_notes": "Testing requires generating random variates, calculating PDFs/CDFs, and comparing them against theoretical properties or reference implementations for various parameter values, verifying correct broadcasting behavior."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -5485,60 +5485,6 @@
       ]
     },
     {
-      "url": "https://github.com/scipy/scipy/pull/22728",
-      "repo_url": "https://github.com/scipy/scipy",
-      "number": 22728,
-      "title": "ENH/BUG: optimize: use `_differentiable_functions.VectorFunction` in `least_squares`",
-      "changed_files": 6,
-      "additions": 222,
-      "deletions": 141,
-      "labels": [
-        "defect",
-        "enhancement",
-        "scipy.optimize"
-      ],
-      "repo_size_mb": 189.44,
-      "repo_language": "Python",
-      "repo_topics": [
-        "algorithms",
-        "closember",
-        "python",
-        "scientific-computing",
-        "scipy"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "library",
-        "skills_required": [
-          "python",
-          "numerical optimization",
-          "scipy.optimize",
-          "linear algebra"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors `scipy.optimize.least_squares` to leverage `VectorFunction` for improved numerical differentiation, performance, and also includes bug fixes.",
-        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
-        "feasibility_notes": "Testing requires setting up optimization problems with `least_squares` to verify correctness, check for performance improvements, and confirm the bug fixes."
-      },
-      "priority_score": 43.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/scipy/scipy/pull/23012",
       "repo_url": "https://github.com/scipy/scipy",
       "number": 23012,
@@ -5645,90 +5591,45 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/27738",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 27738,
-      "title": "[AppConfig] `az appconfig snapshot`: GA snapshot related features",
-      "changed_files": 5,
-      "additions": 464,
-      "deletions": 470,
-      "labels": [
-        "App Configuration",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "cli development",
-          "azure app configuration",
-          "api integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR promotes the Azure App Configuration snapshot-related features to General Availability, likely involving internal code adjustments and removing preview flags.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing involves an Azure subscription, an App Configuration store, and testing the `az appconfig snapshot` commands to ensure full functionality and stability after the GA transition."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/255",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 255,
-      "title": "vm image list: make 'location' optional",
+      "url": "https://github.com/scipy/scipy/pull/22728",
+      "repo_url": "https://github.com/scipy/scipy",
+      "number": 22728,
+      "title": "ENH/BUG: optimize: use `_differentiable_functions.VectorFunction` in `least_squares`",
       "changed_files": 6,
-      "additions": 504,
-      "deletions": 27,
-      "labels": [],
-      "repo_size_mb": 885.28,
+      "additions": 222,
+      "deletions": 141,
+      "labels": [
+        "defect",
+        "enhancement",
+        "scipy.optimize"
+      ],
+      "repo_size_mb": 189.44,
       "repo_language": "Python",
       "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
+        "algorithms",
+        "closember",
+        "python",
+        "scientific-computing",
+        "scipy"
       ],
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "cli-tool",
+        "domain": "library",
         "skills_required": [
           "python",
-          "cli-development",
-          "azure-compute",
-          "api-design"
+          "numerical optimization",
+          "scipy.optimize",
+          "linear algebra"
         ],
-        "difficulty": "mid",
+        "difficulty": "senior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR modifies the `az vm image list` command to make the 'location' argument optional.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally would require an Azure subscription to list VM images both with and without specifying a location and verifying correct behavior."
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR refactors `scipy.optimize.least_squares` to leverage `VectorFunction` for improved numerical differentiation, performance, and also includes bug fixes.",
+        "repo_summary": "SciPy is an open-source Python library used for scientific computing and technical computing.",
+        "feasibility_notes": "Testing requires setting up optimization problems with `least_squares` to verify correctness, check for performance improvements, and confirm the bug fixes."
       },
-      "priority_score": 42.0,
+      "priority_score": 43.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -5744,16 +5645,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/28195",
+      "url": "https://github.com/Azure/azure-cli/pull/3665",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28195,
-      "title": "[SQL] Add new command for managed instances to refresh external governance status",
+      "number": 3665,
+      "title": "webapp: remove all commands under 'az appservice web'",
       "changed_files": 5,
-      "additions": 1169,
-      "deletions": 0,
+      "additions": 14,
+      "deletions": 708,
       "labels": [
-        "SQL",
-        "Auto-Assign"
+        "cla-already-signed"
       ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
@@ -5765,19 +5665,14 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-sdk",
-          "database",
-          "resource-management"
-        ],
+        "domain": "other",
+        "skills_required": [],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a new command `az sql mi refresh-external-governance-status` to refresh the external governance status for Azure SQL Managed Instances.",
-        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
-        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure SQL Managed Instance in an Azure subscription to execute the new command."
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -5845,15 +5740,16 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/3665",
+      "url": "https://github.com/Azure/azure-cli/pull/27738",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 3665,
-      "title": "webapp: remove all commands under 'az appservice web'",
+      "number": 27738,
+      "title": "[AppConfig] `az appconfig snapshot`: GA snapshot related features",
       "changed_files": 5,
-      "additions": 14,
-      "deletions": 708,
+      "additions": 464,
+      "deletions": 470,
       "labels": [
-        "cla-already-signed"
+        "App Configuration",
+        "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
@@ -5865,14 +5761,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "other",
-        "skills_required": [],
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "cli development",
+          "azure app configuration",
+          "api integration"
+        ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
+        "pr_summary": "This PR promotes the Azure App Configuration snapshot-related features to General Availability, likely involving internal code adjustments and removing preview flags.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing involves an Azure subscription, an App Configuration store, and testing the `az appconfig snapshot` commands to ensure full functionality and stability after the GA transition."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -5881,6 +5782,105 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/28195",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 28195,
+      "title": "[SQL] Add new command for managed instances to refresh external governance status",
+      "changed_files": 5,
+      "additions": 1169,
+      "deletions": 0,
+      "labels": [
+        "SQL",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-sdk",
+          "database",
+          "resource-management"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds a new command `az sql mi refresh-external-governance-status` to refresh the external governance status for Azure SQL Managed Instances.",
+        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
+        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure SQL Managed Instance in an Azure subscription to execute the new command."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/255",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 255,
+      "title": "vm image list: make 'location' optional",
+      "changed_files": 6,
+      "additions": 504,
+      "deletions": 27,
+      "labels": [],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "cli-development",
+          "azure-compute",
+          "api-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR modifies the `az vm image list` command to make the 'location' argument optional.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally would require an Azure subscription to list VM images both with and without specifying a location and verifying correct behavior."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
