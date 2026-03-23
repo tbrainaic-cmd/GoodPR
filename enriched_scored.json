@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-23T04:33:57.190589+00:00",
+    "enriched_at": "2026-03-23T07:27:32.177427+00:00",
     "total_repos_input": 1,
     "repos_passed_filter": 1,
     "total_prs_input": 151,
@@ -12,11 +12,11 @@
     "tier_b": 4,
     "tier_c": 68,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.14,
     "incremental": true,
     "prs_from_cache": 151,
     "prs_new": 0,
-    "prs_disappeared": 5
+    "prs_disappeared": 0
   },
   "scored_prs": [
     {
@@ -224,58 +224,6 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/31624",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 31624,
-      "title": "{Network} `az network network-watcher packet-capture create`: Make ring buffer command working",
-      "changed_files": 3,
-      "additions": 1,
-      "deletions": 272,
-      "labels": [
-        "Network",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "networking",
-          "command-line",
-          "cloud-computing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes the `az network network-watcher packet-capture create` command by removing old default parameter values to enable proper functioning of the ring buffer and `continuous-capture` parameter.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing locally requires an Azure subscription with network resources and permissions to create network watchers and packet captures."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/Azure/azure-cli/pull/27271",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 27271,
@@ -327,64 +275,17 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/30781",
+      "url": "https://github.com/Azure/azure-cli/pull/31624",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 30781,
-      "title": "[CosmosDB] `az cosmosdb offline-region`: New command to support offline region for cosmosdb account",
-      "changed_files": 6,
-      "additions": 983,
-      "deletions": 1,
+      "number": 31624,
+      "title": "{Network} `az network network-watcher packet-capture create`: Make ring buffer command working",
+      "changed_files": 3,
+      "additions": 1,
+      "deletions": 272,
       "labels": [
-        "customer-reported"
+        "Network",
+        "Auto-Assign"
       ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "database",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "cosmosdb",
-          "database-administration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR introduces the `az cosmosdb offline-region` command to the Azure CLI, allowing users to offline specific regions for their Azure Cosmos DB accounts.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing this requires an Azure subscription with a multi-region CosmosDB account to verify the command successfully offlines a region."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/30633",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 30633,
-      "title": "[DevTest Labs] Add Hibernation Support",
-      "changed_files": 6,
-      "additions": 575,
-      "deletions": 2,
-      "labels": [],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
       "repo_topics": [
@@ -399,75 +300,24 @@
         "skills_required": [
           "python",
           "azure-cli",
-          "devtest-labs",
-          "virtual-machines"
+          "networking",
+          "command-line",
+          "cloud-computing"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds a new `az lab vm hibernate` command to the Azure CLI, enabling hibernation support for virtual machines in Azure DevTest Labs.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Testing involves setting up an Azure DevTest Lab with a virtual machine and then executing the new hibernate command, requiring an Azure subscription."
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes the `az network network-watcher packet-capture create` command by removing old default parameter values to enable proper functioning of the ring buffer and `continuous-capture` parameter.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing locally requires an Azure subscription with network resources and permissions to create network watchers and packet captures."
       },
-      "priority_score": 48.0,
+      "priority_score": 50.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/24958",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 24958,
-      "title": "[App Service] Fix#16478: `az functionapp cors credentials`: Add enable/disable CORS creds command",
-      "changed_files": 6,
-      "additions": 1016,
-      "deletions": 0,
-      "labels": [
-        "App Services",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "web-backend",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "azure-app-service",
-          "web-development",
-          "api-management"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds `az functionapp cors credentials` commands to enable or disable CORS credentials for Azure Function Apps, resolving issue #16478.",
-        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
-        "feasibility_notes": "Testing involves an Azure subscription, creating an App Service plan and function app, then using the new `az` commands to enable/disable CORS credentials and verify the settings."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
+          "reason": "3 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -529,15 +379,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/31119",
+      "url": "https://github.com/Azure/azure-cli/pull/29223",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 31119,
-      "title": "[AKS] `az aks nodepool add/update`: Add option `Ubuntu2204` to `--os-sku` parameter",
-      "changed_files": 5,
-      "additions": 1341,
-      "deletions": 4,
+      "number": 29223,
+      "title": "[Network] `az network virtual-appliance inbound-security-rule`: Support of GET operation for NVA Inbound Security Rule",
+      "changed_files": 2,
+      "additions": 221,
+      "deletions": 0,
       "labels": [
-        "AKS",
+        "Network",
         "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
@@ -553,17 +403,17 @@
         "domain": "devops",
         "skills_required": [
           "python",
-          "azure-cli",
-          "kubernetes",
-          "aks",
-          "cloud-computing"
+          "cli-tool",
+          "azure-networking",
+          "api-integration",
+          "json"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 5,
-        "pr_summary": "This PR adds the `Ubuntu2204` option to the `--os-sku` parameter for `az aks nodepool add` and `update` commands.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally requires an Azure subscription with permissions to create AKS clusters and nodepools."
+        "pr_summary": "This PR adds support for the `GET` operation to retrieve details of an Azure Network Virtual Appliance Inbound Security Rule.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Testing requires an Azure subscription to provision a Network Virtual Appliance and an existing Inbound Security Rule, then running the provided CLI command."
       },
       "priority_score": 48.0,
       "priority_tier": "C",
@@ -571,7 +421,7 @@
         {
           "filter_name": "pr_file_count",
           "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
+          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -624,161 +474,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/23715",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 23715,
-      "title": "[AKS] `az aks nodepool add`: Add option `Windows2019`, `Windows2022` to `--os-sku` parameter",
-      "changed_files": 5,
-      "additions": 1339,
-      "deletions": 3,
-      "labels": [
-        "AKS",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "kubernetes",
-          "virtual-machines",
-          "cloud-infrastructure"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds `Windows2019` and `Windows2022` as valid options for the `--os-sku` parameter when adding a nodepool to an Azure Kubernetes Service cluster.",
-        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
-        "feasibility_notes": "Testing involves an Azure subscription, an AKS cluster, and attempting to add Windows nodepools with the new OS SKUs using `azdev test --live`."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/26879",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 26879,
-      "title": "[AppConfig] `az appconfig snapshot list`: Use enums for status parameter",
-      "changed_files": 5,
-      "additions": 399,
-      "deletions": 369,
-      "labels": [
-        "App Configuration",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure",
-          "cli-development",
-          "enum-refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR refactors the `status` parameter for `az appconfig snapshot list` to use enums for better validation and type safety.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing involves executing `az appconfig snapshot list` with various valid and invalid status parameters and observing the command behavior and validation."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/29223",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 29223,
-      "title": "[Network] `az network virtual-appliance inbound-security-rule`: Support of GET operation for NVA Inbound Security Rule",
-      "changed_files": 2,
-      "additions": 221,
-      "deletions": 0,
-      "labels": [
-        "Network",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "cli-tool",
-          "azure-networking",
-          "api-integration",
-          "json"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds support for the `GET` operation to retrieve details of an Azure Network Virtual Appliance Inbound Security Rule.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Testing requires an Azure subscription to provision a Network Virtual Appliance and an existing Inbound Security Rule, then running the provided CLI command."
-      },
-      "priority_score": 48.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "2 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -891,6 +586,311 @@
       ]
     },
     {
+      "url": "https://github.com/Azure/azure-cli/pull/30633",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 30633,
+      "title": "[DevTest Labs] Add Hibernation Support",
+      "changed_files": 6,
+      "additions": 575,
+      "deletions": 2,
+      "labels": [],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "devtest-labs",
+          "virtual-machines"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds a new `az lab vm hibernate` command to the Azure CLI, enabling hibernation support for virtual machines in Azure DevTest Labs.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Testing involves setting up an Azure DevTest Lab with a virtual machine and then executing the new hibernate command, requiring an Azure subscription."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/24958",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 24958,
+      "title": "[App Service] Fix#16478: `az functionapp cors credentials`: Add enable/disable CORS creds command",
+      "changed_files": 6,
+      "additions": 1016,
+      "deletions": 0,
+      "labels": [
+        "App Services",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "web-backend",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "azure-app-service",
+          "web-development",
+          "api-management"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds `az functionapp cors credentials` commands to enable or disable CORS credentials for Azure Function Apps, resolving issue #16478.",
+        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
+        "feasibility_notes": "Testing involves an Azure subscription, creating an App Service plan and function app, then using the new `az` commands to enable/disable CORS credentials and verify the settings."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/23715",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 23715,
+      "title": "[AKS] `az aks nodepool add`: Add option `Windows2019`, `Windows2022` to `--os-sku` parameter",
+      "changed_files": 5,
+      "additions": 1339,
+      "deletions": 3,
+      "labels": [
+        "AKS",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "kubernetes",
+          "virtual-machines",
+          "cloud-infrastructure"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds `Windows2019` and `Windows2022` as valid options for the `--os-sku` parameter when adding a nodepool to an Azure Kubernetes Service cluster.",
+        "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
+        "feasibility_notes": "Testing involves an Azure subscription, an AKS cluster, and attempting to add Windows nodepools with the new OS SKUs using `azdev test --live`."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/30781",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 30781,
+      "title": "[CosmosDB] `az cosmosdb offline-region`: New command to support offline region for cosmosdb account",
+      "changed_files": 6,
+      "additions": 983,
+      "deletions": 1,
+      "labels": [
+        "customer-reported"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "database",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "cosmosdb",
+          "database-administration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR introduces the `az cosmosdb offline-region` command to the Azure CLI, allowing users to offline specific regions for their Azure Cosmos DB accounts.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing this requires an Azure subscription with a multi-region CosmosDB account to verify the command successfully offlines a region."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/31119",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 31119,
+      "title": "[AKS] `az aks nodepool add/update`: Add option `Ubuntu2204` to `--os-sku` parameter",
+      "changed_files": 5,
+      "additions": 1341,
+      "deletions": 4,
+      "labels": [
+        "AKS",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "kubernetes",
+          "aks",
+          "cloud-computing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR adds the `Ubuntu2204` option to the `--os-sku` parameter for `az aks nodepool add` and `update` commands.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally requires an Azure subscription with permissions to create AKS clusters and nodepools."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/26879",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 26879,
+      "title": "[AppConfig] `az appconfig snapshot list`: Use enums for status parameter",
+      "changed_files": 5,
+      "additions": 399,
+      "deletions": 369,
+      "labels": [
+        "App Configuration",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure",
+          "cli-development",
+          "enum-refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR refactors the `status` parameter for `az appconfig snapshot list` to use enums for better validation and type safety.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing involves executing `az appconfig snapshot list` with various valid and invalid status parameters and observing the command behavior and validation."
+      },
+      "priority_score": 48.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/Azure/azure-cli/pull/26029",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 26029,
@@ -933,58 +933,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/27037",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 27037,
-      "title": "[Service Connector] `az webapp connection`: Add new parameter `--slot` to support webapp slot connection",
-      "changed_files": 6,
-      "additions": 1276,
-      "deletions": 20,
-      "labels": [
-        "Web Apps",
-        "Auto-Assign",
-        "Service Connector"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "web-backend",
-        "skills_required": [
-          "python",
-          "cli development",
-          "azure web apps",
-          "api integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds a new `--slot` parameter to `az webapp connection` commands to enable connecting to web app deployment slots.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing involves setting up an Azure subscription, creating a web app with a deployment slot, and using the `az webapp connection` commands with the new `--slot` parameter."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -1042,118 +990,17 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/5817",
+      "url": "https://github.com/Azure/azure-cli/pull/27037",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 5817,
-      "title": "Fix regression: Correctly expose the CMK encryption vault properties",
-      "changed_files": 5,
-      "additions": 982,
-      "deletions": 34,
-      "labels": [
-        "Storage"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure",
-          "cli",
-          "storage",
-          "security"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR fixes a regression by re-exposing previously overlooked customer-managed key encryption vault properties in the `az storage account update` command after a `knack` conversion.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Reproducing locally would involve setting up an Azure storage account, possibly with KeyVault integration, and testing the `az storage account update` command with the re-added parameters to verify functionality."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/32372",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 32372,
-      "title": "[CognitiveServices] Add commands for container agents",
+      "number": 27037,
+      "title": "[Service Connector] `az webapp connection`: Add new parameter `--slot` to support webapp slot connection",
       "changed_files": 6,
-      "additions": 727,
-      "deletions": 95,
+      "additions": 1276,
+      "deletions": 20,
       "labels": [
-        "Cognitive Services",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "cognitive-services",
-          "api-integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds a suite of commands to the Azure CLI for managing Cognitive Services foundry agents, including delete, list, show, start, stop, and update operations.",
-        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
-        "feasibility_notes": "Reproducing/testing locally involves installing the Azure CLI, logging into Azure, and having access to Cognitive Services resources to create and manage agents."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/30117",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 30117,
-      "title": "[Containerapp] `az containerapp env update`: Support to update `--dapr-connection-string`. Hide `--dapr-instrumentation-key`",
-      "changed_files": 5,
-      "additions": 748,
-      "deletions": 484,
-      "labels": [
+        "Web Apps",
         "Auto-Assign",
-        "ContainerApp"
+        "Service Connector"
       ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
@@ -1165,374 +1012,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "devops",
+        "domain": "web-backend",
         "skills_required": [
           "python",
-          "azure-cli",
-          "containerization",
-          "dapr"
+          "cli development",
+          "azure web apps",
+          "api integration"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 4,
-        "pr_summary": "This PR adds support for updating the `--dapr-connection-string` and hides the `--dapr-instrumentation-key` parameter for Azure Container App environments.",
+        "pr_summary": "This PR adds a new `--slot` parameter to `az webapp connection` commands to enable connecting to web app deployment slots.",
         "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Testing requires an Azure subscription with Container Apps and Dapr configured to verify parameter updates and hiding behavior."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/2538",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 2538,
-      "title": "Sql Import/Export CLI commands and test",
-      "changed_files": 6,
-      "additions": 1090,
-      "deletions": 2,
-      "labels": [
-        "cla-not-required"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "database",
-        "skills_required": [
-          "python",
-          "cli-development",
-          "azure-sql",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces new Azure CLI commands for SQL database import and export functionalities, along with their corresponding tests.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up an Azure SQL Database and storage account, then using the new `az sql db import` and `export` commands."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/31517",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 31517,
-      "title": "{Keyvault} Remove azure stack logic",
-      "changed_files": 5,
-      "additions": 133,
-      "deletions": 214,
-      "labels": [
-        "KeyVault",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "refactoring",
-          "key-vault",
-          "cloud-computing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR removes deprecated Azure Stack specific logic from the Key Vault module following the dropping of Azure Stack profiles.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing locally requires setting up an Azure CLI development environment and potentially verifying KeyVault operations don't break, though the primary goal is removing dead code."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/30961",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 30961,
-      "title": "[Compute] `az disk`: Add new command `config update` to support updating disk size gb by PATCH method",
-      "changed_files": 6,
-      "additions": 1056,
-      "deletions": 3,
-      "labels": [
-        "Compute",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "virtual-machines",
-          "rest-apis"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds the `az disk config update` command to the Azure CLI to support updating disk size in GB using the PATCH method.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Testing requires an Azure subscription with managed disks to verify the `config update` command can successfully resize a disk using the new PATCH method."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/30065",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 30065,
-      "title": "{Network} `az network public-ip ddos-protection-statu`: Deprecation pre-announcement",
-      "changed_files": 6,
-      "additions": 612,
-      "deletions": 544,
-      "labels": [
-        "Network",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "networking",
-          "cloud-computing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR pre-announces the deprecation of the `az network public-ip ddos-protection-statu` command to address a linked issue.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing requires an Azure subscription with networking resources to verify the deprecation warning/behavior, potentially incurring costs."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/21872",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 21872,
-      "title": "[SQL] `az sql mi create`, `az sql mi update`: Add `--service-principal-type` parameter to support Win Auth (Kerberos)",
-      "changed_files": 5,
-      "additions": 526,
-      "deletions": 315,
-      "labels": [
-        "SQL",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "azure-sql",
-          "api-integration",
-          "kerberos"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds the `--service-principal-type` parameter to `az sql mi create` and `az sql mi update` to enable support for Windows Authentication (Kerberos) for Azure SQL Managed Instances.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing requires an Azure subscription, setting up an Azure SQL Managed Instance, and configuring service principals to verify the new Windows Authentication feature, which can be complex."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/31858",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 31858,
-      "title": "[Compute] `az compute-recommender spot-placement-score`: Add new command to replace original command `az compute-recommender spot-placement-recommender`",
-      "changed_files": 6,
-      "additions": 347,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "cloud-computing",
-          "api-versioning",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR replaces the `az compute-recommender spot-placement-recommender` command with `az compute-recommender spot-placement-score` and updates the underlying API to stable version 2025-06-05.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing locally requires an Azure subscription and permissions to interact with compute recommender services to verify the new command's functionality."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/5666",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 5666,
-      "title": "Updates to interactive telemetry",
-      "changed_files": 6,
-      "additions": 269,
-      "deletions": 249,
-      "labels": [
-        "Interactive"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "cli",
-          "telemetry",
-          "azure"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR updates the interactive telemetry in Azure CLI to ensure consistency with other CLI telemetry, sending session start, command usage, and aggregate session end data.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Reproducing and testing locally would involve running the interactive CLI, performing various commands, and verifying telemetry data is collected and sent correctly, which may require mock services or a development Azure environment."
+        "feasibility_notes": "Reproducing involves setting up an Azure subscription, creating a web app with a deployment slot, and using the `az webapp connection` commands with the new `--slot` parameter."
       },
       "priority_score": 45.0,
       "priority_tier": "C",
@@ -1602,6 +1094,260 @@
       ]
     },
     {
+      "url": "https://github.com/Azure/azure-cli/pull/32372",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 32372,
+      "title": "[CognitiveServices] Add commands for container agents",
+      "changed_files": 6,
+      "additions": 727,
+      "deletions": 95,
+      "labels": [
+        "Cognitive Services",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "cognitive-services",
+          "api-integration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds a suite of commands to the Azure CLI for managing Cognitive Services foundry agents, including delete, list, show, start, stop, and update operations.",
+        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
+        "feasibility_notes": "Reproducing/testing locally involves installing the Azure CLI, logging into Azure, and having access to Cognitive Services resources to create and manage agents."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/30065",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 30065,
+      "title": "{Network} `az network public-ip ddos-protection-statu`: Deprecation pre-announcement",
+      "changed_files": 6,
+      "additions": 612,
+      "deletions": 544,
+      "labels": [
+        "Network",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "networking",
+          "cloud-computing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR pre-announces the deprecation of the `az network public-ip ddos-protection-statu` command to address a linked issue.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing requires an Azure subscription with networking resources to verify the deprecation warning/behavior, potentially incurring costs."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/25873",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 25873,
+      "title": "[SQL] `az sql server refresh-external-governance-status`: New command for refreshing external governance status",
+      "changed_files": 5,
+      "additions": 640,
+      "deletions": 0,
+      "labels": [
+        "SQL",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "database",
+        "skills_required": [
+          "python",
+          "cli-development",
+          "azure-sql",
+          "api-integration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR introduces a new Azure CLI command, `az sql server refresh-external-governance-status`, to allow users to refresh the external governance status on a SQL server.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally would require an Azure subscription with an SQL server configured for external governance to execute and verify the new command."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/5666",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 5666,
+      "title": "Updates to interactive telemetry",
+      "changed_files": 6,
+      "additions": 269,
+      "deletions": 249,
+      "labels": [
+        "Interactive"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "cli",
+          "telemetry",
+          "azure"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR updates the interactive telemetry in Azure CLI to ensure consistency with other CLI telemetry, sending session start, command usage, and aggregate session end data.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Reproducing and testing locally would involve running the interactive CLI, performing various commands, and verifying telemetry data is collected and sent correctly, which may require mock services or a development Azure environment."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/30117",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 30117,
+      "title": "[Containerapp] `az containerapp env update`: Support to update `--dapr-connection-string`. Hide `--dapr-instrumentation-key`",
+      "changed_files": 5,
+      "additions": 748,
+      "deletions": 484,
+      "labels": [
+        "Auto-Assign",
+        "ContainerApp"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "containerization",
+          "dapr"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds support for updating the `--dapr-connection-string` and hides the `--dapr-instrumentation-key` parameter for Azure Container App environments.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Testing requires an Azure subscription with Container Apps and Dapr configured to verify parameter updates and hiding behavior."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/Azure/azure-cli/pull/23344",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 23344,
@@ -1638,6 +1384,311 @@
         "pr_summary": "This PR adds support for the `--network-plugin=none` option to the `az aks create` command, enabling Bring Your Own CNI for Azure Kubernetes Service.",
         "repo_summary": "This repository hosts the Azure Command-Line Interface, a cross-platform tool for managing Azure resources.",
         "feasibility_notes": "Reproducing requires an Azure subscription, setting up the CLI development environment, and creating AKS clusters to test the networking plugin option."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/31858",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 31858,
+      "title": "[Compute] `az compute-recommender spot-placement-score`: Add new command to replace original command `az compute-recommender spot-placement-recommender`",
+      "changed_files": 6,
+      "additions": 347,
+      "deletions": 1,
+      "labels": [],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "ml-ai",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "cloud-computing",
+          "api-versioning",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR replaces the `az compute-recommender spot-placement-recommender` command with `az compute-recommender spot-placement-score` and updates the underlying API to stable version 2025-06-05.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing locally requires an Azure subscription and permissions to interact with compute recommender services to verify the new command's functionality."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/31517",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 31517,
+      "title": "{Keyvault} Remove azure stack logic",
+      "changed_files": 5,
+      "additions": 133,
+      "deletions": 214,
+      "labels": [
+        "KeyVault",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "refactoring",
+          "key-vault",
+          "cloud-computing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR removes deprecated Azure Stack specific logic from the Key Vault module following the dropping of Azure Stack profiles.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing locally requires setting up an Azure CLI development environment and potentially verifying KeyVault operations don't break, though the primary goal is removing dead code."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/5817",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 5817,
+      "title": "Fix regression: Correctly expose the CMK encryption vault properties",
+      "changed_files": 5,
+      "additions": 982,
+      "deletions": 34,
+      "labels": [
+        "Storage"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure",
+          "cli",
+          "storage",
+          "security"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR fixes a regression by re-exposing previously overlooked customer-managed key encryption vault properties in the `az storage account update` command after a `knack` conversion.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Reproducing locally would involve setting up an Azure storage account, possibly with KeyVault integration, and testing the `az storage account update` command with the re-added parameters to verify functionality."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/2538",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 2538,
+      "title": "Sql Import/Export CLI commands and test",
+      "changed_files": 6,
+      "additions": 1090,
+      "deletions": 2,
+      "labels": [
+        "cla-not-required"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "database",
+        "skills_required": [
+          "python",
+          "cli-development",
+          "azure-sql",
+          "testing"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR introduces new Azure CLI commands for SQL database import and export functionalities, along with their corresponding tests.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally would involve setting up an Azure SQL Database and storage account, then using the new `az sql db import` and `export` commands."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/30961",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 30961,
+      "title": "[Compute] `az disk`: Add new command `config update` to support updating disk size gb by PATCH method",
+      "changed_files": 6,
+      "additions": 1056,
+      "deletions": 3,
+      "labels": [
+        "Compute",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "virtual-machines",
+          "rest-apis"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds the `az disk config update` command to the Azure CLI to support updating disk size in GB using the PATCH method.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Testing requires an Azure subscription with managed disks to verify the `config update` command can successfully resize a disk using the new PATCH method."
+      },
+      "priority_score": 45.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/21872",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 21872,
+      "title": "[SQL] `az sql mi create`, `az sql mi update`: Add `--service-principal-type` parameter to support Win Auth (Kerberos)",
+      "changed_files": 5,
+      "additions": 526,
+      "deletions": 315,
+      "labels": [
+        "SQL",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "azure-sql",
+          "api-integration",
+          "kerberos"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR adds the `--service-principal-type` parameter to `az sql mi create` and `az sql mi update` to enable support for Windows Authentication (Kerberos) for Azure SQL Managed Instances.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing requires an Azure subscription, setting up an Azure SQL Managed Instance, and configuring service principals to verify the new Windows Authentication feature, which can be complex."
       },
       "priority_score": 45.0,
       "priority_tier": "C",
@@ -1706,57 +1757,6 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/25873",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 25873,
-      "title": "[SQL] `az sql server refresh-external-governance-status`: New command for refreshing external governance status",
-      "changed_files": 5,
-      "additions": 640,
-      "deletions": 0,
-      "labels": [
-        "SQL",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "database",
-        "skills_required": [
-          "python",
-          "cli-development",
-          "azure-sql",
-          "api-integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces a new Azure CLI command, `az sql server refresh-external-governance-status`, to allow users to refresh the external governance status on a SQL server.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally would require an Azure subscription with an SQL server configured for external governance to execute and verify the new command."
-      },
-      "priority_score": 45.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/Azure/azure-cli/pull/827",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 827,
@@ -1807,15 +1807,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/25528",
+      "url": "https://github.com/Azure/azure-cli/pull/22863",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 25528,
-      "title": "{Network} `az network vpn-connection list-connection`: the command should be unregistered",
+      "number": 22863,
+      "title": "{AKS} Sort out parameter declarations",
       "changed_files": 3,
-      "additions": 0,
-      "deletions": 218,
+      "additions": 238,
+      "deletions": 224,
       "labels": [
-        "Network",
+        "AKS",
         "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
@@ -1831,16 +1831,16 @@
         "domain": "cli-tool",
         "skills_required": [
           "python",
-          "cli-development",
-          "azure-networking",
-          "code-maintenance"
+          "azure-aks",
+          "refactoring",
+          "code-organization"
         ],
         "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR unregisters the `az network vpn-connection list-connection` command from the Azure CLI.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally would involve verifying that the command no longer exists or functions after the changes."
+        "pr_summary": "This PR sorts out and synchronizes parameter declarations for Azure Kubernetes Service (AKS) commands, aligning with changes made in a related pull request.",
+        "repo_summary": "The Azure CLI is a command-line interface tool for managing Azure cloud resources.",
+        "feasibility_notes": "Testing would primarily involve reviewing the code changes for correctness and potentially running existing unit/integration tests to ensure no regressions."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -1858,221 +1858,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/23288",
+      "url": "https://github.com/Azure/azure-cli/pull/3463",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 23288,
-      "title": "[Service Connector] `az webapp connection create`: Add `--config-connstr` to support webapp connection strings",
-      "changed_files": 5,
-      "additions": 760,
-      "deletions": 3,
-      "labels": [
-        "Web Apps",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "web-backend",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "web-development",
-          "connection-strings",
-          "azure-app-service"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds the `--store-connstr` parameter to `az webapp connection create` to allow storing service configurations as web app connection strings.",
-        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
-        "feasibility_notes": "Reproducible by installing Azure CLI, authenticating, and creating a new Azure Web App and a service connection using the new `--store-connstr` parameter on an Azure subscription."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/29919",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 29919,
-      "title": "[AKS] `az aks create/update`: Update the VM SKU details from backend for validations during Azure Container Storage operations",
+      "number": 3463,
+      "title": "Use '?' Gesture to inject into the next command",
       "changed_files": 6,
-      "additions": 200,
-      "deletions": 166,
+      "additions": 388,
+      "deletions": 109,
       "labels": [
-        "AKS",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "cli-tool",
-          "kubernetes",
-          "azure-storage",
-          "api-integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR updates the Azure CLI to fetch VM SKU details from the backend for validations during Azure Container Storage operations in AKS create/update commands.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Testing requires an Azure subscription to create/update AKS clusters with Azure Container Storage, using various VM SKUs to verify validation logic."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/28999",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28999,
-      "title": "[Network] `az network application-gateway waf-policy custom-rule update`: Add parameter `--js-cookie-exp-time`",
-      "changed_files": 5,
-      "additions": 75,
-      "deletions": 47,
-      "labels": [
-        "Network",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "cli-tool",
-          "azure-networking",
-          "api-integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds the `--js-cookie-exp-time` parameter to the `az network application-gateway waf-policy custom-rule update` command.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Testing requires an Azure subscription to configure an Application Gateway WAF policy and verify the new parameter's functionality, with specific commands not provided in the PR."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/27738",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 27738,
-      "title": "[AppConfig] `az appconfig snapshot`: GA snapshot related features",
-      "changed_files": 5,
-      "additions": 464,
-      "deletions": 470,
-      "labels": [
-        "App Configuration",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "cli development",
-          "azure app configuration",
-          "api integration"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR promotes the Azure App Configuration snapshot-related features to General Availability, likely involving internal code adjustments and removing preview flags.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing involves an Azure subscription, an App Configuration store, and testing the `az appconfig snapshot` commands to ensure full functionality and stability after the GA transition."
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/528",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 528,
-      "title": "command: support resource move between groups and subscriptions",
-      "changed_files": 6,
-      "additions": 792,
-      "deletions": 5,
-      "labels": [
-        "new command"
+        "cla-not-required"
       ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
@@ -2157,15 +1951,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/834",
+      "url": "https://github.com/Azure/azure-cli/pull/3665",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 834,
-      "title": "Network team feedback.  Only have update for soa records, hide locati…",
-      "changed_files": 6,
-      "additions": 526,
-      "deletions": 962,
+      "number": 3665,
+      "title": "webapp: remove all commands under 'az appservice web'",
+      "changed_files": 5,
+      "additions": 14,
+      "deletions": 708,
       "labels": [
-        "cla-not-required"
+        "cla-already-signed"
       ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
@@ -2177,19 +1971,59 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure",
-          "cli",
-          "networking"
-        ],
+        "domain": "other",
+        "skills_required": [],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR incorporates network team feedback by restricting updates to only SOA records and hiding the location parameter from the DNS section in the Azure CLI.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
-        "feasibility_notes": "Testing locally would involve managing Azure DNS zones, attempting to modify SOA records, and verifying the visibility of the location parameter, requiring an Azure DNS environment."
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/528",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 528,
+      "title": "command: support resource move between groups and subscriptions",
+      "changed_files": 6,
+      "additions": 792,
+      "deletions": 5,
+      "labels": [
+        "new command"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "other",
+        "skills_required": [],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "",
+        "repo_summary": "",
+        "feasibility_notes": ""
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2252,15 +2086,67 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/22863",
+      "url": "https://github.com/Azure/azure-cli/pull/23288",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 22863,
-      "title": "{AKS} Sort out parameter declarations",
-      "changed_files": 3,
-      "additions": 238,
-      "deletions": 224,
+      "number": 23288,
+      "title": "[Service Connector] `az webapp connection create`: Add `--config-connstr` to support webapp connection strings",
+      "changed_files": 5,
+      "additions": 760,
+      "deletions": 3,
       "labels": [
-        "AKS",
+        "Web Apps",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "web-backend",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "web-development",
+          "connection-strings",
+          "azure-app-service"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds the `--store-connstr` parameter to `az webapp connection create` to allow storing service configurations as web app connection strings.",
+        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
+        "feasibility_notes": "Reproducible by installing Azure CLI, authenticating, and creating a new Azure Web App and a service connection using the new `--store-connstr` parameter on an Azure subscription."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/25528",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 25528,
+      "title": "{Network} `az network vpn-connection list-connection`: the command should be unregistered",
+      "changed_files": 3,
+      "additions": 0,
+      "deletions": 218,
+      "labels": [
+        "Network",
         "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
@@ -2276,16 +2162,16 @@
         "domain": "cli-tool",
         "skills_required": [
           "python",
-          "azure-aks",
-          "refactoring",
-          "code-organization"
+          "cli-development",
+          "azure-networking",
+          "code-maintenance"
         ],
         "difficulty": "junior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR sorts out and synchronizes parameter declarations for Azure Kubernetes Service (AKS) commands, aligning with changes made in a related pull request.",
-        "repo_summary": "The Azure CLI is a command-line interface tool for managing Azure cloud resources.",
-        "feasibility_notes": "Testing would primarily involve reviewing the code changes for correctness and potentially running existing unit/integration tests to ensure no regressions."
+        "pr_summary": "This PR unregisters the `az network vpn-connection list-connection` command from the Azure CLI.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally would involve verifying that the command no longer exists or functions after the changes."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2294,51 +2180,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/3665",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 3665,
-      "title": "webapp: remove all commands under 'az appservice web'",
-      "changed_files": 5,
-      "additions": 14,
-      "deletions": 708,
-      "labels": [
-        "cla-already-signed"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "other",
-        "skills_required": [],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
-      },
-      "priority_score": 42.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2399,15 +2240,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/28195",
+      "url": "https://github.com/Azure/azure-cli/pull/27738",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28195,
-      "title": "[SQL] Add new command for managed instances to refresh external governance status",
+      "number": 27738,
+      "title": "[AppConfig] `az appconfig snapshot`: GA snapshot related features",
       "changed_files": 5,
-      "additions": 1169,
-      "deletions": 0,
+      "additions": 464,
+      "deletions": 470,
       "labels": [
-        "SQL",
+        "App Configuration",
         "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
@@ -2420,19 +2261,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "cli-tool",
+        "domain": "devops",
         "skills_required": [
           "python",
-          "azure-sdk",
-          "database",
-          "resource-management"
+          "cli development",
+          "azure app configuration",
+          "api integration"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "This PR adds a new command `az sql mi refresh-external-governance-status` to refresh the external governance status for Azure SQL Managed Instances.",
-        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
-        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure SQL Managed Instance in an Azure subscription to execute the new command."
+        "pr_summary": "This PR promotes the Azure App Configuration snapshot-related features to General Availability, likely involving internal code adjustments and removing preview flags.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a rich, interactive, and fast experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing involves an Azure subscription, an App Configuration store, and testing the `az appconfig snapshot` commands to ensure full functionality and stability after the GA transition."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2450,13 +2291,65 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/3463",
+      "url": "https://github.com/Azure/azure-cli/pull/29919",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 3463,
-      "title": "Use '?' Gesture to inject into the next command",
+      "number": 29919,
+      "title": "[AKS] `az aks create/update`: Update the VM SKU details from backend for validations during Azure Container Storage operations",
       "changed_files": 6,
-      "additions": 388,
-      "deletions": 109,
+      "additions": 200,
+      "deletions": 166,
+      "labels": [
+        "AKS",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "cli-tool",
+          "kubernetes",
+          "azure-storage",
+          "api-integration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR updates the Azure CLI to fetch VM SKU details from the backend for validations during Azure Container Storage operations in AKS create/update commands.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Testing requires an Azure subscription to create/update AKS clusters with Azure Container Storage, using various VM SKUs to verify validation logic."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/834",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 834,
+      "title": "Network team feedback.  Only have update for soa records, hide locati…",
+      "changed_files": 6,
+      "additions": 526,
+      "deletions": 962,
       "labels": [
         "cla-not-required"
       ],
@@ -2470,14 +2363,19 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "other",
-        "skills_required": [],
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure",
+          "cli",
+          "networking"
+        ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 3,
-        "pr_summary": "",
-        "repo_summary": "",
-        "feasibility_notes": ""
+        "pr_summary": "This PR incorporates network team feedback by restricting updates to only SOA records and hiding the location parameter from the DNS section in the Azure CLI.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Testing locally would involve managing Azure DNS zones, attempting to modify SOA records, and verifying the visibility of the location parameter, requiring an Azure DNS environment."
       },
       "priority_score": 42.0,
       "priority_tier": "C",
@@ -2534,6 +2432,108 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/28999",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 28999,
+      "title": "[Network] `az network application-gateway waf-policy custom-rule update`: Add parameter `--js-cookie-exp-time`",
+      "changed_files": 5,
+      "additions": 75,
+      "deletions": 47,
+      "labels": [
+        "Network",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "cli-tool",
+          "azure-networking",
+          "api-integration"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds the `--js-cookie-exp-time` parameter to the `az network application-gateway waf-policy custom-rule update` command.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources and services.",
+        "feasibility_notes": "Testing requires an Azure subscription to configure an Application Gateway WAF policy and verify the new parameter's functionality, with specific commands not provided in the PR."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/28195",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 28195,
+      "title": "[SQL] Add new command for managed instances to refresh external governance status",
+      "changed_files": 5,
+      "additions": 1169,
+      "deletions": 0,
+      "labels": [
+        "SQL",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-sdk",
+          "database",
+          "resource-management"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds a new command `az sql mi refresh-external-governance-status` to refresh the external governance status for Azure SQL Managed Instances.",
+        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
+        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure SQL Managed Instance in an Azure subscription to execute the new command."
+      },
+      "priority_score": 42.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2697,6 +2697,54 @@
       ]
     },
     {
+      "url": "https://github.com/Azure/azure-cli/pull/25100",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 25100,
+      "title": "{service connector} `az connection`: Refactor for new extension serviceconnector-passwordless",
+      "changed_files": 6,
+      "additions": 333,
+      "deletions": 204,
+      "labels": [],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "cli-development",
+          "azure-sdk",
+          "refactoring"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 2,
+        "pr_summary": "This PR refactors the `az connection` command within the Azure CLI to support a new `serviceconnector-passwordless` extension.",
+        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally would involve setting up the new `serviceconnector-passwordless` extension and validating connection functionalities with and without passwords."
+      },
+      "priority_score": 39.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/Azure/azure-cli/pull/2423",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 2423,
@@ -2739,58 +2787,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/28547",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28547,
-      "title": "[Compute] `az vmss create/update`: Add parameters to specify the security posture to be used for all virtual machines in the scale set",
-      "changed_files": 6,
-      "additions": 1042,
-      "deletions": 4,
-      "labels": [
-        "Compute",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-sdk",
-          "compute",
-          "cloud-security",
-          "resource-management"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR adds parameters to `az vmss create` and `az vmss update` to specify the security posture for all virtual machines in a scale set.",
-        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
-        "feasibility_notes": "Testing involves setting up the Azure CLI development environment and an Azure subscription to create and update VM scale sets with the new security posture parameters."
-      },
-      "priority_score": 39.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
@@ -2903,14 +2899,17 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/25100",
+      "url": "https://github.com/Azure/azure-cli/pull/28547",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 25100,
-      "title": "{service connector} `az connection`: Refactor for new extension serviceconnector-passwordless",
+      "number": 28547,
+      "title": "[Compute] `az vmss create/update`: Add parameters to specify the security posture to be used for all virtual machines in the scale set",
       "changed_files": 6,
-      "additions": 333,
-      "deletions": 204,
-      "labels": [],
+      "additions": 1042,
+      "deletions": 4,
+      "labels": [
+        "Compute",
+        "Auto-Assign"
+      ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
       "repo_topics": [
@@ -2924,16 +2923,17 @@
         "domain": "cli-tool",
         "skills_required": [
           "python",
-          "cli-development",
           "azure-sdk",
-          "refactoring"
+          "compute",
+          "cloud-security",
+          "resource-management"
         ],
         "difficulty": "mid",
         "issue_has_clear_log": false,
         "issue_clarity_score": 2,
-        "pr_summary": "This PR refactors the `az connection` command within the Azure CLI to support a new `serviceconnector-passwordless` extension.",
-        "repo_summary": "The Azure CLI is a command-line tool that provides a multi-platform command-line experience for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally would involve setting up the new `serviceconnector-passwordless` extension and validating connection functionalities with and without passwords."
+        "pr_summary": "This PR adds parameters to `az vmss create` and `az vmss update` to specify the security posture for all virtual machines in a scale set.",
+        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
+        "feasibility_notes": "Testing involves setting up the Azure CLI development environment and an Azure subscription to create and update VM scale sets with the new security posture parameters."
       },
       "priority_score": 39.0,
       "priority_tier": "C",
@@ -2951,15 +2951,15 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/26447",
+      "url": "https://github.com/Azure/azure-cli/pull/26189",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 26447,
-      "title": "[Storage] `az storage account blob-service-properties cors-rule`: New command group to manage blob cors rules",
-      "changed_files": 6,
-      "additions": 414,
-      "deletions": 1,
+      "number": 26189,
+      "title": "[Compute] `az vm host`: Add commands to support getting possible resize options and resizing dedicated host",
+      "changed_files": 5,
+      "additions": 1114,
+      "deletions": 0,
       "labels": [
-        "Storage",
+        "Compute",
         "Auto-Assign"
       ],
       "repo_size_mb": 885.28,
@@ -2978,118 +2978,14 @@
           "azure",
           "api-integration",
           "cli-development",
-          "cloud-storage"
+          "cloud-compute"
         ],
         "difficulty": "senior",
         "issue_has_clear_log": false,
         "issue_clarity_score": 5,
-        "pr_summary": "This PR introduces a new command group, `az storage account blob-service-properties cors-rule`, to manage blob CORS rules via Azure control plane APIs.",
+        "pr_summary": "This PR adds new commands to the Azure CLI to support listing possible resize options for dedicated hosts and resizing them.",
         "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing requires an Azure subscription with a storage account, then executing the new CLI commands to manage blob CORS rules and verifying their effect."
-      },
-      "priority_score": 38.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/31577",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 31577,
-      "title": "{Core} Drop `msrestazure` managed identity authentication",
-      "changed_files": 5,
-      "additions": 22,
-      "deletions": 547,
-      "labels": [
-        "Account",
-        "Core",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "authentication",
-          "refactoring",
-          "msal"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR removes the `msrestazure` managed identity authentication, along with its related configuration and telemetry, as it has been replaced by MSAL.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Reproducing and testing locally requires setting up an Azure CLI development environment and thoroughly testing various managed identity authentication scenarios."
-      },
-      "priority_score": 38.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/28247",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28247,
-      "title": "[Network] `az network lb create`: Support cross-subscription resource ID",
-      "changed_files": 5,
-      "additions": 1077,
-      "deletions": 5,
-      "labels": [
-        "Network",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "cli-tool",
-        "skills_required": [
-          "python",
-          "azure-sdk",
-          "networking",
-          "resource-management"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR enables the `az network lb create` command to support cross-subscription resource IDs for `--subnet` and `--public-ip-address` parameters.",
-        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
-        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure subscription with resources across different subscriptions to verify the cross-subscription ID functionality."
+        "feasibility_notes": "Testing requires an Azure subscription with dedicated hosts provisioned, and involves executing the new CLI commands to list resize options and perform actual resize operations."
       },
       "priority_score": 38.0,
       "priority_tier": "C",
@@ -3159,6 +3055,162 @@
       ]
     },
     {
+      "url": "https://github.com/Azure/azure-cli/pull/28247",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 28247,
+      "title": "[Network] `az network lb create`: Support cross-subscription resource ID",
+      "changed_files": 5,
+      "additions": 1077,
+      "deletions": 5,
+      "labels": [
+        "Network",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-sdk",
+          "networking",
+          "resource-management"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR enables the `az network lb create` command to support cross-subscription resource IDs for `--subnet` and `--public-ip-address` parameters.",
+        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
+        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure subscription with resources across different subscriptions to verify the cross-subscription ID functionality."
+      },
+      "priority_score": 38.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/31577",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 31577,
+      "title": "{Core} Drop `msrestazure` managed identity authentication",
+      "changed_files": 5,
+      "additions": 22,
+      "deletions": 547,
+      "labels": [
+        "Account",
+        "Core",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-cli",
+          "authentication",
+          "refactoring",
+          "msal"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR removes the `msrestazure` managed identity authentication, along with its related configuration and telemetry, as it has been replaced by MSAL.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Reproducing and testing locally requires setting up an Azure CLI development environment and thoroughly testing various managed identity authentication scenarios."
+      },
+      "priority_score": 38.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/26447",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 26447,
+      "title": "[Storage] `az storage account blob-service-properties cors-rule`: New command group to manage blob cors rules",
+      "changed_files": 6,
+      "additions": 414,
+      "deletions": 1,
+      "labels": [
+        "Storage",
+        "Auto-Assign"
+      ],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "devops",
+        "skills_required": [
+          "python",
+          "azure",
+          "api-integration",
+          "cli-development",
+          "cloud-storage"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 5,
+        "pr_summary": "This PR introduces a new command group, `az storage account blob-service-properties cors-rule`, to manage blob CORS rules via Azure control plane APIs.",
+        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
+        "feasibility_notes": "Testing requires an Azure subscription with a storage account, then executing the new CLI commands to manage blob CORS rules and verifying their effect."
+      },
+      "priority_score": 38.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/Azure/azure-cli/pull/26826",
       "repo_url": "https://github.com/Azure/azure-cli",
       "number": 26826,
@@ -3196,110 +3248,6 @@
         "feasibility_notes": "Testing requires an Azure subscription to provision storage accounts and configure network rules with IPv6 addresses, then verifying the configuration using the updated CLI commands."
       },
       "priority_score": 38.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/26189",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 26189,
-      "title": "[Compute] `az vm host`: Add commands to support getting possible resize options and resizing dedicated host",
-      "changed_files": 5,
-      "additions": 1114,
-      "deletions": 0,
-      "labels": [
-        "Compute",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "devops",
-        "skills_required": [
-          "python",
-          "azure",
-          "api-integration",
-          "cli-development",
-          "cloud-compute"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds new commands to the Azure CLI to support listing possible resize options for dedicated hosts and resizing them.",
-        "repo_summary": "The Azure CLI is a cross-platform command-line tool for managing Azure resources.",
-        "feasibility_notes": "Testing requires an Azure subscription with dedicated hosts provisioned, and involves executing the new CLI commands to list resize options and perform actual resize operations."
-      },
-      "priority_score": 38.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/Azure/azure-cli/pull/22874",
-      "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 22874,
-      "title": "[Synapse] `az synapse sql create`: Add parameter `--collation`",
-      "changed_files": 5,
-      "additions": 370,
-      "deletions": 879,
-      "labels": [
-        "SQL",
-        "Synapse",
-        "Auto-Assign"
-      ],
-      "repo_size_mb": 885.28,
-      "repo_language": "Python",
-      "repo_topics": [
-        "azure",
-        "azure-cli",
-        "cloud"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "database",
-        "skills_required": [
-          "python",
-          "azure-cli",
-          "sql",
-          "synapse"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds the `--collation` parameter to the `az synapse sql create` command to support collation settings.",
-        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
-        "feasibility_notes": "Reproducible by installing Azure CLI, authenticating, and attempting to create an Azure Synapse SQL pool with the new `--collation` parameter."
-      },
-      "priority_score": 37.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -3417,14 +3365,18 @@
       ]
     },
     {
-      "url": "https://github.com/Azure/azure-cli/pull/28596",
+      "url": "https://github.com/Azure/azure-cli/pull/22874",
       "repo_url": "https://github.com/Azure/azure-cli",
-      "number": 28596,
-      "title": "{ARM} `az stack` Deprecate the `--delete-*` options and redirect to the new `--action-on-unmanage` argument for the `create` and `delete` subcommands.",
+      "number": 22874,
+      "title": "[Synapse] `az synapse sql create`: Add parameter `--collation`",
       "changed_files": 5,
-      "additions": 201,
-      "deletions": 200,
-      "labels": [],
+      "additions": 370,
+      "deletions": 879,
+      "labels": [
+        "SQL",
+        "Synapse",
+        "Auto-Assign"
+      ],
       "repo_size_mb": 885.28,
       "repo_language": "Python",
       "repo_topics": [
@@ -3435,22 +3387,21 @@
       "repo_has_dockerfile": false,
       "repo_has_pytest": false,
       "analysis": {
-        "domain": "cli-tool",
+        "domain": "database",
         "skills_required": [
           "python",
-          "azure-sdk",
-          "resource-management",
-          "deprecation",
-          "cli-design"
+          "azure-cli",
+          "sql",
+          "synapse"
         ],
-        "difficulty": "senior",
+        "difficulty": "junior",
         "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR deprecates `--delete-*` options in `az stack` commands, introducing a new `--action-on-unmanage` argument and updating related tests.",
-        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
-        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure subscription with permissions to create deployment stacks and test various detach/delete scenarios using both old and new parameters."
+        "issue_clarity_score": 3,
+        "pr_summary": "This PR adds the `--collation` parameter to the `az synapse sql create` command to support collation settings.",
+        "repo_summary": "The Azure CLI is a command-line interface for managing Azure resources and services.",
+        "feasibility_notes": "Reproducible by installing Azure CLI, authenticating, and attempting to create an Azure Synapse SQL pool with the new `--collation` parameter."
       },
-      "priority_score": 35.0,
+      "priority_score": 37.0,
       "priority_tier": "C",
       "filter_verdicts": [
         {
@@ -3562,6 +3513,55 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "6 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Azure/azure-cli/pull/28596",
+      "repo_url": "https://github.com/Azure/azure-cli",
+      "number": 28596,
+      "title": "{ARM} `az stack` Deprecate the `--delete-*` options and redirect to the new `--action-on-unmanage` argument for the `create` and `delete` subcommands.",
+      "changed_files": 5,
+      "additions": 201,
+      "deletions": 200,
+      "labels": [],
+      "repo_size_mb": 885.28,
+      "repo_language": "Python",
+      "repo_topics": [
+        "azure",
+        "azure-cli",
+        "cloud"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "cli-tool",
+        "skills_required": [
+          "python",
+          "azure-sdk",
+          "resource-management",
+          "deprecation",
+          "cli-design"
+        ],
+        "difficulty": "senior",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR deprecates `--delete-*` options in `az stack` commands, introducing a new `--action-on-unmanage` argument and updating related tests.",
+        "repo_summary": "The Azure CLI is a command-line tool that allows users to manage Azure resources.",
+        "feasibility_notes": "Testing requires setting up the Azure CLI development environment and an Azure subscription with permissions to create deployment stacks and test various detach/delete scenarios using both old and new parameters."
+      },
+      "priority_score": 35.0,
+      "priority_tier": "C",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "5 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
