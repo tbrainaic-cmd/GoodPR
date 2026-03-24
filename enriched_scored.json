@@ -1,75 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-24T07:42:47.802662+00:00",
-    "total_repos_input": 5,
-    "repos_passed_filter": 5,
-    "total_prs_input": 25,
-    "prs_after_repo_filter": 25,
-    "prs_after_pr_filter": 5,
+    "enriched_at": "2026-03-24T08:17:02.613850+00:00",
+    "total_repos_input": 3,
+    "repos_passed_filter": 3,
+    "total_prs_input": 14,
+    "prs_after_repo_filter": 14,
+    "prs_after_pr_filter": 3,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 4,
-    "tier_c": 1,
+    "tier_b": 3,
+    "tier_c": 0,
     "workers": 5,
     "elapsed_seconds": 0.12,
     "incremental": true,
-    "prs_from_cache": 25,
+    "prs_from_cache": 14,
     "prs_new": 0,
     "prs_disappeared": 11
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3959",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3959,
-      "title": "Add measure.regionprops_table function",
-      "changed_files": 3,
-      "additions": 314,
-      "deletions": 10,
-      "labels": [
-        ":pray: Feature request"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "data-structures",
-          "numerical-analysis",
-          "api-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR adds a `measure.regionprops_table` function to convert image region properties into a dictionary suitable for tabular data analysis.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Relatively easy to reproduce by applying `regionprops_table` to a segmented image and verifying the structure and content of the output dictionary."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/scikit-image/scikit-image/pull/3429",
       "repo_url": "https://github.com/scikit-image/scikit-image",
@@ -213,55 +162,6 @@
           "filter_name": "pr_file_count",
           "passed": true,
           "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/440",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 440,
-      "title": "Line, Circle, Ellipse total least squares fitting and RANSAC algorithm",
-      "changed_files": 6,
-      "additions": 1085,
-      "deletions": 1,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image-processing",
-          "geometry",
-          "statistics"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR introduces new functionalities for fitting lines, circles, and ellipses using total least squares and implements the RANSAC algorithm for robust model fitting.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves generating data with outliers, applying the fitting algorithms, and verifying that the models are correctly identified."
-      },
-      "priority_score": 50.0,
-      "priority_tier": "C",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "6 changed file(s) within [2, 6]"
         },
         {
           "filter_name": "pr_state",
