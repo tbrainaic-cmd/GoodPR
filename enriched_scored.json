@@ -1,75 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-24T07:07:37.775731+00:00",
+    "enriched_at": "2026-03-24T07:42:47.802662+00:00",
     "total_repos_input": 5,
     "repos_passed_filter": 5,
-    "total_prs_input": 36,
-    "prs_after_repo_filter": 36,
-    "prs_after_pr_filter": 10,
+    "total_prs_input": 25,
+    "prs_after_repo_filter": 25,
+    "prs_after_pr_filter": 5,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 8,
-    "tier_c": 2,
+    "tier_b": 4,
+    "tier_c": 1,
     "workers": 5,
-    "elapsed_seconds": 0.13,
+    "elapsed_seconds": 0.12,
     "incremental": true,
-    "prs_from_cache": 36,
+    "prs_from_cache": 25,
     "prs_new": 0,
-    "prs_disappeared": 57
+    "prs_disappeared": 11
   },
   "scored_prs": [
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/6251",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 6251,
-      "title": "improve butterworth docstring and add new kwargs and gallery example",
-      "changed_files": 3,
-      "additions": 280,
-      "deletions": 23,
-      "labels": [
-        ":fast_forward: type: Enhancement"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "signal-processing",
-          "image-processing",
-          "documentation",
-          "api-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances the Butterworth filter by adding options for traditional vs. squared variants and boundary padding, alongside updating documentation and providing a new gallery example.",
-        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Testing locally involves verifying the functionality of the new `square_butterworth` and `npad` arguments, checking the mathematical correctness of the filter, and reviewing the updated documentation and example."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
     {
       "url": "https://github.com/scikit-image/scikit-image/pull/3959",
       "repo_url": "https://github.com/scikit-image/scikit-image",
@@ -173,6 +122,57 @@
       ]
     },
     {
+      "url": "https://github.com/scikit-image/scikit-image/pull/6251",
+      "repo_url": "https://github.com/scikit-image/scikit-image",
+      "number": 6251,
+      "title": "improve butterworth docstring and add new kwargs and gallery example",
+      "changed_files": 3,
+      "additions": 280,
+      "deletions": 23,
+      "labels": [
+        ":fast_forward: type: Enhancement"
+      ],
+      "repo_size_mb": 80.43,
+      "repo_language": "Python",
+      "repo_topics": [
+        "computer-vision",
+        "image-processing",
+        "python"
+      ],
+      "repo_has_dockerfile": false,
+      "repo_has_pytest": false,
+      "analysis": {
+        "domain": "data-science",
+        "skills_required": [
+          "python",
+          "signal-processing",
+          "image-processing",
+          "documentation",
+          "api-design"
+        ],
+        "difficulty": "mid",
+        "issue_has_clear_log": false,
+        "issue_clarity_score": 4,
+        "pr_summary": "This PR enhances the Butterworth filter by adding options for traditional vs. squared variants and boundary padding, alongside updating documentation and providing a new gallery example.",
+        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
+        "feasibility_notes": "Testing locally involves verifying the functionality of the new `square_butterworth` and `npad` arguments, checking the mathematical correctness of the filter, and reviewing the updated documentation and example."
+      },
+      "priority_score": 65.0,
+      "priority_tier": "B",
+      "filter_verdicts": [
+        {
+          "filter_name": "pr_file_count",
+          "passed": true,
+          "reason": "3 changed file(s) within [2, 6]"
+        },
+        {
+          "filter_name": "pr_state",
+          "passed": true,
+          "reason": "PR state=closed, merged=True"
+        }
+      ]
+    },
+    {
       "url": "https://github.com/scikit-image/scikit-image/pull/798",
       "repo_url": "https://github.com/scikit-image/scikit-image",
       "number": 798,
@@ -208,251 +208,6 @@
       },
       "priority_score": 62.0,
       "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/4342",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 4342,
-      "title": "Refactor canny edge detector",
-      "changed_files": 3,
-      "additions": 206,
-      "deletions": 156,
-      "labels": [
-        ":wrench: type: Maintenance"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "numpy",
-          "image-processing",
-          "refactoring"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors the `skimage.feature._canny` module by introducing new intermediary functions, deprecating `smooth_with_function_and_mask`, and adding validation for threshold values.",
-        "repo_summary": "Scikit-image is an open-source Python package for image processing, providing algorithms for tasks like image filtering, segmentation, analysis, and transformation.",
-        "feasibility_notes": "Testing involves running existing Canny tests, new validation tests for thresholds, and potentially comparing output behavior before and after refactoring."
-      },
-      "priority_score": 62.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3775",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3775,
-      "title": "Implement Farid & Simoncelli derivatives",
-      "changed_files": 4,
-      "additions": 359,
-      "deletions": 42,
-      "labels": [
-        ":pray: Feature request"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "numerical-methods",
-          "algorithm-implementation",
-          "testing"
-        ],
-        "difficulty": "senior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 5,
-        "pr_summary": "This PR adds the implementation of Farid & Simoncelli derivative filters to scikit-image's image filtering module.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Reproducing would involve running the new filters on sample images and comparing results to expected outputs from the referenced paper, requiring domain knowledge."
-      },
-      "priority_score": 58.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "4 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/694",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 694,
-      "title": "Refactor moments functions",
-      "changed_files": 5,
-      "additions": 301,
-      "deletions": 100,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "refactoring",
-          "testing",
-          "numpy"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR refactors moments functions, making them publicly accessible, renaming them for consistency, using typed memoryviews, and adding explicit test cases.",
-        "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
-        "feasibility_notes": "Testing involves running the new explicit test cases and verifying the behavior of the now-public `moments` functions, which should be straightforward."
-      },
-      "priority_score": 57.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "5 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/505",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 505,
-      "title": "Implementation of Pixelwise Image correction methods",
-      "changed_files": 3,
-      "additions": 307,
-      "deletions": 6,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "numerical-algorithms",
-          "software-development"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 1,
-        "pr_summary": "This PR implements pixelwise image correction methods, adding new functionality to the library.",
-        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Testing locally would be difficult due to the lack of description, examples, or specific instructions in the PR or linked issue."
-      },
-      "priority_score": 56.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/896",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 896,
-      "title": "Remove six copy in _shared as it is a required dependency",
-      "changed_files": 3,
-      "additions": 2,
-      "deletions": 426,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "dependency-management",
-          "software-engineering"
-        ],
-        "difficulty": "junior",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 2,
-        "pr_summary": "This PR removes an internal copy of the `six` library, as `six` is already a required dependency.",
-        "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
-        "feasibility_notes": "Testing would primarily involve ensuring no regressions occur after removing the internal copy of `six`, likely by running the full test suite, which is straightforward."
-      },
-      "priority_score": 54.0,
-      "priority_tier": "C",
       "filter_verdicts": [
         {
           "filter_name": "pr_file_count",
