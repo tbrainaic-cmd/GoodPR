@@ -1,176 +1,24 @@
 {
   "metadata": {
     "source_file": "output/pr_results.json",
-    "enriched_at": "2026-03-24T08:17:02.613850+00:00",
-    "total_repos_input": 3,
-    "repos_passed_filter": 3,
-    "total_prs_input": 14,
-    "prs_after_repo_filter": 14,
-    "prs_after_pr_filter": 3,
+    "enriched_at": "2026-03-24T08:51:08.054686+00:00",
+    "total_repos_input": 2,
+    "repos_passed_filter": 2,
+    "total_prs_input": 5,
+    "prs_after_repo_filter": 5,
+    "prs_after_pr_filter": 0,
     "prs_analyzed_by_llm": 0,
     "tier_a": 0,
-    "tier_b": 3,
+    "tier_b": 0,
     "tier_c": 0,
     "workers": 5,
-    "elapsed_seconds": 0.12,
+    "elapsed_seconds": 0.14,
     "incremental": true,
-    "prs_from_cache": 14,
+    "prs_from_cache": 5,
     "prs_new": 0,
-    "prs_disappeared": 11
+    "prs_disappeared": 9
   },
-  "scored_prs": [
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/3429",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 3429,
-      "title": "MAINT: Use upstream colormaps now that matplotlib has been upgraded",
-      "changed_files": 3,
-      "additions": 3,
-      "deletions": 537,
-      "labels": [
-        ":wrench: type: Maintenance"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "matplotlib",
-          "refactoring",
-          "testing"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR refactors scikit-image to use colormaps directly from matplotlib, eliminating redundant internal versions.",
-        "repo_summary": "scikit-image is an open-source image processing library for Python.",
-        "feasibility_notes": "Reproducing involves checking if the library correctly uses matplotlib's colormaps after the change, likely verifiable through existing tests."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/6251",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 6251,
-      "title": "improve butterworth docstring and add new kwargs and gallery example",
-      "changed_files": 3,
-      "additions": 280,
-      "deletions": 23,
-      "labels": [
-        ":fast_forward: type: Enhancement"
-      ],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "data-science",
-        "skills_required": [
-          "python",
-          "signal-processing",
-          "image-processing",
-          "documentation",
-          "api-design"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 4,
-        "pr_summary": "This PR enhances the Butterworth filter by adding options for traditional vs. squared variants and boundary padding, alongside updating documentation and providing a new gallery example.",
-        "repo_summary": "scikit-image is an open-source Python package for image processing, providing algorithms for tasks like segmentation, transformation, filtering, and analysis.",
-        "feasibility_notes": "Testing locally involves verifying the functionality of the new `square_butterworth` and `npad` arguments, checking the mathematical correctness of the filter, and reviewing the updated documentation and example."
-      },
-      "priority_score": 65.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/scikit-image/scikit-image/pull/798",
-      "repo_url": "https://github.com/scikit-image/scikit-image",
-      "number": 798,
-      "title": "Luv colorspace",
-      "changed_files": 3,
-      "additions": 304,
-      "deletions": 73,
-      "labels": [],
-      "repo_size_mb": 80.43,
-      "repo_language": "Python",
-      "repo_topics": [
-        "computer-vision",
-        "image-processing",
-        "python"
-      ],
-      "repo_has_dockerfile": false,
-      "repo_has_pytest": false,
-      "analysis": {
-        "domain": "ml-ai",
-        "skills_required": [
-          "python",
-          "image-processing",
-          "color-science",
-          "testing",
-          "numerical-methods"
-        ],
-        "difficulty": "mid",
-        "issue_has_clear_log": false,
-        "issue_clarity_score": 3,
-        "pr_summary": "This PR adds conversions to and from the CIE Luv color space to the `color` module, along with corresponding tests.",
-        "repo_summary": "scikit-image is a Python library providing algorithms for image processing.",
-        "feasibility_notes": "Testing involves running the new test cases and potentially visually inspecting color conversions, which should be relatively easy."
-      },
-      "priority_score": 62.0,
-      "priority_tier": "B",
-      "filter_verdicts": [
-        {
-          "filter_name": "pr_file_count",
-          "passed": true,
-          "reason": "3 changed file(s) within [2, 6]"
-        },
-        {
-          "filter_name": "pr_state",
-          "passed": true,
-          "reason": "PR state=closed, merged=True"
-        }
-      ]
-    }
-  ],
+  "scored_prs": [],
   "repos_filtered_out": [],
   "prs_filtered_out": []
 }
